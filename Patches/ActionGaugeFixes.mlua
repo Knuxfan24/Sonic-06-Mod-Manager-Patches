@@ -1,0 +1,18 @@
+--[Patch]--
+Title("Action Gauge Fixes")
+Author("Hyper")
+Platform("Xbox 360")
+Description("Restores gauge draining and replenishment for Sonic.")
+
+--[Functions]--
+BeginBlock("core\archives\player.arc")
+ParameterRename("core\player\sonic_new.lub"|"c_gauge_green"|"c_green")
+ParameterRename("core\player\sonic_new.lub"|"c_gauge_red"|"c_red")
+ParameterRename("core\player\sonic_new.lub"|"c_gauge_blue"|"c_blue")
+ParameterRename("core\player\sonic_new.lub"|"c_gauge_white"|"c_white")
+ParameterRename("core\player\sonic_new.lub"|"c_gauge_sky"|"c_sky")
+ParameterRename("core\player\sonic_new.lub"|"c_gauge_yellow"|"c_yellow")
+ParameterRename("core\player\sonic_new.lub"|"c_gauge_purple"|"c_purple")
+ParameterRename("core\player\sonic_new.lub"|"c_gauge_super"|"c_super")
+ParameterEdit("core\player\sonic_new.lub"|"c_gauge_heal"|"5 * (point / sec)")
+EndBlock("core\archives\player.arc")

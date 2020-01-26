@@ -1,0 +1,10 @@
+--[Patch]--
+Title("Curved Homing Attack")
+Author("Hyper")
+Platform("Xbox 360")
+Description("Enables homing gravity for Sonic.")
+
+--[Functions]--
+BeginBlock("core\archives\player.arc")
+StringReplace("core\player\sonic_new.lub"|"other_module_sonic_homing"|"other_module_blaze_homing")
+EndBlock("core\archives\player.arc")

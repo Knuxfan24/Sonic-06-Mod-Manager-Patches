@@ -1,0 +1,10 @@
+--[Patch]--
+Title("Silver Grind Trick Fix")
+Author("Hyper")
+Platform("Xbox 360")
+Description("Fixes Silver's grind trick animation playing incorrectly.")
+
+--[Functions]--
+BeginBlock("core\archives\player.arc")
+PackageEdit("core\player\silver.pkg"|"motion"|"grindturn_l"|"player/silver/sv_grindtrick00.xnm")
+EndBlock("core\archives\player.arc")

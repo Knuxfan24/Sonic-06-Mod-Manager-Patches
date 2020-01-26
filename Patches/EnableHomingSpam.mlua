@@ -1,0 +1,8 @@
+--[Patch]--
+Title("Enable Homing Spam")
+Author("Desko")
+Platform("Xbox 360")
+Description("Allows the player to spam Sonic's homing attack.")
+
+--[Functions]--
+WriteNopPPC("default.xex"|0x21A4BC)

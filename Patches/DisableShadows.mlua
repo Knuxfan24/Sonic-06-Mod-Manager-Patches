@@ -1,0 +1,13 @@
+--[Patch]--
+Title("Disable Shadows")
+Author("Hyper")
+Platform("Xbox 360")
+Description("What do you think? ;)")
+
+--[Functions]--
+BeginBlock("core\archives\cache.arc")
+ParameterErase("core\scripts\render"|"RenderCSM(_ARG_0_, GenerateCSMLevels, GenerateCSMObjects)")
+EndBlock("core\archives\cache.arc")
+BeginBlock("core\archives\scripts.arc")
+ParameterErase("core\scripts\render\stage"|"RenderCSM(_ARG_0_, GenerateCSMLevels, GenerateCSMObjects)")
+EndBlock("core\archives\scripts.arc")

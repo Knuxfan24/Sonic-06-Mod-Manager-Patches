@@ -1,0 +1,8 @@
+--[Patch]--
+Title("Enable Homing Flips")
+Author("Desko")
+Platform("Xbox 360")
+Description("Restores Sonic's extra flipping animations after homing.")
+
+--[Functions]--
+WriteByte("default.xex"|0x21A3F0|0x41)

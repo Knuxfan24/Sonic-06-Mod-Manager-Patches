@@ -1,0 +1,11 @@
+--[Patch]--
+Title("Board Collision Anim Fix")
+Author("Desko")
+Platform("Xbox 360")
+Description("Restores the animation when the board collides with terrain.")
+
+--[Functions]--
+WriteByte("default.xex"|0x217A07|0x0C)
+BeginBlock("core\archives\player.arc")
+PackageEdit("core\player\snow_board.pkg"|"motion"|"against"|"player/sonic_new/so_brd_collision_Root.xnm")
+EndBlock("core\archives\player.arc")

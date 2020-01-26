@@ -1,0 +1,23 @@
+--[Patch]--
+Title("Unlock Mid-air Momentum")
+Author("darkhero1337")
+Platform("Xbox 360")
+Description("Allows for more free movement in the air with all characters.")
+
+--[Functions]--
+BeginBlock("core\archives\player.arc")
+ParameterEdit("core\player"|"c_jump_brake"|"20 * (meter / sec)")
+ParameterEdit("core\player"|"c_jump_speed_acc"|"2.5 * meter")
+ParameterEdit("core\player"|"c_jump_walk"|"9 * (meter / sec)")
+ParameterEdit("core\player\tails.lub"|"c_flight_speed_min"|"0 * (meter / sec)")
+ParameterEdit("core\player\tails.lub"|"c_jump_speed_brake"|"20 * (meter / sec)")
+ParameterEdit("core\player\silver.lub"|"c_jump_speed_brake"|"20 * (meter / sec)")
+ParameterEdit("core\player\rouge.lub"|"c_jump_speed_brake"|"20 * (meter / sec)")
+ParameterEdit("core\player\knuckles.lub"|"c_jump_speed_brake"|"20 * (meter / sec)")
+ParameterEdit("core\player\amy.lub"|"c_jump_speed_brake"|"20 * (meter / sec)")
+ParameterEdit("core\player\tails.lub"|"c_jump_run"|"9 * (meter / sec)")
+ParameterEdit("core\player\silver.lub"|"c_jump_run"|"9 * (meter / sec)")
+ParameterEdit("core\player\rouge.lub"|"c_jump_run"|"9 * (meter / sec)")
+ParameterEdit("core\player\knuckles.lub"|"c_jump_run"|"9 * (meter / sec)")
+ParameterEdit("core\player\amy.lub"|"c_jump_run"|"9 * (meter / sec)")
+EndBlock("core\archives\player.arc")

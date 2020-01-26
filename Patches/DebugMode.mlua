@@ -1,0 +1,14 @@
+--[Patch]--
+Title("Debug Mode")
+Author("Mefiresu")
+Platform("Xbox 360")
+Description("Enables Debug Mode for all characters.")
+
+--[Functions]--
+BeginBlock("core\archives\player.arc")
+Ignore("select_")
+ParameterEdit("core\player"|"debug"|"use")
+ParameterEdit("core\player"|"c_module_state"|"state_module_debug")
+ParameterEdit("core\player"|"c_posture_control"|"posture_control_debug")
+ParameterEdit("core\player"|"c_input_system"|"input_system_debug")
+EndBlock("core\archives\player.arc")

@@ -1,0 +1,8 @@
+--[Patch]--
+Title("Bound Attack Recovery")
+Author("Desko")
+Platform("Xbox 360")
+Description("Unlocks mid-air momentum for the bound attack.")
+
+--[Functions]--
+WriteByte("default.xex"|0x21ADC8|0x40)

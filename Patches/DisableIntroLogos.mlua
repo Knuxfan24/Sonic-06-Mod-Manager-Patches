@@ -1,0 +1,11 @@
+--[Patch]--
+Title("Disable Intro Logos")
+Author("Knuxfan24")
+Platform("Xbox 360")
+Description("Disables the SEGA, Sonic Team and CriWare logos on launch.")
+
+--[Functions]--
+BeginBlock("win32\archives\sprite.arc")
+Delete("win32\sprite\logo\cri_logo.xncp")
+Delete("win32\sprite\logo\sonicteam_logo.xncp")
+EndBlock("win32\archives\sprite.arc")

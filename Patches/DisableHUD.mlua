@@ -1,0 +1,13 @@
+--[Patch]--
+Title("Disable HUD")
+Author("Hyper")
+Platform("Xbox 360")
+Description("Disables the heads-up display.")
+
+--[Functions]--
+BeginBlock("core\archives\cache.arc")
+ParameterErase("core\scripts\render"|"Render2D(_ARG_0_)")
+EndBlock("core\archives\cache.arc")
+BeginBlock("core\archives\scripts.arc")
+ParameterErase("core\scripts\render\stage"|"Render2D(_ARG_0_)")
+EndBlock("core\archives\scripts.arc")

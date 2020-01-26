@@ -1,0 +1,10 @@
+--[Patch]--
+Title("Snowboard Air Control")
+Author("Desko")
+Platform("Xbox 360")
+Description("Allows for free movement when jumping on the snowboard.")
+
+--[Functions]--
+WriteNopPPC("default.xex"|0x217710)
+WriteNopPPC("default.xex"|0x217878)
+WriteNopPPC("default.xex"|0x2175B8)
