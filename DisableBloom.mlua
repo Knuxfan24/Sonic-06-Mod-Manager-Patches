@@ -2,7 +2,7 @@
 Title("Disable Bloom")
 Author("Hyper")
 Platform("Xbox 360")
-Description("Disables bloom| obviously.")
+Description("Disables bloom, obviously.")
 
 --[Functions]--
 BeginBlock("core\archives\cache.arc")
