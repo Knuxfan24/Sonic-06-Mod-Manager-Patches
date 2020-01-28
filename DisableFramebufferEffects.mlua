@@ -2,12 +2,13 @@
 Title("Disable Framebuffer Effects")
 Author("Hyper")
 Platform("All Systems")
-Description("Disables the enemy gauge and screen effects.")
+Blurb("Disables the enemy gauge and screen effects.")
 
 --[Functions]--
 BeginBlock("core\archives\cache.arc")
 ParameterErase("core\scripts\render"|"RenderWorld(_ARG_0_, "afterpp", "all", "transparent")")
 EndBlock("core\archives\cache.arc")
+
 BeginBlock("core\archives\scripts.arc")
 ParameterErase("core\scripts\render\stage"|"RenderWorld(_ARG_0_, "afterpp", "all", "transparent")")
 EndBlock("core\archives\scripts.arc")

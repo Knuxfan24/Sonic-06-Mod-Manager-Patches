@@ -2,7 +2,7 @@
 Title("Enable Homing Spam")
 Author("Desko")
 Platform("Xbox 360")
-Description("Allows the player to spam Sonic's homing attack.")
+Blurb("Allows the player to spam Sonic's homing attack.")
 
 --[Functions]--
 DecryptXEX("default.xex")

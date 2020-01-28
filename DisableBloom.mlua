@@ -2,12 +2,13 @@
 Title("Disable Bloom")
 Author("Hyper")
 Platform("All Systems")
-Description("Disables bloom, obviously.")
+Blurb("Disables bloom.")
 
 --[Functions]--
 BeginBlock("core\archives\cache.arc")
 ParameterErase("core\scripts\render"|"ApplyBloom(_ARG_0_)")
 EndBlock("core\archives\cache.arc")
+
 BeginBlock("core\archives\scripts.arc")
 ParameterErase("core\scripts\render\stage"|"ApplyBloom(_ARG_0_)")
 EndBlock("core\archives\scripts.arc")

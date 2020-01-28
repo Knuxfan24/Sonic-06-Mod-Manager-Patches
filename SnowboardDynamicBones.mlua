@@ -2,10 +2,10 @@
 Title("Snowboard Dynamic Bones")
 Author("Hyper")
 Platform("All Systems")
-Description("Restores Sonic's dynamic bones for the snowboards.")
+Blurb("Restores Sonic's dynamic bones for the snowboards.")
 
 --[Functions]--
 BeginBlock("core\archives\player.arc")
-ParameterEdit("core\player\snow_board.lub"|"c_hair"|"{ "TopHair", "HighLeftHair", "HighRightHair", "LowLeftHair", "LowRightHair", "MiddleHair"}")
-ParameterEdit("core\player\snow_board_wap.lub"|"c_hair"|"{ "TopHair", "HighLeftHair", "HighRightHair", "LowLeftHair", "LowRightHair", "MiddleHair"}")
+ParameterAdd("core\player\snow_board.lub"|"c_hair"|"{ "TopHair", "HighLeftHair", "HighRightHair", "LowLeftHair", "LowRightHair", "MiddleHair" }")
+ParameterAdd("core\player\snow_board_wap.lub"|"c_hair"|"{ "TopHair", "HighLeftHair", "HighRightHair", "LowLeftHair", "LowRightHair", "MiddleHair" }")
 EndBlock("core\archives\player.arc")

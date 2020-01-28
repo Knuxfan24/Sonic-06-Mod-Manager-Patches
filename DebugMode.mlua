@@ -2,7 +2,7 @@
 Title("Debug Mode")
 Author("Mefiresu")
 Platform("All Systems")
-Description("Enables Debug Mode for all characters.")
+Blurb("Enables Debug Mode for all characters.")
 
 --[Functions]--
 BeginBlock("core\archives\player.arc")

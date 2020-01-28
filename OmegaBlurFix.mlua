@@ -2,7 +2,7 @@
 Title("Omega Blur Fix")
 Author("Nonami")
 Platform("All Systems")
-Description("Fixes a Xenia bug that causes issues when rendering Omega.")
+Blurb("Fixes a Xenia bug that causes issues when rendering Omega.")
 
 --[Functions]--
 BeginBlock("win32\archives\player_omega.arc")

@@ -2,7 +2,7 @@
 Title("Action Gauge Fixes")
 Author("Hyper")
 Platform("All Systems")
-Description("Restores gauge draining and replenishment for Sonic.")
+Blurb("Restores gauge draining and replenishment for Sonic.")
 
 --[Functions]--
 BeginBlock("core\archives\player.arc")

@@ -2,7 +2,7 @@
 Title("Controllable Spinkick")
 Author("Nonami")
 Platform("Xbox 360")
-Description("Allows the player to move whilst using the Spinkick.")
+Blurb("Allows the player to move whilst using the Spinkick.")
 
 --[Functions]--
 DecryptXEX("default.xex")

@@ -2,7 +2,7 @@
 Title("Snowboard Air Control")
 Author("Desko")
 Platform("Xbox 360")
-Description("Allows for free movement when jumping on the snowboard.")
+Blurb("Allows for free movement when jumping on the snowboard.")
 
 --[Functions]--
 DecryptXEX("default.xex")

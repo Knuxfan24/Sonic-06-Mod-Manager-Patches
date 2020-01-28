@@ -2,7 +2,7 @@
 Title("Unlock Mid-air Momentum")
 Author("darkhero1337")
 Platform("All Systems")
-Description("Allows for more free movement in the air with all characters.")
+Blurb("Allows for more free movement in the air with all characters.")
 
 --[Functions]--
 BeginBlock("core\archives\player.arc")

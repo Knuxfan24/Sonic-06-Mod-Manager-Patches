@@ -2,7 +2,7 @@
 Title("Bound Attack Recovery")
 Author("Desko")
 Platform("Xbox 360")
-Description("Unlocks mid-air momentum for the bound attack.")
+Blurb("Unlocks mid-air momentum for the bound attack.")
 
 --[Functions]--
 DecryptXEX("default.xex")

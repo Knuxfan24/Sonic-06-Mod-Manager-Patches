@@ -2,7 +2,7 @@
 Title("Enable Chaos Smash")
 Author("Desko")
 Platform("Xbox 360")
-Description("Restores Shadow's Chaos Smash.")
+Blurb("Restores Shadow's Chaos Smash.")
 
 --[Functions]--
 DecryptXEX("default.xex")

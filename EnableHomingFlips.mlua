@@ -2,7 +2,7 @@
 Title("Enable Homing Flips")
 Author("Desko")
 Platform("Xbox 360")
-Description("Restores Sonic's extra flipping animations after homing.")
+Blurb("Restores Sonic's extra flipping animations after homing.")
 
 --[Functions]--
 DecryptXEX("default.xex")

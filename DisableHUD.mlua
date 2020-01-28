@@ -2,13 +2,14 @@
 Title("Disable HUD")
 Author("Hyper")
 Platform("All Systems")
-Description("Disables the heads-up display.")
+Blurb("Disables the heads-up display.")
 
 --[Functions]--
 BeginBlock("core\archives\cache.arc")
 Ignore("render_title.lub")
 ParameterErase("core\scripts\render"|"Render2D(_ARG_0_)")
 EndBlock("core\archives\cache.arc")
+
 BeginBlock("core\archives\scripts.arc")
 ParameterErase("core\scripts\render\stage"|"Render2D(_ARG_0_)")
 EndBlock("core\archives\scripts.arc")

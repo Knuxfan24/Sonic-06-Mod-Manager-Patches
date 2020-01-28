@@ -2,7 +2,7 @@
 Title("Curved Homing Attack")
 Author("Hyper")
 Platform("All Systems")
-Description("Enables homing gravity for Sonic.")
+Blurb("Enables homing gravity for Sonic.")
 
 --[Functions]--
 BeginBlock("core\archives\player.arc")

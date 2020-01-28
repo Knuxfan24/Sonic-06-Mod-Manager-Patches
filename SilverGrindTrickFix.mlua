@@ -2,7 +2,7 @@
 Title("Silver Grind Trick Fix")
 Author("Hyper")
 Platform("All Systems")
-Description("Fixes Silver's grind trick animation playing incorrectly.")
+Blurb("Fixes Silver's grind trick animation playing incorrectly.")
 
 --[Functions]--
 BeginBlock("core\archives\player.arc")

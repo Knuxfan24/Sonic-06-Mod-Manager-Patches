@@ -2,7 +2,7 @@
 Title("Mach Speed Air Control")
 Author("Desko")
 Platform("Xbox 360")
-Description("Allows for free movement when jumping at Mach Speed.")
+Blurb("Allows for free movement when jumping at Mach Speed.")
 
 --[Functions]--
 DecryptXEX("default.xex")
