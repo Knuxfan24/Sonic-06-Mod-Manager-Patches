@@ -3,6 +3,7 @@ Title("Controllable Spinkick")
 Author("Nonami")
 Platform("Xbox 360")
 Blurb("Allows the player to move whilst using the Spinkick.")
+Description("This patch will allow Sonic and/or Shadow to move whilst performing the Spinkick.")
 
 --[Functions]--
 DecryptXEX("default.xex")

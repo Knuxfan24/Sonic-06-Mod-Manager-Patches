@@ -3,6 +3,7 @@ Title("Disable Bloom")
 Author("Hyper")
 Platform("All Systems")
 Blurb("Disables bloom.")
+Description("This patch will disable bloom entirely, as you would expect from a patch called 'Disable Bloom.'")
 
 --[Functions]--
 BeginBlock("core\archives\cache.arc")

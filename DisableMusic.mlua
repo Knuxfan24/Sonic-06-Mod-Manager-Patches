@@ -3,6 +3,7 @@ Title("Disable Music")
 Author("Hyper")
 Platform("All Systems")
 Blurb("Disables all in-game and cutscene music.")
+Description("This patch will disable all music tracks. This may only be useful to Xbox 360 players, since the game doesn't save audio settings on that version.")
 
 --[Functions]--
 RenameByExtension("core\sound"|"*.xma"|".xma_back")

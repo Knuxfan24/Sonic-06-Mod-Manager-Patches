@@ -3,6 +3,7 @@ Title("Action Gauge Fixes")
 Author("Hyper")
 Platform("All Systems")
 Blurb("Restores gauge draining and replenishment for Sonic.")
+Description("This patch will restore Sonic's Action Gauge draining and replenishment when using Gems.")
 
 --[Functions]--
 BeginBlock("core\archives\player.arc")

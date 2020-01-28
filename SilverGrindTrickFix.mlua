@@ -3,6 +3,7 @@ Title("Silver Grind Trick Fix")
 Author("Hyper")
 Platform("All Systems")
 Blurb("Fixes Silver's grind trick animation playing incorrectly.")
+Description("This patch will remove a duplicate file extension in Silver's model package for the grind trick animation name, therefore making the animation play in-game.")
 
 --[Functions]--
 BeginBlock("core\archives\player.arc")

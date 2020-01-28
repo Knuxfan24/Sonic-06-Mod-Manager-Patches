@@ -3,6 +3,7 @@ Title("Snowboard Dynamic Bones")
 Author("Hyper")
 Platform("All Systems")
 Blurb("Restores Sonic's dynamic bones for the snowboards.")
+Description("This patch will restore Sonic's hair bones whilst using the snowboards.")
 
 --[Functions]--
 BeginBlock("core\archives\player.arc")

@@ -3,6 +3,7 @@ Title("Disable Shadows")
 Author("Hyper")
 Platform("All Systems")
 Blurb("Disables real-time shadows and shadow maps.")
+Description("This patch will disable real-time shadow rendering and baked shadows. This may provide a significant performance boost, but looks pretty ugly.")
 
 --[Functions]--
 BeginBlock("core\archives\cache.arc")

@@ -3,6 +3,7 @@ Title("Disable Character Stumble")
 Author("Nonami")
 Platform("Xbox 360")
 Blurb("Disables the stumble state when you smack into a wall.")
+Description("This patch will disable the stumble state when characters impact walls at high speed.")
 
 --[Functions]--
 DecryptXEX("default.xex")

@@ -3,6 +3,7 @@ Title("Unlock Mid-air Momentum")
 Author("darkhero1337")
 Platform("All Systems")
 Blurb("Allows for more free movement in the air with all characters.")
+Description("This patch will unlock all mid-air momentum for every character, making it easier to move in the air.")
 
 --[Functions]--
 BeginBlock("core\archives\player.arc")

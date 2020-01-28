@@ -3,6 +3,7 @@ Title("Snowboard Air Control")
 Author("Desko")
 Platform("Xbox 360")
 Blurb("Allows for free movement when jumping on the snowboard.")
+Description("This patch will provide more free control in the air when using the snowboards.")
 
 --[Functions]--
 DecryptXEX("default.xex")

@@ -3,6 +3,7 @@ Title("Omega Blur Fix")
 Author("Nonami")
 Platform("All Systems")
 Blurb("Fixes a Xenia bug that causes issues when rendering Omega.")
+Description("This patch will remove Omega's transparency materials to fix a bug on Xenia where the sprites become blurry.")
 
 --[Functions]--
 BeginBlock("win32\archives\player_omega.arc")

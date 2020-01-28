@@ -3,6 +3,7 @@ Title("Disable Intro Logos")
 Author("Knuxfan24")
 Platform("PlayStation 3")
 Blurb("Disables the SEGA, Sonic Team and CriWare logos on launch.")
+Description("This patch will disable the logos that display when the game launches.")
 
 --[Functions]--
 Rename("core\sound\HD_SEGA.pam"|"core\sound\HD_SEGA.pam_back")

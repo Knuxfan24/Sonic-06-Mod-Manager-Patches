@@ -3,6 +3,7 @@ Title("Mach Speed Air Control")
 Author("Desko")
 Platform("Xbox 360")
 Blurb("Allows for free movement when jumping at Mach Speed.")
+Description("This patch will provide more free control in the air during Mach Speed sections.")
 
 --[Functions]--
 DecryptXEX("default.xex")

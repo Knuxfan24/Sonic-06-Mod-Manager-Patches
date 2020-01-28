@@ -3,6 +3,7 @@ Title("Board Collision Anim Fix")
 Author("Desko")
 Platform("Xbox 360")
 Blurb("Restores the animation when the board collides with terrain.")
+Description("This patch will restore the board collision animation when you collide with terrain.")
 
 --[Functions]--
 DecryptXEX("default.xex")

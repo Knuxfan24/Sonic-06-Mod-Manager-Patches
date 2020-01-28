@@ -3,6 +3,7 @@ Title("Disable Framebuffer Effects")
 Author("Hyper")
 Platform("All Systems")
 Blurb("Disables the enemy gauge and screen effects.")
+Description("This patch will disable the enemy gauge and other framebuffer effects; including the water effects on the screen in Kingdom Valley.")
 
 --[Functions]--
 BeginBlock("core\archives\cache.arc")

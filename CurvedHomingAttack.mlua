@@ -3,6 +3,7 @@ Title("Curved Homing Attack")
 Author("Hyper")
 Platform("All Systems")
 Blurb("Enables homing gravity for Sonic.")
+Description("This patch will swap Sonic's homing module with Blaze's to simulate the homing attack from early versions of Sonic '06. However, this removes Sonic's ability to destroy physics objects.")
 
 --[Functions]--
 BeginBlock("core\archives\player.arc")

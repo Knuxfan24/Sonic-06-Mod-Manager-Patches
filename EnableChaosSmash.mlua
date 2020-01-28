@@ -3,6 +3,7 @@ Title("Enable Chaos Smash")
 Author("Desko")
 Platform("Xbox 360")
 Blurb("Restores Shadow's Chaos Smash.")
+Description("This patch will restore Shadow's Chaos Smash. Hold A to charge the attack, and release to knock enemies into each other.")
 
 --[Functions]--
 DecryptXEX("default.xex")

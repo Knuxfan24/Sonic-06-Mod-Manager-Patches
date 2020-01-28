@@ -3,6 +3,7 @@ Title("Disable HUD")
 Author("Hyper")
 Platform("All Systems")
 Blurb("Disables the heads-up display.")
+Description("This patch will disable the HUD entirely.")
 
 --[Functions]--
 BeginBlock("core\archives\cache.arc")
