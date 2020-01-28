@@ -1,0 +1,9 @@
+--[Patch]--
+Title("Disable Music")
+Author("Hyper")
+Platform("All Systems")
+Description("Disables all music... is that not obvious enough either?")
+
+--[Functions]--
+RenameByExtension("core\sound"|"*.xma"|".xma_back")
+RenameByExtension("core\sound\event"|"*.xma"|".xma_back")

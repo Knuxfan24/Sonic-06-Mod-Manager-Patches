@@ -5,4 +5,6 @@ Platform("Xbox 360")
 Description("Unlocks mid-air momentum for the bound attack.")
 
 --[Functions]--
+DecryptXEX("default.xex")
+DecompressXEX("default.xex")
 WriteByte("default.xex"|0x21ADC8|0x40)

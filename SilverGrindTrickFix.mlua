@@ -1,7 +1,7 @@
 --[Patch]--
 Title("Silver Grind Trick Fix")
 Author("Hyper")
-Platform("Xbox 360")
+Platform("All Systems")
 Description("Fixes Silver's grind trick animation playing incorrectly.")
 
 --[Functions]--

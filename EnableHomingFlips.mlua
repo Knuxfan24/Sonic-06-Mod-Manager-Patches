@@ -5,4 +5,6 @@ Platform("Xbox 360")
 Description("Restores Sonic's extra flipping animations after homing.")
 
 --[Functions]--
+DecryptXEX("default.xex")
+DecompressXEX("default.xex")
 WriteByte("default.xex"|0x21A3F0|0x41)

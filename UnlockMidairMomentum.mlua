@@ -1,7 +1,7 @@
 --[Patch]--
 Title("Unlock Mid-air Momentum")
 Author("darkhero1337")
-Platform("Xbox 360")
+Platform("All Systems")
 Description("Allows for more free movement in the air with all characters.")
 
 --[Functions]--

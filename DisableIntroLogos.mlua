@@ -1,7 +1,7 @@
 --[Patch]--
 Title("Disable Intro Logos")
 Author("Knuxfan24")
-Platform("Xbox 360")
+Platform("All Systems")
 Description("Disables the SEGA, Sonic Team and CriWare logos on launch.")
 
 --[Functions]--

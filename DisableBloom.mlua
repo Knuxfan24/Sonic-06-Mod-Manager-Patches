@@ -1,7 +1,7 @@
 --[Patch]--
 Title("Disable Bloom")
 Author("Hyper")
-Platform("Xbox 360")
+Platform("All Systems")
 Description("Disables bloom, obviously.")
 
 --[Functions]--

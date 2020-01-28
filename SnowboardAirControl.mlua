@@ -5,6 +5,8 @@ Platform("Xbox 360")
 Description("Allows for free movement when jumping on the snowboard.")
 
 --[Functions]--
+DecryptXEX("default.xex")
+DecompressXEX("default.xex")
 WriteNopPPC("default.xex"|0x217710)
 WriteNopPPC("default.xex"|0x217878)
 WriteNopPPC("default.xex"|0x2175B8)

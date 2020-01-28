@@ -5,6 +5,8 @@ Platform("Xbox 360")
 Description("Allows for free movement when jumping at Mach Speed.")
 
 --[Functions]--
+DecryptXEX("default.xex")
+DecompressXEX("default.xex")
 WriteNopPPC("default.xex"|0x213380)
 WriteNopPPC("default.xex"|0x213384)
 WriteNopPPC("default.xex"|0x2133B4)

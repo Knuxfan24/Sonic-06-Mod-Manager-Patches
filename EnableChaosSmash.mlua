@@ -5,6 +5,8 @@ Platform("Xbox 360")
 Description("Restores Shadow's Chaos Smash.")
 
 --[Functions]--
+DecryptXEX("default.xex")
+DecompressXEX("default.xex")
 WriteByte("default.xex"|0xB1932B|0x55)
 WriteByte("default.xex"|0xB1935B|0x42)
 WriteByte("default.xex"|0x1AA1B3|0x55)

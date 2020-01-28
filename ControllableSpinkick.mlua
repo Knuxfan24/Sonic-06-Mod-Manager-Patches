@@ -5,6 +5,7 @@ Platform("Xbox 360")
 Description("Allows the player to move whilst using the Spinkick.")
 
 --[Functions]--
+DecryptXEX("default.xex")
 WriteByte("default.xex"|0x2E1B9|0x00)
 WriteByte("default.xex"|0x19D987|0xEF)
 WriteByte("default.xex"|0x1A2A07|0xEF)

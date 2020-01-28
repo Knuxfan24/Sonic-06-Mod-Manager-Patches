@@ -5,4 +5,6 @@ Platform("Xbox 360")
 Description("Allows the player to spam Sonic's homing attack.")
 
 --[Functions]--
+DecryptXEX("default.xex")
+DecompressXEX("default.xex")
 WriteNopPPC("default.xex"|0x21A4BC)

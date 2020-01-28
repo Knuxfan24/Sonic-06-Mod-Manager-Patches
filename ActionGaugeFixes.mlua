@@ -1,7 +1,7 @@
 --[Patch]--
 Title("Action Gauge Fixes")
 Author("Hyper")
-Platform("Xbox 360")
+Platform("All Systems")
 Description("Restores gauge draining and replenishment for Sonic.")
 
 --[Functions]--

@@ -1,7 +1,7 @@
 --[Patch]--
 Title("Omega Blur Fix")
 Author("Nonami")
-Platform("Xbox 360")
+Platform("All Systems")
 Description("Fixes a Xenia bug that causes issues when rendering Omega.")
 
 --[Functions]--

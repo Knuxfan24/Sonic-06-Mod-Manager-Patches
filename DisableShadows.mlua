@@ -1,7 +1,7 @@
 --[Patch]--
 Title("Disable Shadows")
 Author("Hyper")
-Platform("Xbox 360")
+Platform("All Systems")
 Description("What do you think? ;)")
 
 --[Functions]--

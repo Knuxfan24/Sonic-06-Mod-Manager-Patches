@@ -5,6 +5,7 @@ Platform("Xbox 360")
 Description("Disables the stumble state when you smack into a wall.")
 
 --[Functions]--
+DecryptXEX("default.xex")
 --Sonic the Hedgehog
 WriteByte("default.xex"|0xB10DB3|0x29)
 WriteByte("default.xex"|0xB10DB6|0x15)

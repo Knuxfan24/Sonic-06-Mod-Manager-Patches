@@ -1,7 +1,7 @@
 --[Patch]--
 Title("Disable Framebuffer Effects")
 Author("Hyper")
-Platform("Xbox 360")
+Platform("All Systems")
 Description("Disables the enemy gauge and screen effects.")
 
 --[Functions]--

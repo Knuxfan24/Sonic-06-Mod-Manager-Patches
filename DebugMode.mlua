@@ -1,7 +1,7 @@
 --[Patch]--
 Title("Debug Mode")
 Author("Mefiresu")
-Platform("Xbox 360")
+Platform("All Systems")
 Description("Enables Debug Mode for all characters.")
 
 --[Functions]--
