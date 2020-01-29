@@ -1,0 +1,11 @@
+--[Patch]--
+Title("Spammable Spindash")
+Author("Nonami")
+Platform("Xbox 360")
+Blurb("Replaces the Spinkick with the Spindash, allowing you to spam it.")
+Description("This patch will remove the Spinkick state in favour of replacing it with the Spindash state - this allows you to activate it from anywhere.")
+
+--[Functions]--
+DecryptXEX("default.xex")
+WriteByte("default.xex"|0xB10EE6|0x2A)
+WriteByte("default.xex"|0xB10EE7|0xC8)
