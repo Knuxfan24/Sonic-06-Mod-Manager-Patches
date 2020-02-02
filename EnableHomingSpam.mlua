@@ -2,11 +2,11 @@
 Title("Enable Homing Spam")
 Author("Desko")
 Platform("Xbox 360")
-Blurb("Allows the player to spam Sonic's homing attack.")
+Blurb("Allows the player to spam Sonic and Shadow's homing attacks.")
 Description("This patch will restore homing spam from the E3 demo.")
 
 --[Functions]--
 DecryptXEX("default.xex")
 DecompressXEX("default.xex")
-WriteNopPPC("default.xex"|0x21A4BC)
 WriteByte("default.xex"|0x21A5D8|0x40)
+WriteByte("default.xex"|0x1A98AC|0x40)
