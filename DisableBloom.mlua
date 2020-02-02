@@ -1,7 +1,7 @@
 --[Patch]--
 Title("Disable Bloom")
 Author("Hyper")
-Platform("All Systems")
+Platform("Xbox 360")
 Blurb("Disables bloom.")
 Description("This patch will disable bloom entirely, as you would expect from a patch called 'Disable Bloom.'")
 

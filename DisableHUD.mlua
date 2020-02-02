@@ -1,7 +1,7 @@
 --[Patch]--
 Title("Disable HUD")
 Author("Hyper")
-Platform("All Systems")
+Platform("Xbox 360")
 Blurb("Disables the heads-up display.")
 Description("This patch will disable the HUD entirely.")
 
