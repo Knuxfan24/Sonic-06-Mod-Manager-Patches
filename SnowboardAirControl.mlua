@@ -6,8 +6,8 @@ Blurb("Allows for free movement when jumping on the snowboard.")
 Description("This patch will provide more free control in the air when using the snowboards.")
 
 --[Functions]--
-DecryptXEX("default.xex")
-DecompressXEX("default.xex")
-WriteNopPPC("default.xex"|0x217710)
-WriteNopPPC("default.xex"|0x217878)
-WriteNopPPC("default.xex"|0x2175B8)
+DecryptExecutable()
+DecompressExecutable()
+WriteNopPPC(Executable|0x217710)
+WriteNopPPC(Executable|0x217878)
+WriteNopPPC(Executable|0x2175B8)

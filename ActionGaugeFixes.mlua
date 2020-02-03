@@ -6,6 +6,7 @@ Blurb("Restores gauge draining and replenishment for Sonic.")
 Description("This patch will restore Sonic's Action Gauge draining and replenishment when using Gems.")
 
 --[Functions]--
+All Systems:
 BeginBlock("core\archives\player.arc")
 ParameterRename("core\player\sonic_new.lub"|"c_gauge_green"|"c_green")
 ParameterRename("core\player\sonic_new.lub"|"c_gauge_red"|"c_red")

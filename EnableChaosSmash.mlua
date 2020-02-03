@@ -6,8 +6,8 @@ Blurb("This patch will restore Shadow's Chaos Smash.")
 Description("This patch will restore Shadow's Chaos Smash. Hold A to charge the attack, and release to knock enemies into each other.")
 
 --[Functions]--
-DecryptXEX("default.xex")
-DecompressXEX("default.xex")
-WriteByte("default.xex"|0xB1932B|0x55)
-WriteByte("default.xex"|0xB1935B|0x42)
-WriteByte("default.xex"|0x1AA1B3|0x55)
+DecryptExecutable()
+DecompressExecutable()
+WriteByte("Executable"|0xB1932B|0x55)
+WriteByte("Executable"|0xB1935B|0x42)
+WriteByte("Executable"|0x1AA1B3|0x55)

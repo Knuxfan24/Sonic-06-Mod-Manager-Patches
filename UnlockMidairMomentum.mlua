@@ -6,6 +6,7 @@ Blurb("Allows for more free movement in the air with all characters.")
 Description("This patch will unlock all mid-air momentum for every character, making it easier to move in the air.")
 
 --[Functions]--
+All Systems:
 BeginBlock("core\archives\player.arc")
 ParameterEdit("core\player"|"c_jump_brake"|"20 * (meter / sec)")
 ParameterEdit("core\player"|"c_jump_speed_acc"|"2.5 * meter")

@@ -6,6 +6,7 @@ Blurb("Restores Sonic's dynamic bones for the snowboards.")
 Description("This patch will restore Sonic's hair bones whilst using the snowboards.")
 
 --[Functions]--
+All Systems:
 BeginBlock("core\archives\player.arc")
 ParameterAdd("core\player\snow_board.lub"|"c_hair"|"{ "TopHair", "HighLeftHair", "HighRightHair", "LowLeftHair", "LowRightHair", "MiddleHair" }")
 ParameterAdd("core\player\snow_board_wap.lub"|"c_hair"|"{ "TopHair", "HighLeftHair", "HighRightHair", "LowLeftHair", "LowRightHair", "MiddleHair" }")

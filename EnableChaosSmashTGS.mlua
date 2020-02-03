@@ -6,4 +6,4 @@ Blurb("This patch will restore Shadow's Chaos Smash to be more like TGS 2006.")
 Description("This patch will restore Shadow's Chaos Smash.\n\nHold A to charge the attack, and release to knock enemies into each other.\n\nUnlike the other version, you can only chain partially charged homing attacks, as with the TGS 2006 demo.")
 
 --[[Functions]]--
-WriteByte("default.xex"|0x1A8FD7|0x55)
+WriteByte(Executable|0x1A8FD7|0x55)

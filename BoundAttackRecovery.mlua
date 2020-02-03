@@ -6,6 +6,6 @@ Blurb("Unlocks mid-air momentum for the bound attack.")
 Description("This patch will unlock mid-air momentum for the bound attack.\n\nUnlock Mid-air Momentum patch would be recommended to use with this.")
 
 --[Functions]--
-DecryptXEX("default.xex")
-DecompressXEX("default.xex")
-WriteByte("default.xex"|0x21ADC8|0x40)
+DecryptExecutable()
+DecompressExecutable()
+WriteByte(Executable|0x21ADC8|0x40)

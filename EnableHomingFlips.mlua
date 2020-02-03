@@ -6,6 +6,6 @@ Blurb("Restores Sonic's extra flipping animations after homing.")
 Description("This patch will restore the homing flip animations for Sonic.")
 
 --[Functions]--
-DecryptXEX("default.xex")
-DecompressXEX("default.xex")
-WriteByte("default.xex"|0x21A3F0|0x41)
+DecryptExecutable()
+DecompressExecutable()
+WriteByte(Executable|0x21A3F0|0x41)

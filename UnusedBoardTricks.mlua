@@ -6,6 +6,7 @@ Blurb("Replaces jumping animation and high jump animations with unused animation
 Description("Replaces jumping animation and high jump animations with unused animations.\n\nOptimally used with the unlocked mid-air board control and collision animations patches.")
 
 --[Functions]--
+All Systems:
 BeginBlock("core\archives\player.arc")
 PackageEdit("core\player\snow_board.pkg"|"motion"|"hi_jump"|"player/sonic_new/so_brd_trickD_l_Root.xnm")
 PackageEdit("core\player\snow_board.pkg"|"motion"|"hi_fall"|"player/sonic_new/so_brd_trick01_Root.xnm")
