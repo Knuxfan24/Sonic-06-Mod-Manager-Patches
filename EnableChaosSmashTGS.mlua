@@ -9,3 +9,4 @@ Description("This patch will restore Shadow's Chaos Smash.\n\nHold A to charge t
 DecryptExecutable()
 DecompressExecutable()
 WriteByte(Executable|0x1A8FD7|0x55)
+WriteByte(Executable|0x1A92E7|0x55)
