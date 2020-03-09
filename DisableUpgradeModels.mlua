@@ -1,0 +1,11 @@
+--[Patch]--
+Title("Disable Upgrade Models")
+Author("Hyper")
+Platform("All Systems")
+Blurb("Disables the models for Sonic's upgrades.")
+
+--[Functions]--
+All Systems:
+BeginBlock("core\archives\player.arc")
+ParameterRename("core\player\sonic_new.lub"|"c_item_table"|"c_null")
+EndBlock("core\archives\player.arc")
