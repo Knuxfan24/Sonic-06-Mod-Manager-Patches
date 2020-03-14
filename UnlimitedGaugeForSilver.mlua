@@ -1,0 +1,12 @@
+--[Patch]--
+Title("Unlimited Gauge for Silver")
+Author("Hyper")
+Platform("All Systems")
+Blurb("Stops Silver's Action Gauge from depleting.")
+
+--[Functions]--
+All Systems:
+BeginBlock("core\archives\player.arc")
+ParameterEdit("core\player\silver.lub"|"c_psi_gauge_heal"|"100 * point")
+ParameterEdit("core\player\silver.lub"|"c_psi_gauge_heal_delay"|"0 * sec")
+EndBlock("core\archives\player.arc")
