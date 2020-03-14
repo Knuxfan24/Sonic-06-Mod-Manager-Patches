@@ -1,5 +1,5 @@
 --[Patch]--
-Title("Board Collision Anim Fix")
+Title("Board Collision Animation Fix")
 Author("Desko")
 Platform("Xbox 360")
 Blurb("Restores the animation when the board collides with terrain.")
