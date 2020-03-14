@@ -2,7 +2,7 @@
 Title("Unlimited Gauge for Silver")
 Author("Hyper")
 Platform("All Systems")
-Blurb("Stops Silver's Action Gauge from depleting.")
+Blurb("Stops Silver's Action Gauge depleting.")
 
 --[Functions]--
 All Systems:

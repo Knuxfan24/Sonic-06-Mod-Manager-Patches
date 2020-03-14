@@ -2,7 +2,7 @@
 Title("Unlimited Gauge for Elise")
 Author("Hyper")
 Platform("All Systems")
-Blurb("Stops Elise's Action Gauge from depleting.")
+Blurb("Stops Elise's Action Gauge depleting.")
 
 --[Functions]--
 All Systems:
