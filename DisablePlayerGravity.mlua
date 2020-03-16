@@ -1,0 +1,11 @@
+--[Patch]--
+Title("Disable Player Gravity")
+Author("Hyper")
+Platform("All Systems")
+Blurb("Disables gravity for all players.")
+
+--[Functions]--
+All Systems:
+BeginBlock("core\archives\player.arc")
+ParameterEdit("core\player"|"c_module_gravity"|"not_use")
+EndBlock("core\archives\player.arc")

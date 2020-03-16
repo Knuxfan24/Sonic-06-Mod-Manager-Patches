@@ -1,0 +1,11 @@
+--[Patch]--
+Title("Disable Grind Trick Penalty")
+Author("Hyper")
+Platform("All Systems")
+Blurb("Stops grind tricks being cancelled.")
+
+--[Functions]--
+All Systems:
+BeginBlock("core\archives\player.arc")
+ParameterEdit("core\player"|"c_grind_penalty_time"|"0")
+EndBlock("core\archives\player.arc")
