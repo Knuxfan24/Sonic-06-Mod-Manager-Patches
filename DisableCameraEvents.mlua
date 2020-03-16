@@ -1,0 +1,9 @@
+--[Patch]--
+Title("Disable Camera Events")
+Author("jase3300")
+Platform("Xbox 360")
+Blurb("Removes all scripted camera events.")
+
+--[Functions]--
+DecryptExecutable()
+WriteNullBytes(Executable|0x17B38|55)
