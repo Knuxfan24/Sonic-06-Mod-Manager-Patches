@@ -1,5 +1,5 @@
 --[Patch]--
-Title("Keep Character Entity After Restart")
+Title("Keep Entities After Restart")
 Author("Nonami")
 Platform("Xbox 360")
 Blurb("Restarts the stage without disposing of some entities.")
