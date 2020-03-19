@@ -1,0 +1,11 @@
+--[Patch]--
+Title("Sonic Jump Animation Fix")
+Author("Hyper")
+Platform("All Systems")
+Blurb("Uses the correct jump up animation for Sonic.")
+
+--[Functions]--
+All Systems:
+BeginBlock("core\archives\player.arc")
+PackageEdit("core\player\sonic_new.pkg"|"motion"|"jumpup"|"player/sonic_new/jumpup_sonic_Root.xnm")
+EndBlock("core\archives\player.arc")
