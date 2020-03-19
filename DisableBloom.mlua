@@ -2,7 +2,7 @@
 Title("Disable Bloom")
 Author("Hyper")
 Platform("Xbox 360")
-Blurb("Disables bloom.")
+Blurb("Disables bloom effects on the framebuffer.")
 Description("This patch will disable bloom entirely, as you would expect from a patch called 'Disable Bloom.'")
 
 --[Functions]--
