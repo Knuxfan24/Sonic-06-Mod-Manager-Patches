@@ -6,7 +6,6 @@ Blurb("Restarts the stage without disposing of some entities.")
 
 --[Functions]--
 DecryptExecutable()
-
 WriteByte(Executable|0x15DB0A|0x58)
 WriteByte(Executable|0x15DB23|0x00)
 WriteByte(Executable|0x15DB29|0x0B)

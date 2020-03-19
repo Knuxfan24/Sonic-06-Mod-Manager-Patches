@@ -1,0 +1,11 @@
+--[Patch]--
+Title("Don't Restart upon Death")
+Author("Hyper")
+Platform("All Systems")
+Blurb("Stops the game automatically restarting when you die.")
+
+--[Functions]--
+All Systems:
+BeginBlock("core\archives\player.arc")
+ParameterErase("core\player"|"  OpenGameMaster(_ARG_0_, gamemaster_module_player)")
+EndBlock("core\archives\player.arc")
