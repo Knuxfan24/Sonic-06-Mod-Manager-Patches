@@ -1,0 +1,9 @@
+--[Patch]--
+Title("Disable Loading Graphics")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Removes the loading graphics for areas.")
+
+--[Functions]--
+DecryptExecutable()
+WriteNullBytes(Executable|0x3C34C|783)

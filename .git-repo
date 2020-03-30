@@ -1,9 +1,11 @@
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/ActionGaugeFixes.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/AlwaysHaveHighSpeed.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/AlwaysHaveInvincibility.mlua
+https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/BlueGemOverSpinkick.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/BoardCollisionAnimationFix.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/BoundAttackRecovery.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/ControllableSpinkick.mlua
+https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/CorrectHomingAnimation.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/CurvedHomingAttack.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/DebugMode.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/DisableBloom.mlua
@@ -13,6 +15,7 @@ https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/DisableGrindTrickPenalty.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/DisableHUD.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/DisableIntroLogos.mlua
+https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/DisableLoadingGraphics.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/DisableMusic.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/DisablePlayerGravity.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/DisableShadows.mlua

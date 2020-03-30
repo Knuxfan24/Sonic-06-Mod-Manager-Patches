@@ -1,0 +1,11 @@
+--[Patch]--
+Title("Correct Homing Animation")
+Author("Hyper")
+Platform("All Systems")
+Blurb("Uses the correct homing animation, rather than the jump ball.")
+
+--[Functions]--
+All Systems:
+BeginBlock("core\archives\player.arc")
+PackageEdit("core\player\sonic_new.pkg"|"motion"|"homing"|"player/sonic_new/homing_sonic_Root.xnm")
+EndBlock("core\archives\player.arc")
