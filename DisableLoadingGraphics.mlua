@@ -2,7 +2,7 @@
 Title("Disable Loading Graphics")
 Author("Hyper")
 Platform("Xbox 360")
-Blurb("Removes the loading graphics for areas.")
+Blurb("Removes the loading graphics for all areas.")
 
 --[Functions]--
 DecryptExecutable()

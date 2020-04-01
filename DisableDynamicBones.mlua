@@ -14,5 +14,5 @@ WriteByte(Executable|0xFE9D|0x6C)
 
 PlayStation 3:
 BeginBlock("core\archives\player.arc")
-ParameterRename("core\player"|"c_hair"|"c_null")
+ParameterRename("core\player"|"c_hair"|"c_hair_null")
 EndBlock("core\archives\player.arc")

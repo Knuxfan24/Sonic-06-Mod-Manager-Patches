@@ -5,15 +5,11 @@ Platform("All Systems")
 Blurb("Uses Sonic's animations from Tokyo Game Show 2005.")
 
 --[Functions]--
-Xbox 360:
-DecryptExecutable()
-WriteByte(Executable|0xFE9A|0x6E)
-WriteByte(Executable|0xFE9B|0x75)
-WriteByte(Executable|0xFE9C|0x6C)
-WriteByte(Executable|0xFE9D|0x6C)
-
 All Systems:
 BeginBlock("core\archives\player.arc")
+ParameterRename("core\player\princess.lub"|"c_hair"|"c_hair_null")
+ParameterRename("core\player\sonic_new.lub"|"c_hair"|"c_hair_null")
+ParameterRename("core\player\sonic_fast.lub"|"c_hair"|"c_hair_null")
 PackageEdit("core\player\sonic_new.pkg"|"motion"|"fall"|"player/sonic_new/fall_sonic_Root.xnm")
 PackageEdit("core\player\sonic_new.pkg"|"motion"|"goal_l"|"player/sonic_new/goalpose_loop_sonic_Root.xnm")
 PackageEdit("core\player\sonic_new.pkg"|"motion"|"goal"|"player/sonic_new/goal_sonic_Root.xnm")
@@ -27,9 +23,8 @@ PackageEdit("core\player\sonic_new.pkg"|"motion"|"wait"|"player/sonic_new/wait_s
 PackageEdit("core\player\sonic_new.pkg"|"motion"|"wait3"|"player/sonic_new/wait3_sonic_Root.xnm")
 PackageEdit("core\player\sonic_new.pkg"|"motion"|"wait4"|"player/sonic_new/wait4_sonic_Root.xnm")
 PackageEdit("core\player\sonic_new.pkg"|"motion"|"walk"|"player/sonic_new/walk_sonic_Root.xnm")
-
-PlayStation 3:
-ParameterRename("core\player\sonic_new.lub"|"c_hair"|"c_null")
-
-All Systems:
+PackageEdit("core\player\sonic_fast.pkg"|"motion"|"fall"|"player/sonic_new/fall_sonic_Root.xnm")
+PackageEdit("core\player\sonic_fast.pkg"|"motion"|"goal_l"|"player/sonic_new/goalpose_loop_sonic_Root.xnm")
+PackageEdit("core\player\sonic_fast.pkg"|"motion"|"goal"|"player/sonic_new/goal_sonic_Root.xnm")
+PackageEdit("core\player\sonic_fast.pkg"|"motion"|"run"|"player/sonic_new/dush_sonic_Root.xnm")
 EndBlock("core\archives\player.arc")
