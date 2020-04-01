@@ -20,6 +20,7 @@ PackageEdit("core\player\sonic_new.pkg"|"motion"|"homing"|"player/sonic_new/homi
 PackageEdit("core\player\sonic_new.pkg"|"motion"|"run"|"player/sonic_new/run_sonic_Root.xnm")
 PackageEdit("core\player\sonic_new.pkg"|"motion"|"dush"|"player/sonic_new/dush_sonic_Root.xnm")
 PackageEdit("core\player\sonic_new.pkg"|"motion"|"wait"|"player/sonic_new/wait_sonic_Root.xnm")
+PackageEdit("core\player\sonic_new.pkg"|"motion"|"wait2"|"player/sonic_new/wait2_sonic_Root.xnm")
 PackageEdit("core\player\sonic_new.pkg"|"motion"|"wait3"|"player/sonic_new/wait3_sonic_Root.xnm")
 PackageEdit("core\player\sonic_new.pkg"|"motion"|"wait4"|"player/sonic_new/wait4_sonic_Root.xnm")
 PackageEdit("core\player\sonic_new.pkg"|"motion"|"walk"|"player/sonic_new/walk_sonic_Root.xnm")
