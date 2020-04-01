@@ -1,0 +1,12 @@
+--[Patch]--
+Title("Break the Red Gem")
+Author("Hyper")
+Platform("All Systems")
+Blurb("Breaks the Red Gem.")
+
+--[Functions]--
+All Systems:
+BeginBlock("core\archives\player.arc")
+ParameterEdit("core\player\sonic_new.lub"|"c_custom_action_slow_bias"|"-2")
+ParameterEdit("core\player\sonic_new.lub"|"c_custom_action_slow_time"|"-5")
+EndBlock("core\archives\player.arc")
