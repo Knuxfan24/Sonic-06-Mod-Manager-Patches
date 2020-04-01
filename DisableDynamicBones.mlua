@@ -1,0 +1,18 @@
+--[Patch]--
+Title("Disable Dynamic Bones")
+Author("Hyper")
+Platform("All Systems")
+Blurb("Disables dynamic bones for all characters.")
+
+--[Functions]--
+Xbox 360:
+DecryptExecutable()
+WriteByte(Executable|0xFE9A|0x6E)
+WriteByte(Executable|0xFE9B|0x75)
+WriteByte(Executable|0xFE9C|0x6C)
+WriteByte(Executable|0xFE9D|0x6C)
+
+PlayStation 3:
+BeginBlock("core\archives\player.arc")
+ParameterRename("core\player"|"c_hair"|"c_null")
+EndBlock("core\archives\player.arc")

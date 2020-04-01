@@ -5,7 +5,14 @@ Platform("All Systems")
 Blurb("Disables the models for character upgrades.")
 
 --[Functions]--
-All Systems:
+Xbox 360:
+DecryptExecutable()
+WriteByte(Executable|0x101F4|0x6E)
+WriteByte(Executable|0x101F5|0x75)
+WriteByte(Executable|0x101F6|0x6C)
+WriteByte(Executable|0x101F7|0x6C)
+
+PlayStation 3:
 BeginBlock("core\archives\player.arc")
 ParameterRename("core\player"|"c_item_table"|"c_null")
 EndBlock("core\archives\player.arc")

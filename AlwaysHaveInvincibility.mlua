@@ -1,11 +1,11 @@
---[[Patch]]--
+--[Patch]--
 Title("Always Have Invincibility")
 Author("Desko")
 Platform("Xbox 360")
 Blurb("Gives characters invincibility at all times.")
 Description("This patch will give all main characters invincibility at all times.")
 
---[[Functions]]--
+--[Functions]--
 DecryptExecutable()
 DecompressExecutable()
 WriteNopPPC(Executable|0x20FBE4)

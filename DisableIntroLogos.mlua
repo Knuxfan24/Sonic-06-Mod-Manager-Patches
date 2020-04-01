@@ -6,9 +6,7 @@ Blurb("Disables the SEGA, Sonic Team and CriWare logos on launch.")
 Description("This patch will disable the logos that display when the game launches.")
 
 --[Functions]--
-Delete("core\sound\HD_SEGA.wmv")
-
-BeginBlock("win32\archives\sprite.arc")
-Delete("win32\sprite\logo\cri_logo.xncp")
-Delete("win32\sprite\logo\sonicteam_logo.xncp")
-EndBlock("win32\archives\sprite.arc")
+DecryptExecutable()
+WriteNullBytes(Executable|0x36600|20)
+WriteNullBytes(Executable|0x36624|26)
+WriteNullBytes(Executable|0x36654|16)

@@ -1,0 +1,24 @@
+--[Patch]--
+Title("TGS Sonic")
+Author("Melpontro")
+Platform("All Systems")
+Blurb("Uses Sonic's animations from Tokyo Game Show 2005.")
+
+--[Functions]--
+All Systems:
+BeginBlock("core\archives\player.arc")
+ParameterRename("core\player\sonic_new.lub"|"c_hair"|"c_null")
+PackageEdit("core\player\sonic_new.pkg"|"motion"|"fall"|"player/sonic_new/fall_sonic_Root.xnm")
+PackageEdit("core\player\sonic_new.pkg"|"motion"|"goal_l"|"player/sonic_new/goalpose_loop_sonic_Root.xnm")
+PackageEdit("core\player\sonic_new.pkg"|"motion"|"goal"|"player/sonic_new/goal_sonic_Root.xnm")
+PackageEdit("core\player\sonic_new.pkg"|"motion"|"grind_l"|"player/sonic_new/grind_l_sonic_Root.xnm")
+PackageEdit("core\player\sonic_new.pkg"|"motion"|"landing"|"player/sonic_new/wait_sonic_Root.xnm")
+PackageEdit("core\player\sonic_new.pkg"|"motion"|"jumpup"|"player/sonic_new/jumpup_sonic_Root.xnm")
+PackageEdit("core\player\sonic_new.pkg"|"motion"|"homing"|"player/sonic_new/homing_sonic_Root.xnm")
+PackageEdit("core\player\sonic_new.pkg"|"motion"|"run"|"player/sonic_new/run_sonic_Root.xnm")
+PackageEdit("core\player\sonic_new.pkg"|"motion"|"dush"|"player/sonic_new/dush_sonic_Root.xnm")
+PackageEdit("core\player\sonic_new.pkg"|"motion"|"wait"|"player/sonic_new/wait_sonic_Root.xnm")
+PackageEdit("core\player\sonic_new.pkg"|"motion"|"wait3"|"player/sonic_new/wait3_sonic_Root.xnm")
+PackageEdit("core\player\sonic_new.pkg"|"motion"|"wait4"|"player/sonic_new/wait4_sonic_Root.xnm")
+PackageEdit("core\player\sonic_new.pkg"|"motion"|"walk"|"player/sonic_new/walk_sonic_Root.xnm")
+EndBlock("core\archives\player.arc")
