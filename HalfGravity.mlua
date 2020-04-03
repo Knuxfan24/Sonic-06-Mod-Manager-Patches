@@ -1,0 +1,11 @@
+--[Patch]--
+Title("Half Gravity")
+Author("Luna")
+Platform("All Systems")
+Blurb("Halves the gravity value.")
+
+--[Functions]--
+All Systems:
+BeginBlock("core\archives\player.arc")
+ParameterEdit("core\player\common.lub"|"gravity"|"4.9 * meter")
+EndBlock("core\archives\player.arc")
