@@ -13,6 +13,14 @@ PackageEdit("core\player\sonic_new.pkg"|"model"|"face"|"event/eventobj/eventface
 PackageEdit("core\player\sonic_new.pkg"|"motion"|"face_base1_mot"|"event/eventobj/eventface/default_motion/sonic_evf_head.xnm")
 PackageEdit("core\player\sonic_new.pkg"|"motion"|"face_base2_mot"|"event/eventobj/eventface/default_motion/sonic_evf_head.xnm")
 PackageEdit("core\player\sonic_new.pkg"|"motion"|"face_wait1_mot"|"event/eventobj/eventface/default_motion/sonic_evf_head.xnm")
+PackageEdit("core\player\sonic_fast.pkg"|"model"|"face"|"event/eventobj/eventface/sonic/sonic_evf_head.xno")
+PackageEdit("core\player\sonic_fast.pkg"|"motion"|"face_base1_mot"|"event/eventobj/eventface/default_motion/sonic_evf_head.xnm")
+PackageEdit("core\player\sonic_fast.pkg"|"motion"|"face_base2_mot"|"event/eventobj/eventface/default_motion/sonic_evf_head.xnm")
+PackageEdit("core\player\sonic_fast.pkg"|"motion"|"face_wait1_mot"|"event/eventobj/eventface/default_motion/sonic_evf_head.xnm")
+PackageEdit("core\player\snow_board.pkg"|"model"|"face"|"event/eventobj/eventface/sonic/sonic_evf_head.xno")
+PackageEdit("core\player\snow_board.pkg"|"motion"|"face_base1_mot"|"event/eventobj/eventface/default_motion/sonic_evf_head.xnm")
+PackageEdit("core\player\snow_board.pkg"|"motion"|"face_base2_mot"|"event/eventobj/eventface/default_motion/sonic_evf_head.xnm")
+PackageEdit("core\player\snow_board.pkg"|"motion"|"face_wait1_mot"|"event/eventobj/eventface/default_motion/sonic_evf_head.xnm")
 
 --Shadow the Hedgehog
 PackageEdit("core\player\shadow.pkg"|"model"|"face"|"event/eventobj/eventface/shadow/shadow_evf_head.xno")
