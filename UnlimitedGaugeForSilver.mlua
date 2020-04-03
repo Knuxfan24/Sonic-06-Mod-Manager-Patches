@@ -7,6 +7,6 @@ Blurb("Stops Silver's Action Gauge depleting.")
 --[Functions]--
 All Systems:
 BeginBlock("core\archives\player.arc")
-ParameterEdit("core\player\silver.lub"|"c_psi_gauge_heal"|"100")
+ParameterEdit("core\player\silver.lub"|"c_psi_gauge_heal"|"999999999")
 ParameterEdit("core\player\silver.lub"|"c_psi_gauge_heal_delay"|"0")
 EndBlock("core\archives\player.arc")
