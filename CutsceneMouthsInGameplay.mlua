@@ -1,0 +1,79 @@
+--[Patch]--
+Title("Cutscene Mouths in Gameplay")
+Author("Hyper")
+Platform("All Systems")
+Blurb("Loads the cutscene mouth models in gameplay.")
+
+--[Functions]--
+All Systems:
+BeginBlock("core\archives\player.arc")
+
+--Sonic the Hedgehog
+PackageEdit("core\player\sonic_new.pkg"|"model"|"face"|"event/eventobj/eventface/sonic/sonic_evf_head.xno")
+PackageEdit("core\player\sonic_new.pkg"|"motion"|"face_base1_mot"|"event/eventobj/eventface/default_motion/sonic_evf_head.xnm")
+PackageEdit("core\player\sonic_new.pkg"|"motion"|"face_base2_mot"|"event/eventobj/eventface/default_motion/sonic_evf_head.xnm")
+PackageEdit("core\player\sonic_new.pkg"|"motion"|"face_wait1_mot"|"event/eventobj/eventface/default_motion/sonic_evf_head.xnm")
+
+--Shadow the Hedgehog
+PackageEdit("core\player\shadow.pkg"|"model"|"face"|"event/eventobj/eventface/shadow/shadow_evf_head.xno")
+PackageEdit("core\player\shadow.pkg"|"motion"|"face_base1_mot"|"event/eventobj/eventface/default_motion/shadow_evf_head.xnm")
+PackageEdit("core\player\shadow.pkg"|"motion"|"face_base2_mot"|"event/eventobj/eventface/default_motion/shadow_evf_head.xnm")
+PackageEdit("core\player\shadow.pkg"|"motion"|"face_wait1_mot"|"event/eventobj/eventface/default_motion/shadow_evf_head.xnm")
+PackageEdit("core\player\shadow_none.pkg"|"model"|"face"|"event/eventobj/eventface/shadow/shadow_evf_head.xno")
+PackageEdit("core\player\shadow_none.pkg"|"motion"|"face_base1_mot"|"event/eventobj/eventface/default_motion/shadow_evf_head.xnm")
+PackageEdit("core\player\shadow_none.pkg"|"motion"|"face_base2_mot"|"event/eventobj/eventface/default_motion/shadow_evf_head.xnm")
+PackageEdit("core\player\shadow_none.pkg"|"motion"|"face_wait1_mot"|"event/eventobj/eventface/default_motion/shadow_evf_head.xnm")
+PackageEdit("core\player\shadow_jeep.pkg"|"model"|"face"|"event/eventobj/eventface/shadow/shadow_evf_head.xno")
+PackageEdit("core\player\shadow_jeep.pkg"|"motion"|"face_base1_mot"|"event/eventobj/eventface/default_motion/shadow_evf_head.xnm")
+PackageEdit("core\player\shadow_jeep.pkg"|"motion"|"face_base2_mot"|"event/eventobj/eventface/default_motion/shadow_evf_head.xnm")
+PackageEdit("core\player\shadow_jeep.pkg"|"motion"|"face_wait1_mot"|"event/eventobj/eventface/default_motion/shadow_evf_head.xnm")
+PackageEdit("core\player\shadow_hover.pkg"|"model"|"face"|"event/eventobj/eventface/shadow/shadow_evf_head.xno")
+PackageEdit("core\player\shadow_hover.pkg"|"motion"|"face_base1_mot"|"event/eventobj/eventface/default_motion/shadow_evf_head.xnm")
+PackageEdit("core\player\shadow_hover.pkg"|"motion"|"face_base2_mot"|"event/eventobj/eventface/default_motion/shadow_evf_head.xnm")
+PackageEdit("core\player\shadow_hover.pkg"|"motion"|"face_wait1_mot"|"event/eventobj/eventface/default_motion/shadow_evf_head.xnm")
+PackageEdit("core\player\shadow_glider.pkg"|"model"|"face"|"event/eventobj/eventface/shadow/shadow_evf_head.xno")
+PackageEdit("core\player\shadow_glider.pkg"|"motion"|"face_base1_mot"|"event/eventobj/eventface/default_motion/shadow_evf_head.xnm")
+PackageEdit("core\player\shadow_glider.pkg"|"motion"|"face_base2_mot"|"event/eventobj/eventface/default_motion/shadow_evf_head.xnm")
+PackageEdit("core\player\shadow_glider.pkg"|"motion"|"face_wait1_mot"|"event/eventobj/eventface/default_motion/shadow_evf_head.xnm")
+PackageEdit("core\player\shadow_bike.pkg"|"model"|"face"|"event/eventobj/eventface/shadow/shadow_evf_head.xno")
+PackageEdit("core\player\shadow_bike.pkg"|"motion"|"face_base1_mot"|"event/eventobj/eventface/default_motion/shadow_evf_head.xnm")
+PackageEdit("core\player\shadow_bike.pkg"|"motion"|"face_base2_mot"|"event/eventobj/eventface/default_motion/shadow_evf_head.xnm")
+PackageEdit("core\player\shadow_bike.pkg"|"motion"|"face_wait1_mot"|"event/eventobj/eventface/default_motion/shadow_evf_head.xnm")
+
+--Silver the Hedgehog
+PackageEdit("core\player\silver.pkg"|"model"|"face"|"event/eventobj/eventface/silver/silver_evf_head.xno")
+PackageEdit("core\player\silver.pkg"|"motion"|"face_base1_mot"|"event/eventobj/eventface/default_motion/silver_evf_head.xnm")
+PackageEdit("core\player\silver.pkg"|"motion"|"face_base2_mot"|"event/eventobj/eventface/default_motion/silver_evf_head.xnm")
+PackageEdit("core\player\silver.pkg"|"motion"|"face_wait1_mot"|"event/eventobj/eventface/default_motion/silver_evf_head.xnm")
+
+--Amy Rose
+PackageEdit("core\player\amy.pkg"|"model"|"face"|"event/eventobj/eventface/amy/amy_evf_head.xno")
+PackageEdit("core\player\amy.pkg"|"motion"|"face_base1_mot"|"event/eventobj/eventface/default_motion/amy_evf_head.xnm")
+PackageEdit("core\player\amy.pkg"|"motion"|"face_base2_mot"|"event/eventobj/eventface/default_motion/amy_evf_head.xnm")
+PackageEdit("core\player\amy.pkg"|"motion"|"face_wait1_mot"|"event/eventobj/eventface/default_motion/amy_evf_head.xnm")
+
+--Blaze the Cat
+PackageEdit("core\player\blaze.pkg"|"model"|"face"|"event/eventobj/eventface/blaze/blaze_evf_head.xno")
+PackageEdit("core\player\blaze.pkg"|"motion"|"face_base1_mot"|"event/eventobj/eventface/default_motion/blaze_evf_head.xnm")
+PackageEdit("core\player\blaze.pkg"|"motion"|"face_base2_mot"|"event/eventobj/eventface/default_motion/blaze_evf_head.xnm")
+PackageEdit("core\player\blaze.pkg"|"motion"|"face_wait1_mot"|"event/eventobj/eventface/default_motion/blaze_evf_head.xnm")
+
+--Knuckles the Echidna
+PackageEdit("core\player\knuckles.pkg"|"model"|"face"|"event/eventobj/eventface/knuckles/knuckles_evf_head.xno")
+PackageEdit("core\player\knuckles.pkg"|"motion"|"face_base1_mot"|"event/eventobj/eventface/default_motion/knuckles_evf_head.xnm")
+PackageEdit("core\player\knuckles.pkg"|"motion"|"face_base2_mot"|"event/eventobj/eventface/default_motion/knuckles_evf_head.xnm")
+PackageEdit("core\player\knuckles.pkg"|"motion"|"face_wait1_mot"|"event/eventobj/eventface/default_motion/knuckles_evf_head.xnm")
+
+--Rouge the Bat
+PackageEdit("core\player\rouge.pkg"|"model"|"face"|"event/eventobj/eventface/rouge/rouge_evf_head.xno")
+PackageEdit("core\player\rouge.pkg"|"motion"|"face_base1_mot"|"event/eventobj/eventface/default_motion/rouge_evf_head.xnm")
+PackageEdit("core\player\rouge.pkg"|"motion"|"face_base2_mot"|"event/eventobj/eventface/default_motion/rouge_evf_head.xnm")
+PackageEdit("core\player\rouge.pkg"|"motion"|"face_wait1_mot"|"event/eventobj/eventface/default_motion/rouge_evf_head.xnm")
+
+--Miles "Tails" Prower
+PackageEdit("core\player\tails.pkg"|"model"|"face"|"event/eventobj/eventface/tails/tails_evf_head01.xno")
+PackageEdit("core\player\tails.pkg"|"motion"|"face_base1_mot"|"event/eventobj/eventface/default_motion/tails_evf_head01.xnm")
+PackageEdit("core\player\tails.pkg"|"motion"|"face_base2_mot"|"event/eventobj/eventface/default_motion/tails_evf_head01.xnm")
+PackageEdit("core\player\tails.pkg"|"motion"|"face_wait1_mot"|"event/eventobj/eventface/default_motion/tails_evf_head01.xnm")
+
+EndBlock("core\archives\player.arc")
