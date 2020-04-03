@@ -1,0 +1,11 @@
+--[Patch]--
+Title("Sonic Doesn't Carry Elise")
+Author("Luna")
+Platform("All Systems")
+Blurb("Makes Sonic use his regular movement in stages where he would carry Elise.")
+
+--[Functions]--
+All Systems:
+BeginBlock("core\archives\player.arc")
+WriteBase64("core\player\princess.lub"|"c2NyaXB0LnJlbG9hZCgicGxheWVyL3NvbmljX25ldy5sdWEiKQ==")
+EndBlock("core\archives\player.arc")
