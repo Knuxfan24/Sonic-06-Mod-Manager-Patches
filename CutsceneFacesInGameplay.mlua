@@ -1,8 +1,8 @@
 --[Patch]--
-Title("Cutscene Mouths in Gameplay")
+Title("Cutscene Faces in Gameplay")
 Author("Hyper")
 Platform("All Systems")
-Blurb("Loads the cutscene mouth models in gameplay.")
+Blurb("Loads the cutscene face models in gameplay.")
 
 --[Functions]--
 All Systems:
