@@ -2,8 +2,8 @@
 Title("E3 Timers")
 Author("Hyper")
 Platform("Xbox 360")
-Blurb("Removes the second zero from the minutes and the checkpoint timer.")
-Description("This patch will remove the second zero from the minutes and the checkpoint timer, restoring its original look from the E3 demo.")
+Blurb("Removes the checkpoint timer and the second zero from the minutes.")
+Description("This patch will remove the checkpoint timer and the second zero from the minutes, restoring the original look from the E3 demo.")
 
 --[Functions]--
 DecryptExecutable()

@@ -1,0 +1,9 @@
+--[Patch]--
+Title("Disable Hint Rings")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Hides the hint rings in all stages.")
+
+--[Functions]--
+DecryptExecutable()
+WriteNullBytes(Executable|0x16E34|11)
