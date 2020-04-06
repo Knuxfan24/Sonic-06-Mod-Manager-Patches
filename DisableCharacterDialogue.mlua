@@ -1,0 +1,9 @@
+--[Patch]--
+Title("Disable Character Dialogue")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Disables character dialogue in stages.")
+
+--[Functions]--
+DecryptExecutable()
+WriteNullBytes(Executable|0x16E10|21)
