@@ -16,10 +16,6 @@ WriteByte(Executable|0x21A3F0|0x41)
 WriteByte(Executable|0x21A5D8|0x40)
 WriteByte(Executable|0x1A98AC|0x40)
 
---Homing Control Recovery
-WriteByte(Executable|0x21A600|0x48)
-WriteByte(Executable|0x21A601|0x00)
-
 All Systems:
 BeginBlock("core\archives\player.arc")
 ParameterEdit("core\player\common.lub"|"equip_gem_green"|"0")
