@@ -1,11 +1,25 @@
 --[Patch]--
 Title("E3 Sonic")
-Author("Hyper")
+Author("Hyper & Desko")
 Platform("All Systems")
 Blurb("Replicates Sonic's configuration from E3.")
-Description("This patch replicates Sonic's configuration from the E3 demo. Please use Enable Homing Flips, Enable Homing Spam and Homing Control Recovery for the full experience.")
 
 --[Functions]--
+Xbox 360:
+DecryptExecutable()
+DecompressExecutable()
+
+--Enable Homing Flips
+WriteByte(Executable|0x21A3F0|0x41)
+
+--Enable Homing Spam
+WriteByte(Executable|0x21A5D8|0x40)
+WriteByte(Executable|0x1A98AC|0x40)
+
+--Homing Control Recovery
+WriteByte(Executable|0x21A600|0x48)
+WriteByte(Executable|0x21A601|0x00)
+
 All Systems:
 BeginBlock("core\archives\player.arc")
 ParameterEdit("core\player\common.lub"|"equip_gem_green"|"0")
