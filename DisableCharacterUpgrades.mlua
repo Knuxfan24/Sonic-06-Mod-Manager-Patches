@@ -1,0 +1,19 @@
+--[Patch]--
+Title("Disable Character Upgrades")
+Author("Hyper")
+Platform("All Systems")
+Blurb("Disables all character upgrades.")
+
+--[Functions]--
+Xbox 360:
+DecryptExecutable()
+WriteByte(Executable|0x65A6|0x6E)
+WriteByte(Executable|0x65A7|0x75)
+WriteByte(Executable|0x65A8|0x6C)
+WriteByte(Executable|0x65A9|0x6C)
+WriteNullBytes(Executable|0x65AA|12)
+
+PlayStation 3:
+BeginBlock("core\archives\player.arc")
+ParameterRename("core\player\common.lub"|"c_equip_flag_table"|"c_equip_flag_table_null")
+EndBlock("core\archives\player.arc")

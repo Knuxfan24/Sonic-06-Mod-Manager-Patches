@@ -1,0 +1,22 @@
+--[Patch]--
+Title("E3 Sonic")
+Author("Hyper")
+Platform("All Systems")
+Blurb("Replicates Sonic's configuration from E3.")
+Description("This patch replicates Sonic's configuration from the E3 demo. Please use Enable Homing Flips, Enable Homing Spam and Homing Control Recovery for the full experience.")
+
+--[Functions]--
+All Systems:
+BeginBlock("core\archives\player.arc")
+ParameterEdit("core\player\common.lub"|"equip_gem_green"|"0")
+ParameterEdit("core\player\common.lub"|"equip_gem_red"|"0")
+ParameterEdit("core\player\common.lub"|"equip_gem_blue"|"0")
+ParameterEdit("core\player\common.lub"|"equip_gem_white"|"0")
+ParameterEdit("core\player\common.lub"|"equip_gem_sky"|"0")
+ParameterEdit("core\player\common.lub"|"equip_gem_yellow"|"0")
+ParameterEdit("core\player\common.lub"|"equip_gem_purple"|"0")
+ParameterEdit("core\player\common.lub"|"equip_gem_super"|"0")
+ParameterEdit("core\player\common.lub"|"gauge_module_sonic"|"-1")
+ParameterEdit("core\player\common.lub"|"other_module_sonic_homing"|"9")
+ParameterRename("core\player\sonic_new.lub"|"c_item_table"|"c_item_table_null")
+EndBlock("core\archives\player.arc")
