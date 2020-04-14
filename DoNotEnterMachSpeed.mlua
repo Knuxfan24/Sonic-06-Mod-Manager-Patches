@@ -1,0 +1,11 @@
+--[Patch]--
+Title("Don't Enter Mach Speed")
+Author("Hyper")
+Platform("All Systems")
+Blurb("Uses default Sonic, rather than loading Mach Speed.")
+
+--[Functions]--
+All Systems:
+BeginBlock("core\archives\player.arc")
+WriteBase64("core\player\sonic_fast.lub"|"c2NyaXB0LnJlbG9hZCgicGxheWVyL3NvbmljX25ldy5sdWEiKQ==")
+EndBlock("core\archives\player.arc")
