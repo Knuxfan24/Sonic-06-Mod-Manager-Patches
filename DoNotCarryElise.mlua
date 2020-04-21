@@ -1,8 +1,8 @@
 --[Patch]--
-Title("Sonic Doesn't Carry Elise")
+Title("Don't Carry Elise")
 Author("Luna")
 Platform("All Systems")
-Blurb("Makes Sonic use his regular movement in stages where he would carry Elise.")
+Blurb("Uses default Sonic, rather than loading Elise.")
 
 --[Functions]--
 All Systems:

@@ -1,0 +1,12 @@
+--[Patch]--
+Title("Don't Use the Snowboard")
+Author("Hyper")
+Platform("All Systems")
+Blurb("Uses default Sonic, rather than loading the snowboard.")
+
+--[Functions]--
+All Systems:
+BeginBlock("core\archives\player.arc")
+WriteBase64("core\player\snow_board.lub"|"c2NyaXB0LnJlbG9hZCgicGxheWVyL3NvbmljX25ldy5sdWEiKQ==")
+WriteBase64("core\player\snow_board_wap.lub"|"c2NyaXB0LnJlbG9hZCgicGxheWVyL3NvbmljX25ldy5sdWEiKQ==")
+EndBlock("core\archives\player.arc")

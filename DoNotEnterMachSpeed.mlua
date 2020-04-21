@@ -2,7 +2,7 @@
 Title("Don't Enter Mach Speed")
 Author("Hyper")
 Platform("All Systems")
-Blurb("Uses default Sonic, rather than loading Mach Speed.")
+Blurb("Uses default Sonic, rather than loading mach speed.")
 
 --[Functions]--
 All Systems:
