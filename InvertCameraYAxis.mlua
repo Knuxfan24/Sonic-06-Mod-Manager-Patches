@@ -1,0 +1,11 @@
+--[Patch]--
+Title("Invert Camera Y-Axis")
+Author("Hyper")
+Platform("All Systems")
+Blurb("Inverts the camera on the Y axis.")
+
+--[Functions]--
+All Systems:
+BeginBlock("core\archives\game.arc")
+StringReplace("core\cameraparam.lub"|"alt_driveK = "|"alt_driveK = -")
+EndBlock("core\archives\game.arc")
