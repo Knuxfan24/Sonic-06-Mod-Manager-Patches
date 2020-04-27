@@ -1,0 +1,15 @@
+--[Patch]--
+Title("Unlimited Gauge for Shadow")
+Author("Hyper")
+Platform("All Systems")
+Blurb("Stops Shadow's Action Gauge depleting (requires one gauge point).")
+
+--[Functions]--
+All Systems:
+BeginBlock("core\archives\player.arc")
+ParameterEdit("core\player\shadow.lub"|"c_gauge_bias"|"100")
+ParameterEdit("core\player\shadow.lub"|"c_gauge_consumption_0"|"0")
+ParameterEdit("core\player\shadow.lub"|"c_gauge_consumption_1"|"0")
+ParameterEdit("core\player\shadow.lub"|"c_gauge_consumption_2"|"0")
+ParameterEdit("core\player\shadow.lub"|"c_gauge_consumption_3"|"0")
+EndBlock("core\archives\player.arc")

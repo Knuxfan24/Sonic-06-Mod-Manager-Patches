@@ -1,0 +1,9 @@
+--[Patch]--
+Title("Disable Fog")
+Author("rom~")
+Platform("Xbox 360")
+Blurb("Disables the fog effects.")
+
+--[Functions]--
+DecryptExecutable()
+WriteNullBytes(Executable|0x137EC|4)
