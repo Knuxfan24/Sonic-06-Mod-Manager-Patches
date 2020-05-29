@@ -6,4 +6,5 @@ Blurb("Disables the fog effects.")
 
 --[Functions]--
 DecryptExecutable()
-WriteNullBytes(Executable|0x137EC|4)
+WriteNullBytes(Executable|0x137B8|8)
+WriteNullBytes(Executable|0x137EC|12)
