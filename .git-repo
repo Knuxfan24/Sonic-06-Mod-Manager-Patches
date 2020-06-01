@@ -1,4 +1,5 @@
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/ActionGaugeFixes.mlua
+https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/AllCharactersHaveSonicSpeed.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/AlwaysHaveHighSpeed.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/AlwaysHaveInvincibility.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/BlueGemOverSpinkick.mlua
@@ -23,7 +24,6 @@ https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/DisableIntroLogos.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/DisableLoadingGraphics.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/DisableMusic.mlua
-https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/DisablePlayerGravity.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/DisableShadows.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/DisableUpgradeModels.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/DoNotCarryElise.mlua
@@ -44,6 +44,7 @@ https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/MachSpeedAirControl.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/OmegaBlurFix.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/OmegaShotRangeFix.mlua
+https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/OppositeButtonPrompts.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/SilverGrindTrickFix.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/SnowboardAirControl.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/SnowboardDynamicBones.mlua
