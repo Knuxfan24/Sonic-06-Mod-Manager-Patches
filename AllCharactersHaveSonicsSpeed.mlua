@@ -1,0 +1,20 @@
+--[Patch]--
+Title("All Characters Have Sonic's Speed")
+Author("Knuxfan24")
+Platform("All Systems")
+Blurb("Gives every character Sonic's speed values.")
+
+--[Functions]--
+All Systems:
+BeginBlock("core\archives\player.arc")
+Ignore("sonic"|"omega"|"select"|"boss")
+ParameterEdit("core\player"|"c_walk_speed_max"|"4 * (meter / sec)")
+ParameterEdit("core\player"|"c_run_speed_max"|"17 * (meter / sec)")
+ParameterEdit("core\player"|"c_jump_brake"|"25 * (meter / sec)")
+ParameterEdit("core\player"|"c_jump_speed_acc"|"20 * (meter / sec)")
+ParameterEdit("core\player"|"c_jump_speed_brake"|"20 * (meter / sec)")
+ParameterEdit("core\player"|"c_jump_speed"|"9 * (meter / sec)")
+ParameterEdit("core\player"|"c_jump_walk"|"HeightAndDistanceToSpeed(l_jump_walk, l_jump_hight)")
+ParameterEdit("core\player"|"c_jump_run"|"9 * (meter / sec)")
+ParameterEdit("core\player"|"c_jump_speed_sand"|"SpeedByHeightBias(c_jump_speed, 0.5)")
+EndBlock("core\archives\player.arc")
