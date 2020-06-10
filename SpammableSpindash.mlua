@@ -7,5 +7,4 @@ Description("This patch will remove the Spinkick state in favour of replacing it
 
 --[Functions]--
 DecryptExecutable()
-WriteByte(Executable|0xB10EE6|0x2A)
-WriteByte(Executable|0xB10EE7|0xC8)
+WriteBytes(Executable|0xB10EE6|"2AC8")

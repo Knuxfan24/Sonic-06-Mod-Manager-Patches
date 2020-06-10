@@ -7,10 +7,7 @@ Blurb("Disables dynamic bones for all characters.")
 --[Functions]--
 Xbox 360:
 DecryptExecutable()
-WriteByte(Executable|0xFE9A|0x6E)
-WriteByte(Executable|0xFE9B|0x75)
-WriteByte(Executable|0xFE9C|0x6C)
-WriteByte(Executable|0xFE9D|0x6C)
+WriteTextBytes(Executable|0xFE9A|"null")
 
 PlayStation 3:
 BeginBlock("core\archives\player.arc")
