@@ -1,0 +1,20 @@
+--[Patch]--
+Title("Increased Shadow Cascades")
+Author("rom~")
+Platform("All Systems")
+Blurb("Corrects the shadow draw distance.")
+
+--[Functions]--
+Xbox 360:
+BeginBlock("core\archives\scripts.arc")
+ParameterEdit("core\scripts\render\stage"|"GenerateCSMObjects"|"4")
+ParameterEdit("core\scripts\render\stage"|"GenerateCSMLevels"|"4")
+EndBlock("core\archives\scripts.arc")
+
+PlayStation 3:
+BeginBlock("core\archives\scripts.arc")
+ParameterEdit("core\scripts\render"|"TerrainShadowMapLevel"|"4")
+ParameterEdit("core\scripts\render"|"ClumpShadowMapLevel"|"4")
+ParameterEdit("core\scripts\render\stage"|"TerrainShadowMapLevel"|"4")
+ParameterEdit("core\scripts\render\stage"|"ClumpShadowMapLevel"|"4")
+EndBlock("core\archives\scripts.arc")
