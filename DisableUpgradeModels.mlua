@@ -7,7 +7,7 @@ Blurb("Disables the models for character upgrades.")
 --[Functions]--
 Xbox 360:
 DecryptExecutable()
-WriteTextBytes(Executable|0x101F4|"null")
+WriteTextBytes(Executable|0x101F6|"null")
 
 PlayStation 3:
 BeginBlock("core\archives\player.arc")

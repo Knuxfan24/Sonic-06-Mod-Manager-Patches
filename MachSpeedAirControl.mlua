@@ -7,7 +7,6 @@ Description("This patch will provide more free control in the air during Mach Sp
 
 --[Functions]--
 DecryptExecutable()
-DecompressExecutable()
 WriteNopPPC(Executable|0x213380)
 WriteNopPPC(Executable|0x213384)
 WriteNopPPC(Executable|0x2133B4)

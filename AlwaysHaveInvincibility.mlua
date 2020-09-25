@@ -7,5 +7,4 @@ Description("This patch will give all main characters invincibility at all times
 
 --[Functions]--
 DecryptExecutable()
-DecompressExecutable()
 WriteNopPPC(Executable|0x20FBE4)

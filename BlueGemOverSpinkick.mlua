@@ -6,5 +6,5 @@ Blurb("Replaces the Spinkick with the Blue Gem speed up.")
 
 --[Functions]--
 DecryptExecutable()
-WriteByte(Executable|0xB10EE6|0x2D)
-WriteByte(Executable|0xB10EE7|0x68)
+WriteByte(Executable|0xB18EE6|0x2D)
+WriteByte(Executable|0xB18EE7|0x68)

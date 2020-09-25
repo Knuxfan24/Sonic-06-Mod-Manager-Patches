@@ -8,21 +8,21 @@ Blurb("Disables the balancing state when close to the edge of a platform.")
 DecryptExecutable()
 
 --Sonic the Hedgehog
-WriteByte(Executable|0xB10DDB|0x29)
-WriteBytes(Executable|0xB10DDE|"15D0")
+WriteByte(Executable|0xB18DDB|0x29)
+WriteBytes(Executable|0xB18DDE|"15D0")
 
 --Princess Elise
-WriteByte(Executable|0xB11113|0x29)
-WriteBytes(Executable|0xB11116|"15D0")
+WriteByte(Executable|0xB19113|0x29)
+WriteBytes(Executable|0xB19116|"15D0")
 
 --Shadow the Hedgehog
-WriteByte(Executable|0xB11273|0x29)
-WriteBytes(Executable|0xB11276|"15D0")
+WriteByte(Executable|0xB19273|0x29)
+WriteBytes(Executable|0xB19276|"15D0")
 
 --Amy Rose
-WriteByte(Executable|0xB11A5B|0x29)
-WriteBytes(Executable|0xB11A5E|"15D0")
+WriteByte(Executable|0xB19A5B|0x29)
+WriteBytes(Executable|0xB19A5E|"15D0")
 
 --Blaze the Cat
-WriteByte(Executable|0xB11BAB|0x29)
-WriteBytes(Executable|0xB11BAE|"15D0")
+WriteByte(Executable|0xB19BAB|0x29)
+WriteBytes(Executable|0xB19BAE|"15D0")

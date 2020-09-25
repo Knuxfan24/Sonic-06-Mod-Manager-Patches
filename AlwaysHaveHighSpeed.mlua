@@ -7,5 +7,4 @@ Description("This patch will give all main characters the High Speed power up at
 
 --[Functions]--
 DecryptExecutable()
-DecompressExecutable()
 WriteNopPPC(Executable|0x20FBFC)

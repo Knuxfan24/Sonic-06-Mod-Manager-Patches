@@ -7,7 +7,6 @@ Description("This patch will restore the board collision animation for when you 
 
 --[Functions]--
 DecryptExecutable()
-DecompressExecutable()
 WriteByte(Executable|0x217A07|0x0C)
 
 BeginBlock("core\archives\player.arc")

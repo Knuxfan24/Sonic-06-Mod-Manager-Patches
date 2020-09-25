@@ -1,0 +1,9 @@
+--[Patch]--
+Title("Antigravity over Spinkick")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Replaces the Spinkick with Antigravity.")
+
+--[Functions]--
+DecryptExecutable()
+WriteBytes(Executable|0xB18EE6|"2848")

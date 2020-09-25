@@ -6,4 +6,4 @@ Blurb("Disables character dialogue in stages.")
 
 --[Functions]--
 DecryptExecutable()
-WriteNullBytes(Executable|0x16E10|21)
+WriteNullBytes(Executable|0x16E1C|21)

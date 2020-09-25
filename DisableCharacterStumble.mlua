@@ -9,33 +9,33 @@ Description("This patch will disable the stumble state when characters impact wa
 DecryptExecutable()
 
 --Sonic the Hedgehog
-WriteByte(Executable|0xB10DB3|0x29)
-WriteBytes(Executable|0xB10DB6|"15D0")
+WriteByte(Executable|0xB18DB3|0x29)
+WriteBytes(Executable|0xB18DB6|"15D0")
 
 --Princess Elise
-WriteByte(Executable|0xB110EB|0x29)
-WriteBytes(Executable|0xB110EE|"15D0")
+WriteByte(Executable|0xB190EB|0x29)
+WriteBytes(Executable|0xB190EE|"15D0")
 
 --Shadow the Hedgehog
-WriteByte(Executable|0xB1124B|0x29)
-WriteBytes(Executable|0xB1124E|"15D0")
+WriteByte(Executable|0xB1924B|0x29)
+WriteBytes(Executable|0xB1924E|"15D0")
 
 --E-123 Omega
-WriteByte(Executable|0xB1190B|0x29)
-WriteBytes(Executable|0xB1190E|"15D0")
+WriteByte(Executable|0xB1990B|0x29)
+WriteBytes(Executable|0xB1990E|"15D0")
 
 --Amy Rose
-WriteByte(Executable|0xB11A33|0x29)
-WriteBytes(Executable|0xB11A36|"15D0")
+WriteByte(Executable|0xB19A33|0x29)
+WriteBytes(Executable|0xB19A36|"15D0")
 
 --Blaze the Cat
-WriteByte(Executable|0xB11B83|0x29)
-WriteBytes(Executable|0xB11B86|"15D0")
+WriteByte(Executable|0xB19B83|0x29)
+WriteBytes(Executable|0xB19B86|"15D0")
 
 --Knuckles the Echidna
-WriteByte(Executable|0xB11CCB|0x29)
-WriteBytes(Executable|0xB11CCE|"15D0")
+WriteByte(Executable|0xB19CCB|0x29)
+WriteBytes(Executable|0xB19CCE|"15D0")
 
 --Rouge the Bat
-WriteByte(Executable|0xB11E1B|0x29)
-WriteBytes(Executable|0xB11E1E|"15D0")
+WriteByte(Executable|0xB19E1B|0x29)
+WriteBytes(Executable|0xB19E1E|"15D0")

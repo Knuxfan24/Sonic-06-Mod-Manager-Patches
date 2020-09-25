@@ -7,5 +7,4 @@ Description("This patch will unlock mid-air control for the full duration of Son
 
 --[Functions]--
 DecryptExecutable()
-DecompressExecutable()
 WriteBytes(Executable|0x21A600|"4800")

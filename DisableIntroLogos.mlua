@@ -9,4 +9,4 @@ Description("This patch will disable the logos that display when the game launch
 DecryptExecutable()
 WriteNullBytes(Executable|0x36600|20)
 WriteNullBytes(Executable|0x36624|26)
-WriteNullBytes(Executable|0x36654|16)
+WriteNullBytes(Executable|0x36654|17)

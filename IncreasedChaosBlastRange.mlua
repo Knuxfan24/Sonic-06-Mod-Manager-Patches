@@ -6,9 +6,9 @@ Blurb("Changes Shadow's Chaos Blast radius from 1 to 20 meters and makes Chaos B
 
 --[Functions]--
 DecryptExecutable()
-WriteByte(Executable|0x1A1F94|0x40)
-WriteBytes(Executable|0x24E551|"40 82 01")
-WriteBytes(Executable|0x24E561|"0A 6F 3C")
+WriteByte(Executable|0x1A9F94|0x40)
+WriteBytes(Executable|0x256551|"40 82 01")
+WriteBytes(Executable|0x256561|"0A 6F 3C")
 
 BeginBlock("core\archives\particle.arc")
 WriteBytes("core\effect\player\shadow\sh_chaos_blast00.mab"|0x934|"42 C8")

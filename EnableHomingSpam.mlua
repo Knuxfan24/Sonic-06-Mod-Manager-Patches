@@ -7,6 +7,5 @@ Description("This patch will restore homing spam from the E3 demo.")
 
 --[Functions]--
 DecryptExecutable()
-DecompressExecutable()
 WriteByte(Executable|0x21A5D8|0x40)
 WriteByte(Executable|0x1A98AC|0x40)

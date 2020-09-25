@@ -1,9 +1,0 @@
---[Patch]--
-Title("Slide over Spinkick")
-Author("Hyper")
-Platform("Xbox 360")
-Blurb("Replaces the Spinkick with the Slide.")
-
---[Functions]--
-DecryptExecutable()
-WriteBytes(Executable|0xB10EE6|"2848")

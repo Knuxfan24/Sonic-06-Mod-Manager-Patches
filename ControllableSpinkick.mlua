@@ -7,5 +7,5 @@ Description("This patch will allow Sonic and/or Shadow to move whilst performing
 
 --[Functions]--
 DecryptExecutable()
-WriteByte(Executable|0x19D987|0xEF)
-WriteByte(Executable|0x1A2A07|0xEF)
+WriteByte(Executable|0x1A5987|0xEF)
+WriteByte(Executable|0x1AAA07|0xEF)

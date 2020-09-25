@@ -7,7 +7,6 @@ Description("This patch will provide more free control in the air when using the
 
 --[Functions]--
 DecryptExecutable()
-DecompressExecutable()
 WriteNopPPC(Executable|0x217710)
 WriteNopPPC(Executable|0x217878)
 WriteNopPPC(Executable|0x2175B8)
