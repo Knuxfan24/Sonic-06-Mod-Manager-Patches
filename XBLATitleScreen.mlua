@@ -1,0 +1,10 @@
+--[Patch]--
+Title("XBLA Title Screen")
+Author("Desko")
+Platform("Xbox 360")
+Blurb("Restores the 'New Game' and 'Continue' options.")
+
+--[Functions]--
+DecryptExecutable()
+WriteByte(Executable|0x515877|0x05)
+WriteByte(Executable|0x515813|0x03)
