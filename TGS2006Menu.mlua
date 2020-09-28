@@ -1,0 +1,9 @@
+--[Patch]--
+Title("TGS 2006 Menu")
+Author("Desko")
+Platform("Xbox 360")
+Blurb("Replaces the title screen with the menu from Tokyo Game Show 2006.")
+
+--[Functions]--
+DecryptExecutable()
+WriteBytes(Executable|0x4A9FDE|"75 60")

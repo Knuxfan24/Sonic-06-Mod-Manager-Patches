@@ -1,5 +1,5 @@
 --[Patch]--
-Title("TGS Sonic")
+Title("TGS 2005 Sonic")
 Author("Melpontro")
 Platform("All Systems")
 Blurb("Uses Sonic's animations from Tokyo Game Show 2005.")
