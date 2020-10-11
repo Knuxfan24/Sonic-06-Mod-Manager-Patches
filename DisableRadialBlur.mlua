@@ -1,0 +1,11 @@
+--[Patch]--
+Title("Disable Radial Blur")
+Author("Hyper")
+Platform("All Systems")
+Blurb("Disables the radial blur effect when running.")
+
+--[Functions]--
+All Systems:
+BeginBlock("core\archives\cache.arc")
+ParameterEdit("core\scripts\render\render_gamemode.lub"|"EnableRasterizeBlur"|"false")
+EndBlock("core\archives\cache.arc")
