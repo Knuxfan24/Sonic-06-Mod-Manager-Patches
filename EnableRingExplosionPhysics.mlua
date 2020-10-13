@@ -6,4 +6,5 @@ Blurb("Restores the Ring explosion effect after taking damage from eariler build
 
 --[Functions]--
 DecryptExecutable()
+WriteBytes(Executable|0xB33A55|"4248")
 WriteBytes(Executable|0xB33A58|"42C8")
