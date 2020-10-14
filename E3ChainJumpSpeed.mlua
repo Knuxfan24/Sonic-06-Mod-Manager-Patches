@@ -1,0 +1,10 @@
+--[Patch]--
+Title("E3 Chain Jump Speed")
+Author("VolcanoTheBat")
+Platform("Xbox 360")
+Blurb("Removes the chain jump delay and increases the jump speed to be more akin to E3.")
+
+--[Functions]--
+DecryptExecutable()
+WriteBytes(Executable|0xB230|"45FA0000")
+WriteBytes(Executable|0xD8B4|"00000000")
