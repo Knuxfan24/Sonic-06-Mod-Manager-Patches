@@ -7,4 +7,6 @@ Description("This patch will unlock mid-air momentum for the bound attack.\n\nUn
 
 --[Functions]--
 DecryptExecutable()
+WriteNopPPC(Executable|0x21AEE0)
+WriteNopPPC(Executable|0x21AF1C)
 WriteByte(Executable|0x21ADC8|0x40)
