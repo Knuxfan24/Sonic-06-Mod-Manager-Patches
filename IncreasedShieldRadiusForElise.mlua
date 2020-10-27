@@ -1,0 +1,12 @@
+--[Patch]--
+Title("Increased Shield Radius for Elise")
+Author("Hyper & jase3300")
+Platform("All Systems")
+Blurb("Changes Elise's shield to a more appropriate radius with reduced force, rather than the Antigravity properties.")
+
+--[Functions]--
+All Systems:
+BeginBlock("core\archives\player.arc")
+ParameterEdit("core\player\princess.lub"|"c_sliding_power"|"150 * N")
+ParameterAdd("core\player\princess.lub"|"c_sliding_collision"|"{ type = shape_sphere, radius = 1.5 * meter, offset = { x = 0 * meter, y = -1, z = 0.5 * meter } }")
+EndBlock("core\archives\player.arc")
