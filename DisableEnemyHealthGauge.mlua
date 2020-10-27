@@ -1,0 +1,10 @@
+--[Patch]--
+Title("Disable Enemy Health Gauge")
+Author("Nonami")
+Platform("Xbox 360")
+Blurb("Disables just the health gauge when you hit an enemy.")
+
+--[Functions]--
+DecryptExecutable()
+WriteBytes(Executable|0x4CD85E|0DD8)
+

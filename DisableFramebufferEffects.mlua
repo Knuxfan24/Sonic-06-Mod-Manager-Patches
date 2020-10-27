@@ -2,7 +2,7 @@
 Title("Disable Framebuffer Effects")
 Author("Hyper")
 Platform("Xbox 360")
-Blurb("Disables the enemy gauge and screen effects.")
+Blurb("Disables screen space effects.")
 Description("This patch will disable the enemy gauge and other framebuffer effects; including the water effects on the screen in Kingdom Valley.")
 
 --[Functions]--
