@@ -1,0 +1,11 @@
+--[Patch]--
+Title("Disable Invisible Walls")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Disables the invisible wall volumes placed in SET data.")
+
+--[Functions]--
+DecryptExecutable()
+WriteNullBytes(Executable|0x1CC30|80)
+WriteNullBytes(Executable|0x2D254|29)
+WriteNullBytes(Executable|0x2D544|42)
