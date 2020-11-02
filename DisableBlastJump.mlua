@@ -1,0 +1,9 @@
+--[Patch]--
+Title("Disable Blast Jump")
+Author("Nonami")
+Platform("Xbox 360")
+Blurb("Disable's Rouge's intrusive locked jump that occurs when you jump after one of her bombs explodes.")
+
+--[Functions]--
+DecryptExecutable()
+WriteByte(Executable|0xB19F03|0x29)
