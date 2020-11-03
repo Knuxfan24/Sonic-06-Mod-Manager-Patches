@@ -1,0 +1,14 @@
+--[Patch]--
+Title("Wall Climb Fix")
+Author("Nonami")
+Platform("Xbox 360")
+Blurb("Prevents characters like Knuckles and Rouge from sticking to walls while climbing.")
+
+--[Functions]--
+DecryptExecutable()
+
+--Knuckles the Echidna
+WriteBytes(Executable|0x7DE1|"1A5F30")
+
+--Rouge the Bat
+WriteBytes(Executable|0x8099|"1A5F30")
