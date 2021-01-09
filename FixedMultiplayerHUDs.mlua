@@ -1,5 +1,5 @@
 --[Patch]--
-Title("Better Multiplayer HUDs")
+Title("Fixed Multiplayer HUDs")
 Author("Hyper & Nonami")
 Platform("Xbox 360")
 Blurb("Fixes bad HUD positioning and missing elements for multiplayer.")
