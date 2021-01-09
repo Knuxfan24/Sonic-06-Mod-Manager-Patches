@@ -1,0 +1,21 @@
+--[Patch]--
+Title("Better Multiplayer HUDs")
+Author("Hyper & Nonami")
+Platform("Xbox 360")
+Blurb("Fixes bad HUD positioning and missing elements for multiplayer.")
+
+--[Functions]--
+DecryptExecutable()
+
+--Player 2 tag display
+WriteByte(Executable|0x39FC2|0x31)
+
+--Player 2 battle display
+WriteByte(Executable|0x39FF5|0x31)
+
+BeginBlock("win32\archives\sprite.arc")
+
+--Player 1 tag display fix (for fuck sake, Sonic Team)
+WriteByte("win32\sprite\tagdisplay_1p.xncp"|0x6E6|0x65)
+
+EndBlock("win32\archives\sprite.arc")
