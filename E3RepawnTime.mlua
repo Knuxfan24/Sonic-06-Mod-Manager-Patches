@@ -1,0 +1,10 @@
+--[Patch]--
+Title("E3 Respawn Time")
+Author("Nonami & VolcanoTheBat")
+Platform("Xbox 360")
+Blurb("Decreases the respawn time to be more similar to the E3 demo.")
+
+--[Functions]--
+DecryptExecutable()
+WriteBytes(Executable|0x16C2DC|"3D 40 82 05")
+WriteBytes(Executable|0x16C2E8|"C0 0A 11 50")
