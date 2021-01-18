@@ -1,0 +1,11 @@
+--[Patch]--
+Title("Disable Push State")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Disables the broken push state that causes characters to get stuck sliding.")
+
+--[Functions]--
+DecryptExecutable()
+WriteNopPPC(Executable|0x1A33F0)
+WriteNopPPC(Executable|0x1A33F4)
+WriteNopPPC(Executable|0x1A33F8)
