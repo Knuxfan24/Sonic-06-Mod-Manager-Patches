@@ -6,4 +6,12 @@ Blurb("Disables character dialogue in stages.")
 
 --[Functions]--
 DecryptExecutable()
+
+--Remove hint collision objects
 WriteNullBytes(Executable|0x16E1C|21)
+
+--Remove hard-coded voice lines for Egg Cerberus
+WriteNullBytes(Executable|0x288A4|297)
+
+--Cut off enemy Lua function for message calls
+WriteNopPPC(Executable|0x3C154C)
