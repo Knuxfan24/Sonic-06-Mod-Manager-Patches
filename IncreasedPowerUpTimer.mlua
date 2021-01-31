@@ -1,0 +1,10 @@
+--[Patch]--
+Title("Increased Power Up Timer")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Increases the timer for high speed and invincibility to fit the full length of the soundtrack.")
+
+--[Functions]--
+DecryptExecutable()
+WriteByte(Executable|0x16FC1B|0x04)
+WriteBytes(Executable|0x16FC26|"5D 98")
