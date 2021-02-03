@@ -1,0 +1,9 @@
+--[Patch]--
+Title("Disable Kingdom Valley Mist")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Disables the mist effect on screen in Kingdom Valley's super speed section.")
+
+--[Functions]--
+DecryptExecutable()
+WriteNopPPC(Executable|0x314E50)
