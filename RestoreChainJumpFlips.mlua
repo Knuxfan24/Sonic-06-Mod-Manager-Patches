@@ -1,0 +1,36 @@
+--[Patch]--
+Title("Restore Chain Jump Flips")
+Author("Desko & Violet")
+Platform("Xbox 360")
+Blurb("Restores the flipping animations between chain jumps.")
+
+--[Functions]--
+DecryptExecutable()
+
+--Restore chain jump instructions.
+WriteBytes(Executable|0x19C650|"C0 61 00 7C")
+WriteBytes(Executable|0x20CB74|"91 6A 00 44")
+WriteBytes(Executable|0x20F0BC|"D3 EB 00 44")
+
+--Correct chain jump animation slots.
+WriteByte(Executable|0x20F117|0x65)
+WriteByte(Executable|0x21351B|0x0E)
+
+--Add or replace animations to correct the changes.
+BeginBlock("core\archives\player.arc")
+PackageEdit("core\player\sonic_fast.pkg"|"motion"|"lightdash"|"player/sonic_new/so_123jump_s_Root.xnm")
+PackageEdit("core\player\sonic_fast.pkg"|"motion"|"chainjump_s"|"player/sonic_new/so_light_dush_l_Root.xnm")
+PackageEdit("core\player\amy.pkg"|"motion"|"chainjump_s"|"player/amy/am_jump_l_Root.xnm")
+PackageEdit("core\player\amy.pkg"|"motion"|"chainjump_landing"|"player/amy/am_landing00_l_Root.xnm")
+PackageEdit("core\player\blaze.pkg"|"motion"|"chainjump_s"|"player/blaze/bl_jump_l_Root.xnm")
+PackageEdit("core\player\blaze.pkg"|"motion"|"chainjump_landing"|"player/blaze/bl_landing00_l_Root.xnm")
+PackageEdit("core\player\knuckles.pkg"|"motion"|"chainjump_s"|"player/knuckles/kn_jump_l_Root.xnm")
+PackageEdit("core\player\knuckles.pkg"|"motion"|"chainjump_landing"|"player/knuckles/kn_landing00_l_Root.xnm")
+PackageEdit("core\player\omega.pkg"|"motion"|"chainjump_s"|"player/omega/om_jump_l_Root.xnm")
+PackageEdit("core\player\omega.pkg"|"motion"|"chainjump_landing"|"player/omega/om_landing00_l_Root.xnm")
+PackageEdit("core\player\rouge.pkg"|"motion"|"chainjump_s"|"player/rouge/ro_jump_l_Root.xnm")
+PackageEdit("core\player\rouge.pkg"|"motion"|"chainjump_landing"|"player/rouge/ro_landing00_l_Root.xnm")
+PackageEdit("core\player\tails.pkg"|"motion"|"chainjump_s"|"player/tails/ta_jump_l_Root.xnm")
+PackageEdit("core\player\tails.pkg"|"motion"|"chainjump_landing"|"player/tails/ta_landing00_l_Root.xnm")
+PackageEdit("core\player\silver.pkg"|"motion"|"chainjump_s"|"player/silver/sv_jump_l_Root.xnm")
+EndBlock("core\archives\player.arc")
