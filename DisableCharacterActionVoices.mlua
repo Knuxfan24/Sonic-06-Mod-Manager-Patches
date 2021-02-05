@@ -1,0 +1,35 @@
+--[Patch]--
+Title("Disable Character Action Voices")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Disables the voices for actions during gameplay.")
+
+--[Functions]--
+DecryptExecutable()
+
+--Common
+WriteNullBytes(Executable|0x11F60|74)
+
+--Amy Rose
+WriteNullBytes(Executable|0x120D0|67)
+
+--Blaze the Cat
+WriteNullBytes(Executable|0x12230|37)
+
+--Knuckles the Echidna
+WriteNullBytes(Executable|0x127AC|50)
+
+--Rouge the Bat
+WriteNullBytes(Executable|0x12984|62)
+
+--Shadow the Hedgehog
+WriteNullBytes(Executable|0x12B24|50)
+
+--Sonic the Hedgehog
+WriteNullBytes(Executable|0x12E64|24)
+
+--Miles "Tails" Prower
+WriteNullBytes(Executable|0x133A0|23)
+
+--Silver the Hedgehog
+WriteNullBytes(Executable|0x13540|40)
