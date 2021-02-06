@@ -1,0 +1,9 @@
+--[Patch]--
+Title("Unlock Snowboard Control")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Allows for 360 degree movement without charging a snowboard jump.")
+
+--[Functions]--
+DecryptExecutable()
+WriteNopPPC(Executable|0x218000)
