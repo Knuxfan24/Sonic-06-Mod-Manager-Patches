@@ -1,0 +1,30 @@
+--[Patch]--
+Title("Draw Snowboard Shadows")
+Author("rom~")
+Platform("All Systems")
+Blurb("Corrects the snowboards not drawing shadows.")
+
+--[Functions]--
+All Systems:
+
+BeginBlock("core\archives\player.arc")
+
+--Replace bad model loader with the item loader for the Crisis City snowboard.
+StringReplace("core\player\snow_board.lub"|"  OpenModel(_ARG_0_, model_system_easy, "player/common", "snow_board_csc", "LeftToeBase")"|"  OpenOther(_ARG_0_, other_module_item)")
+
+--Load the Crisis City snowboard as an item.
+ParameterAdd("core\player\snow_board.lub"|"c_item_table"|"{ { flags = 1, package = "player/common", model = "snow_board_csc", node = "LeftToeBase" } }")
+
+--Support for the Disable Upgrade Models patch - same parameter as above, but with the 'disabled' name.
+ParameterAdd("core\player\snow_board.lub"|"c_null_table"|"{ { flags = 1, package = "player/common", model = "snow_board_csc", node = "LeftToeBase" } }")
+
+--Replace bad model loader with the item loader for the White Acropolis snowboard.
+StringReplace("core\player\snow_board_wap.lub"|"  OpenModel(_ARG_0_, model_system_easy, "player/common", "snow_board_wap", "LeftToeBase")"|"  OpenOther(_ARG_0_, other_module_item)")
+
+--Load the White Acropolis snowboard as an item.
+ParameterAdd("core\player\snow_board_wap.lub"|"c_item_table"|"{ { flags = 1, package = "player/common", model = "snow_board_wap", node = "LeftToeBase" } }")
+
+--Support for the Disable Upgrade Models patch - same parameter as above, but with the 'disabled' name.
+ParameterAdd("core\player\snow_board_wap.lub"|"c_null_table"|"{ { flags = 1, package = "player/common", model = "snow_board_wap", node = "LeftToeBase" } }")
+
+EndBlock("core\archives\player.arc")
