@@ -1,10 +1,15 @@
 --[Patch]--
 Title("Spammable Spindash")
-Author("Nonami")
+Author("Nonami & Hyper")
 Platform("Xbox 360")
 Blurb("Replaces the Spinkick with the Spindash, allowing you to spam it.")
 Description("This patch will remove the Spinkick state in favour of replacing it with the Spindash state - this allows you to activate it from anywhere.")
 
 --[Functions]--
 DecryptExecutable()
-WriteBytes(Executable|0xB18EE6|"2AC8")
+
+--Redirect Spinkick state to the Spindash
+WriteBytes(Executable|0xB18EE6|"2A C8")
+
+--Skip Spindash charging state
+WriteNopPPC(Executable|0x21ABD8)
