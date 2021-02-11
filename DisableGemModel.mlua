@@ -1,0 +1,11 @@
+--[Patch]--
+Title("Disable Gem Model")
+Author("JotaroPowered")
+Platform("All Systems")
+Blurb("Disables the model switch that occurs when equipping gems.")
+
+--[Functions]--
+All Systems:
+BeginBlock("core\archives\player.arc")
+ParameterEdit("core\player\sonic_new.lub"|"c_system_model"|"model_system_standard")
+EndBlock("core\archives\player.arc")
