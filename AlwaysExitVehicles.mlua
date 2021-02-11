@@ -1,0 +1,9 @@
+--[Patch]--
+Title("Always Exit Vehicles")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Allows Shadow to exit vehicles at any time.")
+
+--[Functions]--
+DecryptExecutable()
+WriteNopPPC(Executable|0x2AE244)
