@@ -1,0 +1,17 @@
+--[Patch]--
+Title("Disable Title Input Delay")
+Author("Hyper & VolcanoTheBat")
+Platform("Xbox 360")
+Blurb("Disables the input delay for the title screen prompts.")
+
+--[Functions]--
+DecryptExecutable()
+
+--Remove Xbox guide delay.
+WriteBytes(Executable|0x1972DE|"0D D8")
+
+--Remove PRESS START delay.
+WriteNopPPC(Executable|0x515748)
+
+--Remove XBLA options delay.
+WriteNopPPC(Executable|0x51458C)

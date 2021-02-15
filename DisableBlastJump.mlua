@@ -2,7 +2,7 @@
 Title("Disable Blast Jump")
 Author("Nonami")
 Platform("Xbox 360")
-Blurb("Disable's Rouge's intrusive locked jump that occurs when you jump after one of her bombs explodes.")
+Blurb("Disables Rouge's intrusive locked jump that occurs when you jump after one of her bombs explodes.")
 
 --[Functions]--
 DecryptExecutable()
