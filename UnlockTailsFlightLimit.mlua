@@ -1,10 +1,15 @@
 --[Patch]--
 Title("Unlock Tails' Flight Limit")
 Author("Hyper")
-Platform("Xbox 360")
-Blurb("Removes the flight cap for Tails.")
-Description("Removes the flight cap for Tails in the executable - much more efficient than the tweak, which is what you'd want to use on PlayStation 3 for now.")
+Platform("All Systems")
+Blurb("Removes the flight limit for Tails.")
 
 --[Functions]--
+Xbox 360:
 DecryptExecutable()
-WriteBytes(Executable|0x21DA48|"38A0000E")
+WriteBytes(Executable|0x21DA48|"38 A0 00 0E")
+
+PlayStation 3:
+BeginBlock("core\archives\player.arc")
+ParameterEdit("core\player\tails.lub"|"c_flight_timer_b"|"c_flight_timer")
+EndBlock("core\archives\player.arc")
