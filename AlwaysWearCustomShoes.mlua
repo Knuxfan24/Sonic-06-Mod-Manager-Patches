@@ -1,0 +1,17 @@
+--[Patch]--
+Title("Always Wear Custom Shoes")
+Author("Hyper")
+Platform("All Systems")
+Blurb("Forces Sonic to always wear the custom shoes.")
+
+--[Functions]--
+All Systems:
+BeginBlock("core\archives\player.arc")
+PackageEdit("core\player\boss_sonic.pkg"|"model"|"model"|"player/sonic_new/sonic_shoes_Root.xno")
+PackageEdit("core\player\princess.pkg"|"model"|"model"|"player/sonic_new/sonic_shoes_Root.xno")
+PackageEdit("core\player\select_sonic.pkg"|"model"|"model"|"player/sonic_new/sonic_shoes_Root.xno")
+PackageEdit("core\player\snow_board.pkg"|"model"|"model"|"player/sonic_new/sonic_shoes_Root.xno")
+PackageEdit("core\player\sonic_damaged_and_wind.pkg"|"model"|"model"|"player/sonic_new/sonic_shoes_Root.xno")
+PackageEdit("core\player\sonic_fast.pkg"|"model"|"model"|"player/sonic_new/sonic_shoes_Root.xno")
+PackageEdit("core\player\sonic_new.pkg"|"model"|"model"|"player/sonic_new/sonic_shoes_Root.xno")
+EndBlock("core\archives\player.arc")

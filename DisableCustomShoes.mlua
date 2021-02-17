@@ -1,5 +1,5 @@
 --[Patch]--
-Title("Disable Gem Model")
+Title("Disable Custom Shoes")
 Author("JotaroPowered")
 Platform("All Systems")
 Blurb("Disables the model switch that occurs when equipping gems.")
