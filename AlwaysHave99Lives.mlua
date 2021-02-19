@@ -1,0 +1,19 @@
+--[Patch]--
+Title("Always Have 99 Lives")
+Author("Hyper & VolcanoTheBat")
+Platform("Xbox 360")
+Blurb("Forces the game to keep 99 lives at all times.")
+Description("There's nothing else to it, cheater.")
+
+--[Functions]--
+DecryptExecutable()
+
+--Jump out of main 1-UP loop.
+WriteNopPPC(Executable|0x16E76C)
+
+--Skip 1-UP addition to force 99 lives.
+WriteNopPPC(Executable|0x16E814)
+WriteNopPPC(Executable|0x16E820)
+
+--Disable 1-UP sound to save our ears.
+WriteNopPPC(Executable|0x16E838)
