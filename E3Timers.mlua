@@ -1,11 +1,19 @@
 --[Patch]--
 Title("E3 Timers")
 Author("Hyper")
-Platform("Xbox 360")
+Platform("All Systems")
 Blurb("Removes the checkpoint timer and the second zero from the minutes.")
 Description("This patch will remove the checkpoint timer and the second zero from the minutes, restoring the original look from the E3 demo.")
 
 --[Functions]--
+All Systems:
 DecryptExecutable()
+
+Xbox 360:
 WriteByte(Executable|0x38E96|0x31)
 WriteNullBytes(Executable|0x38EB1|27)
+
+PlayStation 3:
+WriteByte(Executable|0x171E2AA|0x31)
+WriteNullBytes(Executable|0x171E321|27)
+EncryptExecutable()
