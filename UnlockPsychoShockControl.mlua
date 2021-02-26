@@ -1,0 +1,14 @@
+--[Patch]--
+Title("Unlock Psycho Shock Control")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Allows you to move whilst performing Psycho Shock.")
+
+--[Functions]--
+DecryptExecutable()
+
+--Remove direction limiter.
+WriteNopPPC(Executable|0x1A7320)
+
+--Remove speed limiter.
+WriteNopPPC(Executable|0x1A7334)
