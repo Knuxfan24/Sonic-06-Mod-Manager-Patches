@@ -1,0 +1,10 @@
+--[Patch]--
+Title("Disable Fade Transition")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Disables the fade in transition in-game.")
+Description("This patch will remove the fade in transition that occurs upon dying or restarting in-game - similar to earlier versions of the game.")
+
+--[Functions]--
+DecryptExecutable()
+WriteNopPPC(Executable|0x4FB8EC)
