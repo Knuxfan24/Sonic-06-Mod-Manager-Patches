@@ -10,6 +10,7 @@ https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/BlueGemOverSpinkick.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/BoardCollisionAnimationFix.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/BoundAttackRecovery.mlua
+https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/ControllablePsychoShock.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/ControllableSpinkick.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/ControllableTeleportDash.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/CorrectHomingAnimation.mlua
@@ -64,6 +65,7 @@ https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/InvertCameraXAxis.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/InvertCameraYAxis.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/MachSpeedAirControl.mlua
+https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/NativeResolutionMephilesShadow.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/OmegaBlurFix.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/OmegaShotRangeFix.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/OppositeButtonPrompts.mlua
@@ -81,7 +83,6 @@ https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/UnlimitedGaugeForShadow.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/UnlimitedGaugeForSilver.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/UnlockMidairMomentum.mlua
-https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/UnlockPsychoShockControl.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/UnlockSnowboardControl.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/UnlockTailsFlightLimit.mlua
 https://raw.githubusercontent.com/Knuxfan24/Sonic-06-Mod-Manager-Patches/master/UnusedBoardTricks.mlua

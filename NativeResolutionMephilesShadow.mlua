@@ -1,0 +1,11 @@
+--[Patch]--
+Title("High Resolution Mephiles Shadow")
+Author("Hyper")
+Platform("All Systems")
+Blurb("Draws Mephiles' shadow at the internal shadow resolution for his first phase.")
+
+--[Functions]--
+All Systems:
+BeginBlock("core\archives\scripts.arc")
+StringReplace("core\scripts\render\stage\render_firstmefiress.lub"|"  user_texture_size = 256"|"  user_texture_size = CSMTextureSize")
+EndBlock("core\archives\scripts.arc")
