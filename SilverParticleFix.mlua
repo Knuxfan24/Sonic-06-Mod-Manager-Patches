@@ -1,6 +1,6 @@
 --[Patch]--
 Title("Silver Particle Fix")
-Author("Violet")
+Author("Chara")
 Platform("All Systems")
 Blurb("Restores Silver's missing particle effects.")
 

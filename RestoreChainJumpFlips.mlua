@@ -1,6 +1,6 @@
 --[Patch]--
 Title("Restore Chain Jump Flips")
-Author("Desko & Violet")
+Author("Desko & Chara")
 Platform("Xbox 360")
 Blurb("Restores the flipping animations between chain jumps.")
 
