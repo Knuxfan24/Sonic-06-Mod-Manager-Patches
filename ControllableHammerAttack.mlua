@@ -1,0 +1,15 @@
+--[Patch]--
+Title("Controllable Hammer Attack")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Allows the player to move whilst performing the Hammer Attack.")
+Description("This patch will allow Amy to move whilst performing the Hammer Attack.")
+
+--[Functions]--
+DecryptExecutable()
+
+--Remove direction limiter.
+WriteNopPPC(Executable|0x1AE6AC)
+
+--Remove speed limiter.
+WriteNopPPC(Executable|0x1AE6B4)

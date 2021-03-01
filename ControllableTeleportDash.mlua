@@ -7,4 +7,6 @@ Description("This patch will allow Silver to move whilst performing Teleport Das
 
 --[Functions]--
 DecryptExecutable()
-WriteByte(Executable|0x21F49F|0xEF)
+
+--Remove direction limiter.
+WriteNopPPC(Executable|0x21F49C)

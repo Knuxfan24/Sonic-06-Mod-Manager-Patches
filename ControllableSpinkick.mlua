@@ -7,5 +7,9 @@ Description("This patch will allow Sonic and Shadow to move whilst performing th
 
 --[Functions]--
 DecryptExecutable()
-WriteByte(Executable|0x1A5987|0xEF)
-WriteByte(Executable|0x1AAA07|0xEF)
+
+--Remove direction limiter for Sonic.
+WriteNopPPC(Executable|0x1A5984)
+
+--Remove direction limiter for Shadow.
+WriteNopPPC(Executable|0x1AAA04)
