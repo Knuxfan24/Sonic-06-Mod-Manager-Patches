@@ -1,0 +1,9 @@
+--[Patch]--
+Title("Disable Talk Window in Stages")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Disables the subtitle box for character dialogue and hint rings.")
+
+--[Functions]--
+DecryptExecutable()
+WriteNopPPC(Executable|0x4D4214)
