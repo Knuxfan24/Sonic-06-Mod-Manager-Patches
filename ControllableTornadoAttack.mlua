@@ -1,0 +1,25 @@
+--[Patch]--
+Title("Controllable Tornado Attack")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Allows the player to move whilst performing the Tornado attack.")
+Description("This patch will allow Sonic to move whilst performing the Tornado attack with the Green Gem.")
+
+--[Functions]--
+DecryptExecutable()
+
+--Redirect ground state to air state.
+WriteBytes(Executable|0x1A5FD2|"3B 14")
+
+--Redirect animation cue to restore sound.
+WriteByte(Executable|0x1A619F|0xCC)
+
+--Remove height limiter.
+WriteNopPPC(Executable|0x1A61B8)
+
+--Remove speed limiters.
+WriteNopPPC(Executable|0x1A61C0)
+WriteNopPPC(Executable|0x1A61C4)
+
+--Redirect ground animation to air animation.
+WriteByte(Executable|0xB173B3|0x24)
