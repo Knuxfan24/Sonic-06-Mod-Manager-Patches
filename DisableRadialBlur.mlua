@@ -7,5 +7,5 @@ Blurb("Disables the radial blur effect when running.")
 --[Functions]--
 All Systems:
 BeginBlock("core\archives\cache.arc")
-ParameterEdit("core\scripts\render\render_gamemode.lub"|"EnableRasterizeBlur"|"false")
+StringReplace("core\scripts\render\render_gamemode.lub"|"RasterizeBurnoutBlur(_ARG_0_, "postprocess_output", "main", 1)"|"Rasterize(_ARG_0_, "postprocess_output")")
 EndBlock("core\archives\cache.arc")
