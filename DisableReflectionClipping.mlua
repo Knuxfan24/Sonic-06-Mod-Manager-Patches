@@ -2,7 +2,7 @@
 Title("Disable Reflection Clipping")
 Author("rom~")
 Platform("Xbox 360")
-Blurb("Stops realtime reflections from being clipped off.")
+Blurb("Stops real-time reflections from being clipped off.")
 
 --[Functions]--
 DecryptExecutable()
