@@ -1,0 +1,46 @@
+--[Patch]--
+Title("Always Have Shadow's HUD")
+Author("Chara & Hyper")
+Platform("Xbox 360")
+Blurb("Forces all characters to use Shadow's HUD colours.")
+
+--[Functions]--
+DecryptExecutable()
+
+--Sonic the Hedgehog
+WriteBytes(Executable|0x39BE4|"3F 80 00 00")
+
+--Shadow the Hedgehog
+WriteBytes(Executable|0x39BE8|"3F 80 00 00")
+
+--Silver the Hedgehog
+WriteBytes(Executable|0x39BEC|"3F 80 00 00")
+
+--Tails "Miles" Prower
+WriteBytes(Executable|0x39BF0|"3F 80 00 00")
+
+--Amy Rose
+WriteBytes(Executable|0x39BF4|"3F 80 00 00")
+
+--Knuckles the Echidna
+WriteBytes(Executable|0x39BF8|"3F 80 00 00")
+
+--E-123 Omega
+WriteBytes(Executable|0x39BFC|"3F 80 00 00")
+
+--Rouge the Bat
+WriteBytes(Executable|0x39C00|"3F 80 00 00")
+
+--Blaze the Cat
+WriteBytes(Executable|0x39C04|"3F 80 00 00")
+
+--???
+WriteBytes(Executable|0x39C08|"3F 80 00 00")
+
+--Redirect Sonic's XNCP cast to Shadow's for the life bar.
+--This being hard-coded is the reason we haven't uploaded the version of this patch that switches in real-time yet.
+WriteByte(Executable|0x4D85C7|0x6C)
+WriteByte(Executable|0x4DB043|0x6C)
+WriteByte(Executable|0x4DB09F|0x6C)
+WriteByte(Executable|0x4DBF2B|0x6C)
+WriteByte(Executable|0xB7933B|0x6C)
