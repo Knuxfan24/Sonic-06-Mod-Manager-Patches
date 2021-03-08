@@ -1,5 +1,5 @@
 --[Patch]--
-Title("Board Collision Animation Fix")
+Title("Restore Snowboard Against Animation")
 Author("Desko")
 Platform("Xbox 360")
 Blurb("Restores the animation for when the board collides with terrain.")

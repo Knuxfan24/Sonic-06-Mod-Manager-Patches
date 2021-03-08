@@ -1,5 +1,5 @@
 --[Patch]--
-Title("Silver Grind Trick Fix")
+Title("Correct Silver's Grind Trick Animation")
 Author("Hyper")
 Platform("All Systems")
 Blurb("Fixes Silver's grind trick animation playing incorrectly.")

@@ -1,5 +1,5 @@
 --[Patch]--
-Title("Sonic Jump Animation Fix")
+Title("Correct Sonic's Jump Animation")
 Author("Hyper")
 Platform("All Systems")
 Blurb("Uses the correct jump up animation for Sonic.")

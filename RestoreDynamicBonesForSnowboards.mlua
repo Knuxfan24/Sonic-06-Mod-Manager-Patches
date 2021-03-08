@@ -1,5 +1,5 @@
 --[Patch]--
-Title("Snowboard Dynamic Bones")
+Title("Restore Dynamic Bones for Snowboards")
 Author("Hyper")
 Platform("All Systems")
 Blurb("Restores Sonic's dynamic bones for the snowboards.")

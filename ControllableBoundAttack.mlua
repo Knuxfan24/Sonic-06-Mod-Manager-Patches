@@ -1,0 +1,12 @@
+--[Patch]--
+Title("Controllable Bound Attack")
+Author("Desko")
+Platform("Xbox 360")
+Blurb("Allows the player to move whilst performing the Bound Attack.")
+Description("This patch will allow Sonic to move whilst performing the Bound Attack.\n\nUnlock Mid-air Momentum patch would be recommended to use alongside this.")
+
+--[Functions]--
+DecryptExecutable()
+WriteNopPPC(Executable|0x21AEE0)
+WriteNopPPC(Executable|0x21AF1C)
+WriteByte(Executable|0x21ADC8|0x40)

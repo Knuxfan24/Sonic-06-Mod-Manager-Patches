@@ -1,5 +1,5 @@
 --[Patch]--
-Title("Native Resolution Mephiles Shadow")
+Title("Draw Mephiles' Shadow Natively")
 Author("Hyper")
 Platform("All Systems")
 Blurb("Draws Mephiles' shadow at the internal shadow resolution for his first phase.")

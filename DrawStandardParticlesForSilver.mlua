@@ -1,5 +1,5 @@
 --[Patch]--
-Title("Silver Particle Fix")
+Title("Draw Standard Particles for Silver")
 Author("Chara")
 Platform("All Systems")
 Blurb("Restores Silver's missing particle effects.")

@@ -1,5 +1,5 @@
 --[Patch]--
-Title("Enable Homing Gravity")
+Title("Restore Homing Gravity")
 Author("Hyper")
 Platform("All Systems")
 Blurb("Restores Sonic's homing gravity from earlier builds.")

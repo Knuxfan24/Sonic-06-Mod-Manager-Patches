@@ -1,5 +1,5 @@
 --[Patch]--
-Title("Mach Speed Air Control")
+Title("Mid-air Control for Mach Speed")
 Author("Desko")
 Platform("Xbox 360")
 Blurb("Allows for free movement when jumping at Mach Speed.")

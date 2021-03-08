@@ -1,5 +1,5 @@
 --[Patch]--
-Title("Enable Chaos Smash")
+Title("Restore Chaos Smash")
 Author("Desko")
 Platform("Xbox 360")
 Blurb("Restores Shadow's Chaos Smash.")

@@ -1,0 +1,10 @@
+--[Patch]--
+Title("Controllable Homing Recovery")
+Author("Desko")
+Platform("Xbox 360")
+Blurb("Allows the player to move after performing the Homing Attack.")
+Description("This patch will allow Sonic to move after performing the Homing Attack.\n\nRestore Homing Spam is highly recommended for full control, as otherwise you will be unable to turn at the start of the move.\n\nUse of the Unlock Mid-air Momentum patch is also recommended.")
+
+--[Functions]--
+DecryptExecutable()
+WriteBytes(Executable|0x21A600|"48 00")

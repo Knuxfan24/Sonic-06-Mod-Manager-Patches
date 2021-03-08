@@ -1,8 +1,8 @@
 --[Patch]--
-Title("Wall Climb Fix")
+Title("Disable Climb from Jump")
 Author("Nonami")
 Platform("Xbox 360")
-Blurb("Prevents characters like Knuckles and Rouge from sticking to walls while climbing.")
+Blurb("Prevents characters like Knuckles and Rouge sticking to walls while climbing.")
 
 --[Functions]--
 DecryptExecutable()

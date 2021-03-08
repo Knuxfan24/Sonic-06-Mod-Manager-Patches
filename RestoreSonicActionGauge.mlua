@@ -1,5 +1,5 @@
 --[Patch]--
-Title("Action Gauge Fixes")
+Title("Restore Sonic's Action Gauge")
 Author("Hyper")
 Platform("All Systems")
 Blurb("Restores gauge draining and replenishment for Sonic.")

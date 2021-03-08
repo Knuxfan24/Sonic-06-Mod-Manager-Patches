@@ -1,5 +1,5 @@
 --[Patch]--
-Title("Snowboard Air Control")
+Title("Mid-air Control for Snowboards")
 Author("Desko")
 Platform("Xbox 360")
 Blurb("Allows for free movement when jumping on the snowboard.")

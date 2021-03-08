@@ -1,5 +1,5 @@
 --[Patch]--
-Title("Omega Shot Range Fix")
+Title("Increased Omega Shot Range")
 Author("Hyper")
 Platform("All Systems")
 Blurb("Increases the shot range and hit box for Omega.")

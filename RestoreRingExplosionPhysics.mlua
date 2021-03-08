@@ -1,5 +1,5 @@
 --[Patch]--
-Title("Enable Ring Explosion Physics")
+Title("Restore Ring Explosion Physics")
 Author("Nonami")
 Platform("Xbox 360")
 Blurb("Restores the Ring explosion effect after taking damage from eariler builds of the game.")

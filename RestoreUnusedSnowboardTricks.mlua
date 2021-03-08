@@ -1,9 +1,9 @@
 --[Patch]--
-Title("Unused Board Tricks")
+Title("Restore Unused Snowboard Tricks")
 Author("rom~")
 Platform("All Systems")
-Blurb("Replaces jumping animation and high jump animations with unused animations.")
-Description("Replaces jumping animation and high jump animations with unused animations.\n\nOptimally used with the unlocked mid-air board control and collision animations patches.")
+Blurb("Replaces the jumping animation and the high jump animations with unused animations.")
+Description("This patch will replace the jumping animation and the high jump animations with unused animations.\n\nRecommended to be used alongside Mid-air Control for Snowboards and Restore Snowboard Against Animation.")
 
 --[Functions]--
 All Systems:

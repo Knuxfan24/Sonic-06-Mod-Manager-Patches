@@ -1,9 +1,9 @@
 --[Patch]--
-Title("Debug Mode")
+Title("Enable Debug Mode")
 Author("Mefiresu")
 Platform("All Systems")
-Blurb("Enables Debug Mode for all characters.")
-Description("This patch will enable Debug Mode, allowing you to navigate stages with no-clip.\n\nControls:\n► Left Analog Stick/Directional Pad - Move.\n► Left Bumper (L2) - Unlock all upgrades.\n► Right Bumper (R2) - Increase Ring count by 99.\n► Y (Triangle) - Increase height.\n► A (Cross) - Decrease height.")
+Blurb("Enables the debug states for all characters.")
+Description("This patch will enable debug mode, allowing you to navigate stages with no-clip.\n\nControls:\n► Left Analog Stick/Directional Pad - Move.\n► Left Bumper (L2) - Unlock all upgrades.\n► Right Bumper (R2) - Increase Ring count by 99.\n► Y (Triangle) - Increase height.\n► A (Cross) - Decrease height.")
 
 --[Functions]--
 All Systems:

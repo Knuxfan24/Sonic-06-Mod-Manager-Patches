@@ -1,5 +1,5 @@
 --[Patch]--
-Title("Enable Homing Flips")
+Title("Restore Homing Flips")
 Author("Desko")
 Platform("Xbox 360")
 Blurb("Restores Sonic's extra flipping animations after homing.")

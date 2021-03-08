@@ -1,5 +1,5 @@
 --[Patch]--
-Title("Correct Homing Animation")
+Title("Correct Sonic's Homing Animation")
 Author("Hyper")
 Platform("All Systems")
 Blurb("Uses the correct homing animation, rather than the jump ball.")
