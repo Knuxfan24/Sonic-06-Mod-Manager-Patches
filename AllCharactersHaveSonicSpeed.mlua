@@ -7,7 +7,7 @@ Blurb("Gives every character Sonic's speed values.")
 --[Functions]--
 All Systems:
 BeginBlock("core\archives\player.arc")
-Ignore("sonic"|"omega"|"select"|"boss"|"board")
+Ignore("sonic"|"omega"|"select"|"boss"|"board"|"super")
 ParameterEdit("core\player"|"c_walk_speed_max"|"4 * (meter / sec)")
 ParameterEdit("core\player"|"c_run_speed_max"|"17 * (meter / sec)")
 ParameterEdit("core\player"|"c_jump_brake"|"25 * (meter / sec)")
