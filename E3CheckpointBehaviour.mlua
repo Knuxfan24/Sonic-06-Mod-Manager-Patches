@@ -1,0 +1,11 @@
+--[Patch]--
+Title("E3 Checkpoint Behaviour")
+Author("VolcanoTheBat")
+Platform("Xbox 360")
+Blurb("Resets the checkpoint state upon respawning.")
+
+--[Functions]--
+DecryptExecutable()
+WriteTextBytes(Executable|0x14D20|"begin")
+WriteByte(Executable|0x14D25|0x00)
+WriteTextBytes(Executable|0x14D28|"passed")
