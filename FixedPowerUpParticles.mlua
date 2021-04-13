@@ -1,0 +1,18 @@
+--[Patch]--
+Title("Fixed Power Up Particles")
+Author("Chara")
+Platform("All Systems")
+Blurb("Fixes the invincibility and shield particles for all common characters.")
+
+--[Functions]--
+All Systems:
+BeginBlock("core\archives\player.arc")
+
+--Add missing effect module for Silver
+StringReplace("core\player\silver.lub"|"  OpenEffect(_ARG_0_, effect_module_venice, "player_silver")"|"  OpenEffect(_ARG_0_, effect_module_venice, "player_silver")  OpenEffect(_ARG_0_, effect_module_sonic, "player_silver")")
+
+--Use Sonic's particle container for all characters
+Ignore("sonic"|"select"|"boss"|"board"|"super")
+PackageEdit("core\player"|"particle"|"common"|"particle/player_sonic.plc")
+
+EndBlock("core\archives\player.arc")
