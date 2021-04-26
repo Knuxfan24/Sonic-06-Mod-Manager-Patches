@@ -1,0 +1,12 @@
+--[Patch]--
+Title("E3 Homing Flips")
+Author("Chara")
+Platform("Xbox 360")
+Blurb("Restores Sonic's extra flipping animations after homing and resets after landing.")
+Description("This patch will restore the homing flip animations for Sonic, just like Restore Homing Flips, however they behave like E3 and reset after landing.\n\nThis patch cannot be used alongside Restore Homing Flips!")
+
+--[Functions]--
+DecryptExecutable()
+
+--Branch if less than or equal
+WriteBytes(Executable|0x21A3F0|"40 99")

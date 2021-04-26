@@ -7,4 +7,6 @@ Description("This patch will restore the homing flip animations for Sonic.")
 
 --[Functions]--
 DecryptExecutable()
-WriteByte(Executable|0x21A3F0|0x41)
+
+--Branch if equal
+WriteByte(Executable|0x21A3F0|"41 9A")
