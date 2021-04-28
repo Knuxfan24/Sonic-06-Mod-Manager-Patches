@@ -2,7 +2,7 @@
 Title("Draw Snowboard Shadows")
 Author("rom~")
 Platform("All Systems")
-Blurb("Corrects the snowboards not drawing shadows.")
+Blurb("Draws shadows beneath the snowboards.")
 
 --[Functions]--
 All Systems:

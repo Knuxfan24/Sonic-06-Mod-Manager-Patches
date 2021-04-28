@@ -1,0 +1,10 @@
+--[Patch]--
+Title("Draw Radar with Anti-Aliasing")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Draws the radar with the game's native anti-aliasing mode.")
+
+--[Functions]--
+BeginBlock("core\archives\cache.arc")
+StringReplace("core\scripts\render\core\render_radermap.lub"|"  SetFrameBufferObject(_ARG_0_, "radermap", "depthstencil_256", "color_depth", 0, 0, 0, 0)"|"  SetFrameBufferObject(_ARG_0_, "radermap", "depthstencil_256", "color_depth", 0, 0, 0, 0, MSAAType)")
+EndBlock("core\archives\cache.arc")
