@@ -2,7 +2,7 @@
 Title("Draw Radar with Anti-Aliasing")
 Author("Hyper")
 Platform("Xbox 360")
-Blurb("Draws the radar with the game's native anti-aliasing mode.")
+Blurb("Draws the radar with the game's native anti-aliasing method.")
 
 --[Functions]--
 BeginBlock("core\archives\cache.arc")
