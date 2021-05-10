@@ -1,9 +1,9 @@
 --[Patch]--
 Title("Restore Sonic's Action Gauge")
-Author("Hyper")
+Author("Desko, Dunker & Reimous")
 Platform("All Systems")
 Blurb("Restores gauge draining and replenishment for Sonic.")
-Description("This patch will restore Sonic's Action Gauge draining and replenishment when using Gems.")
+Description("This patch will restore Sonic's Action Gauge draining and replenishment when using Gems.\n\nThis is currently incompatible with the TGS 2006 Menu patch.\n\nThe Rainbow Gem also won't drain the gauge due to the workaround.")
 
 --[Functions]--
 All Systems:
@@ -15,6 +15,26 @@ ParameterRename("core\player\sonic_new.lub"|"c_gauge_white"|"c_white")
 ParameterRename("core\player\sonic_new.lub"|"c_gauge_sky"|"c_sky")
 ParameterRename("core\player\sonic_new.lub"|"c_gauge_yellow"|"c_yellow")
 ParameterRename("core\player\sonic_new.lub"|"c_gauge_purple"|"c_purple")
-ParameterRename("core\player\sonic_new.lub"|"c_gauge_super"|"c_super")
-ParameterEdit("core\player\sonic_new.lub"|"c_gauge_heal"|"5 * (point / sec)")
+--Rainbow Gem's draining is broken in the workaround, so enabling it in player.arc is pointless.
+--ParameterRename("core\player\sonic_new.lub"|"c_gauge_super"|"c_super")
 EndBlock("core\archives\player.arc")
+
+Xbox 360:
+DecryptExecutable()
+
+--branch
+WriteBytes(Executable|0x21C584|"482B18E4")
+
+--beq instead of bne
+WriteBytes(Executable|0x241F64|"41")
+
+--gauge heal function rewritten from scratch
+WriteBytes(Executable|0x4CDE68|"546B7FFE")
+WriteBytes(Executable|0x4CDE6C|"2B0B0000")
+WriteBytes(Executable|0x4CDE70|"419A0014")
+WriteBytes(Executable|0x4CDE74|"38800008")
+WriteBytes(Executable|0x4CDE78|"FC200890")
+WriteBytes(Executable|0x4CDE7C|"7FE3FB78")
+WriteBytes(Executable|0x4CDE80|"4BD4D1E9")
+WriteBytes(Executable|0x4CDE84|"817F0250")
+WriteBytes(Executable|0x4CDE88|"4BD4E700")
