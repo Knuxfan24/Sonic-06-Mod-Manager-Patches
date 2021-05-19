@@ -1,0 +1,44 @@
+--[Patch]--
+Title("Y Button Light Dash")
+Author("Desko")
+Platform("Xbox 360")
+Blurb("Remaps the Light Dash to the Y button.")
+Description("Remaps the Light Dash to the Y button like in Unleashed onwards.")
+
+--[Functions]--
+DecryptExecutable()
+
+--Sonic fall state
+WriteByte(Executable|0x219B4A|0x8F)
+--Sonic jump state
+WriteByte(Executable|0x219CC6|0x8F)
+--Sonic widespring state
+WriteByte(Executable|0x219F12|0x8F)
+--Sonic/Princess homing after state
+WriteByte(Executable|0x21A45A|0x8F)
+--Sonic bound state
+WriteByte(Executable|0x21ACD2|0x8F)
+--Sonic wait state
+WriteByte(Executable|0x21BB22|0x8F)
+--Sonic walk state
+WriteByte(Executable|0x21BDF6|0x8F)
+--Sonic run state
+WriteByte(Executable|0x21C0D6|0x8F)
+
+--Fast Sonic run state
+WriteByte(Executable|0x21465E|0x8F)
+
+--Shadow wait state
+WriteByte(Executable|0x1A8502|0x8F)
+--Shadow walk state
+WriteByte(Executable|0x1A87C6|0x8F)
+--Shadow run state
+WriteByte(Executable|0x1A8A8E|0x8F)
+--Shadow fall state
+WriteByte(Executable|0x1A8D56|0x8F)
+--Shadow jump state
+WriteByte(Executable|0x1A8F5E|0x8F)
+--Shadow widespring state
+WriteByte(Executable|0x1A926E|0x8F)
+--Shadow homing after state
+WriteByte(Executable|0x1A9792|0x8F)
