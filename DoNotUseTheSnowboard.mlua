@@ -2,7 +2,7 @@
 Title("Don't Use the Snowboard")
 Author("Hyper")
 Platform("All Systems")
-Blurb("Uses default Sonic, rather than loading the snowboard.")
+Blurb("Uses default Sonic for snowboard sections.")
 
 --[Functions]--
 All Systems:

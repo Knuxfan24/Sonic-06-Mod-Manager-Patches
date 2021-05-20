@@ -2,7 +2,7 @@
 Title("Don't Carry Elise")
 Author("Luna")
 Platform("All Systems")
-Blurb("Uses default Sonic, rather than loading Elise.")
+Blurb("Uses default Sonic for Elise's stages.")
 
 --[Functions]--
 All Systems:
