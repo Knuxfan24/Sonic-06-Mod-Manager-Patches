@@ -3,7 +3,7 @@ Title("Restore Sonic's Action Gauge")
 Author("Desko, Dunker & Reimous")
 Platform("All Systems")
 Blurb("Restores gauge draining and replenishment for Sonic.")
-Description("This patch will restore Sonic's Action Gauge draining and replenishment when using Gems.\n\nThis is currently incompatible with the TGS 2006 Menu patch.\n\nThe Rainbow Gem also won't drain the gauge due to the workaround.")
+Description("This patch will restore Sonic's Action Gauge draining and replenishment when using Gems.\n\nThis is currently incompatible with the Enable Debug Menu patch.\n\nThe Rainbow Gem also won't drain the gauge due to the workaround.")
 
 --[Functions]--
 All Systems:
@@ -23,18 +23,26 @@ Xbox 360:
 DecryptExecutable()
 
 --branch
-WriteBytes(Executable|0x21C584|"482B18E4")
+WriteVirtualBytes(0x82219584|"4BFDE05C")
 
---beq instead of bne
+--beq instead of bne | Sonic's code checks for something that always equals to zero 
 WriteBytes(Executable|0x241F64|"41")
 
 --gauge heal function rewritten from scratch
-WriteBytes(Executable|0x4CDE68|"546B7FFE")
-WriteBytes(Executable|0x4CDE6C|"2B0B0000")
-WriteBytes(Executable|0x4CDE70|"419A0014")
-WriteBytes(Executable|0x4CDE74|"38800008")
-WriteBytes(Executable|0x4CDE78|"FC200890")
-WriteBytes(Executable|0x4CDE7C|"7FE3FB78")
-WriteBytes(Executable|0x4CDE80|"4BD4D1E9")
-WriteBytes(Executable|0x4CDE84|"817F0250")
-WriteBytes(Executable|0x4CDE88|"4BD4E700")
+
+--If RT is held then branch
+WriteVirtualBytes(0x821F75E0|"546B7FFE")
+WriteVirtualBytes(0x821F75E4|"2B0B0000")
+WriteVirtualBytes(0x821F75E8|"419A0014")
+
+--load Rainbow Gem and float thingies
+WriteVirtualBytes(0x821F75EC|"38800008")
+WriteVirtualBytes(0x821F75F0|"FC200890")
+WriteVirtualBytes(0x821F75F4|"7FE3FB78")
+
+--bl to the Gem Drain Case
+WriteVirtualBytes(0x821F75F8|"48020A71")
+
+--load the beginning of the function where we came from and branch there
+WriteVirtualBytes(0x821F75FC|"817F0250")
+WriteVirtualBytes(0x821F7600|"48021F88")
