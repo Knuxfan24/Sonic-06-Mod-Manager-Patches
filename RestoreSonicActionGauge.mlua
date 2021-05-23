@@ -3,7 +3,7 @@ Title("Restore Sonic's Action Gauge")
 Author("Desko, Dunker & Reimous")
 Platform("All Systems")
 Blurb("Restores gauge draining and replenishment for Sonic.")
-Description("This patch will restore Sonic's Action Gauge draining and replenishment when using Gems.\n\nThis is currently incompatible with the Enable Debug Menu patch.\n\nThe Rainbow Gem also won't drain the gauge due to the workaround.")
+Description("This patch will restore Sonic's Action Gauge draining and replenishment when using Gems.\n\nThis is currently incompatible with the Enable Debug Mode patch.\n\nThe Rainbow Gem also won't drain the gauge due to the workaround.")
 
 --[Functions]--
 All Systems:
