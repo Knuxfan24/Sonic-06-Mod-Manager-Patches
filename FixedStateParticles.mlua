@@ -1,8 +1,8 @@
 --[Patch]--
-Title("Fixed Power Up Particles")
+Title("Fixed State Particles")
 Author("Chara")
 Platform("All Systems")
-Blurb("Fixes the invincibility and shield particles for all common characters.")
+Blurb("Fixes some issues with some states' particles for all common characters.")
 
 --[Functions]--
 All Systems:
@@ -16,3 +16,9 @@ Ignore("sonic"|"select"|"boss"|"board"|"super")
 PackageEdit("core\player"|"particle"|"common"|"particle/player_sonic.plc")
 
 EndBlock("core\archives\player.arc")
+
+Xbox 360:
+DecryptExecutable()
+
+--Fixes the water landing particle for Fast Sonic
+WriteBytes(Executable|0xF5A8|"73 70 6C 61 73 68 30 32 00 00 00 00")
