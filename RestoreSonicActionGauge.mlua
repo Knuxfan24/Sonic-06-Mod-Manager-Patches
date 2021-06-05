@@ -46,3 +46,29 @@ WriteVirtualBytes(0x821F75F8|"48020A71")
 --load the beginning of the function where we came from and branch there
 WriteVirtualBytes(0x821F75FC|"817F0250")
 WriteVirtualBytes(0x821F7600|"48021F88")
+
+
+
+--red
+
+--branch
+WriteVirtualBytes(0x8223F054|"4B FB 85 B0")
+--load float 0.0
+WriteVirtualBytes(0x821F7604|"3D 80 82 00")
+WriteVirtualBytes(0x821F7608|"C1 AC 0D D8")
+--branch
+WriteVirtualBytes(0x821F760C|"48 04 7A 4C")
+--gauge will drain only if the gauge is bigger than zero
+WriteVirtualBytes(0x8223F05C|"41 99 FF E8")
+
+--purple
+
+--branch
+WriteVirtualBytes(0x8223F0F4|"4BFB851C")
+--load float 0.0
+WriteVirtualBytes(0x821F7610|"3D 80 82 00")
+WriteVirtualBytes(0x821F7614|"C1 AC 0D D8")
+--branch
+WriteVirtualBytes(0x821F7618|"48047AE0")
+--gauge will drain only if the gauge is bigger than zero
+WriteVirtualBytes(0x8223F0FC|"41 99 FF 48")
