@@ -14,12 +14,11 @@ WriteBytes(Executable|0x20F0BC|"D3 EB 00 44")
 
 --Correct chain jump animation slots.
 WriteByte(Executable|0x20F117|0x65)
-WriteByte(Executable|0x21351B|0x0E)
+WriteByte(Executable|0x214F07|0x00)
+WriteByte(Executable|0x2151A7|0x0E)
 
 --Add or replace animations to correct the changes.
 BeginBlock("core\archives\player.arc")
-PackageEdit("core\player\sonic_fast.pkg"|"motion"|"lightdash"|"player/sonic_new/so_123jump_s_Root.xnm")
-PackageEdit("core\player\sonic_fast.pkg"|"motion"|"chainjump_s"|"player/sonic_new/so_light_dush_l_Root.xnm")
 PackageEdit("core\player\amy.pkg"|"motion"|"chainjump_s"|"player/amy/am_jump_l_Root.xnm")
 PackageEdit("core\player\amy.pkg"|"motion"|"chainjump_landing"|"player/amy/am_landing00_l_Root.xnm")
 PackageEdit("core\player\blaze.pkg"|"motion"|"chainjump_s"|"player/blaze/bl_jump_l_Root.xnm")
