@@ -3,7 +3,7 @@ Title("Restore Sonic's Action Gauge")
 Author("Desko, Dunker & Reimous")
 Platform("All Systems")
 Blurb("Restores gauge draining and replenishment for Sonic.")
-Description("This patch will restore Sonic's Action Gauge draining and replenishment when using Gems.\n\nThis is currently incompatible with the Enable Debug Mode patch.\n\nThe Rainbow Gem also won't drain the gauge due to the workaround.")
+Description("This patch will restore Sonic's Action Gauge draining and replenishment when using Gems.\n\nThe Rainbow Gem also won't drain the gauge due to the workaround.")
 
 --[Functions]--
 All Systems:
@@ -15,60 +15,81 @@ ParameterRename("core\player\sonic_new.lub"|"c_gauge_white"|"c_white")
 ParameterRename("core\player\sonic_new.lub"|"c_gauge_sky"|"c_sky")
 ParameterRename("core\player\sonic_new.lub"|"c_gauge_yellow"|"c_yellow")
 ParameterRename("core\player\sonic_new.lub"|"c_gauge_purple"|"c_purple")
---Rainbow Gem's draining is broken in the workaround, so enabling it in player.arc is pointless.
---ParameterRename("core\player\sonic_new.lub"|"c_gauge_super"|"c_super")
+--Rainbow Gem's draining is broken in the workaround, so enabling it in player.arc is pointless. | Rename just to be sure that c_super won't drain anything.
+ParameterRename("core\player\sonic_new.lub"|"c_super"|"c_gauge_super")
 EndBlock("core\archives\player.arc")
 
 Xbox 360:
 DecryptExecutable()
 
---branch
-WriteVirtualBytes(0x82219584|"4BFDE05C")
-
 --beq instead of bne | Sonic's code checks for something that always equals to zero 
 WriteBytes(Executable|0x241F64|"41")
 
---gauge heal function rewritten from scratch
+--optimizing the code
 
---If RT is held then branch
-WriteVirtualBytes(0x821F75E0|"546B7FFE")
-WriteVirtualBytes(0x821F75E4|"2B0B0000")
-WriteVirtualBytes(0x821F75E8|"419A0014")
+--custom jump table
+WriteBytes(Executable|0x24200C|"82 23 F0 2C 82 23 F0 4C 82 23 F0 6C 82 23 F0 74 82 23 F0 7C 82 23 F0 84 82 23 F0 8C 82 23 F0 90")
 
---load Rainbow Gem and float thingies
-WriteVirtualBytes(0x821F75EC|"38800008")
-WriteVirtualBytes(0x821F75F0|"FC200890")
-WriteVirtualBytes(0x821F75F4|"7FE3FB78")
+--blue
 
---bl to the Gem Drain Case
-WriteVirtualBytes(0x821F75F8|"48020A71")
+WriteVirtualBytes(0x8223F02C|"C1 A3 00 3C")
+WriteVirtualBytes(0x8223F034|"C0 03 00 28")
 
---load the beginning of the function where we came from and branch there
-WriteVirtualBytes(0x821F75FC|"817F0250")
-WriteVirtualBytes(0x821F7600|"48021F88")
+--green
+WriteVirtualBytes(0x8223F06C|"C1 A3 00 44")
+WriteVirtualBytes(0x8223F070|"4BFFFFC0")
 
+--white
+WriteVirtualBytes(0x8223F074|"C1 A3 00 48")
+WriteVirtualBytes(0x8223F078|"4B FF FF B8")
 
+--sky
+WriteVirtualBytes(0x8223F07C|"C1 A3 00 4C")
+WriteVirtualBytes(0x8223F080|"4B FF FF B0")
+
+--yellow
+WriteVirtualBytes(0x8223F084|"C1 A3 00 50")
+WriteVirtualBytes(0x8223F088|" 4B FF FF A8")
+
+--super
+WriteVirtualBytes(0x8223F090|"C1 A3 00 58")
+WriteVirtualBytes(0x8223F094|"4B FF FF 9C")
 
 --red
 
 --branch
-WriteVirtualBytes(0x8223F054|"4B FB 85 B0")
+WriteVirtualBytes(0x8223F054|"48 00 00 44")
 --load float 0.0
-WriteVirtualBytes(0x821F7604|"3D 80 82 00")
-WriteVirtualBytes(0x821F7608|"C1 AC 0D D8")
+WriteVirtualBytes(0x8223F098|"3D 80 82 00")
+WriteVirtualBytes(0x8223F09C|"C1 AC 0D D8")
 --branch
-WriteVirtualBytes(0x821F760C|"48 04 7A 4C")
+WriteVirtualBytes(0x8223F0A0|"4B FF FF B8")
 --gauge will drain only if the gauge is bigger than zero
 WriteVirtualBytes(0x8223F05C|"41 99 FF E8")
 
 --purple
+--branch to red
+WriteVirtualBytes(0x8223F08C|"4B FF FF C0")
 
---branch
-WriteVirtualBytes(0x8223F0F4|"4BFB851C")
---load float 0.0
-WriteVirtualBytes(0x821F7610|"3D 80 82 00")
-WriteVirtualBytes(0x821F7614|"C1 AC 0D D8")
---branch
-WriteVirtualBytes(0x821F7618|"48047AE0")
---gauge will drain only if the gauge is bigger than zero
-WriteVirtualBytes(0x8223F0FC|"41 99 FF 48")
+
+--A custom function
+
+--branch to it
+WriteVirtualBytes(0x82219584|"48 02 5B 20")
+
+--If RT is held then branch
+WriteVirtualBytes(0x8223F0A4|"54 6B 7F FE")
+WriteVirtualBytes(0x8223F0A8|"2B 0B 00 00")
+WriteVirtualBytes(0x8223F0AC|"419A0014")
+
+--load Rainbow Gem and float thingies
+WriteVirtualBytes(0x8223F0B0|"38800008")
+WriteVirtualBytes(0x8223F0B4|"FC200890")
+WriteVirtualBytes(0x8223F0B8|"7FE3FB78")
+
+--bl to the Gem Drain Case
+WriteVirtualBytes(0x8223F0BC|"4B FD 8F AD")
+
+--load the beginning of the function where we came from and branch there
+WriteVirtualBytes(0x8223F0C0|"817F0250")
+WriteVirtualBytes(0x8223F0C4|"4B FD A4 C4")
