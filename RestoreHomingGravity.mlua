@@ -1,12 +1,17 @@
 --[Patch]--
 Title("Restore Homing Gravity")
-Author("Hyper")
+Author("Desko & Hyper")
 Platform("All Systems")
 Blurb("Restores Sonic's homing gravity from earlier builds.")
-Description("This patch will swap Sonic's homing module with Blaze's one to simulate homing gravity from early versions of Sonic '06.\n\nHowever, this removes Sonic's ability to destroy physics objects.\n\nExpect this to be replaced once fully restored.")
+Description("This patch will restore Sonic's homing gravity from early versions of Sonic '06.\n\nThe PlayStation 3 version uses a workaround that removes Sonic's ability to destroy physics objects. This will be fixed once the patch is ported over.")
 
 --[Functions]--
-All Systems:
+Xbox 360:
+DecryptExecutable()
+WriteVirtualNop(0x821F8724)
+WriteVirtualBytes(0x821F872D|"3D B4 85")
+
+PlayStation 3:
 BeginBlock("core\archives\player.arc")
 ParameterEdit("core\player\common.lub"|"other_module_sonic_homing"|"9")
 EndBlock("core\archives\player.arc")
