@@ -1,0 +1,15 @@
+--[Patch]--
+Title("Restore Talk Window Arrow")
+Author("Desko")
+Platform("Xbox 360")
+Description("Restores the unused continue arrow for dialog boxes.")
+
+--[Functions]--
+DecryptExecutable()
+
+--Overwrite text used by the non-functional Mission Complete HUD.
+WriteVirtualBytes(0x8203847C|"53 63 65 6E 65 5F 30 30 32 31 00 00")
+
+--Redirect talk window animation to restore this animation.
+WriteVirtualBytes(0x824EA20E|"84 7C")
+WriteVirtualBytes(0x824EA26A|"84 7C")
