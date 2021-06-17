@@ -1,0 +1,10 @@
+--[Patch]--
+Title("Always Active Radial Blur")
+Author("Desko")
+Platform("Xbox 360")
+Blurb("Forces radial blur to always be active, no matter your velocity.")
+Description("Heaven can't save us, hell is a joke.")
+
+--[Functions]--
+DecryptExecutable()
+WriteVirtualBytes(0x8265383C|"48 00")
