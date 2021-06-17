@@ -1,0 +1,9 @@
+--[Patch]--
+Title("Disable Checkpoints")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Disables checkpoints in all stages.")
+
+--[Functions]--
+DecryptExecutable()
+WriteVirtualNop(0x82298F04)
