@@ -1,0 +1,9 @@
+--[Patch]--
+Title("Disable Mid-air Spinning Claw")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Disables Blaze's Spinning Claw attack in mid-air to prevent it from cancelling homing attacks.")
+
+--[Functions]--
+DecryptExecutable()
+WriteVirtualBytes(0x821ABFD8|"48 00")
