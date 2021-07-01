@@ -1,0 +1,9 @@
+--[Patch]--
+Title("Disable Purple Gem Scale")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Disables the character scaling when using the Purple Gem.")
+
+--[Functions]--
+DecryptExecutable()
+WriteVirtualBytes(0x82256870|"48 00")

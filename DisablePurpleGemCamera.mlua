@@ -1,0 +1,9 @@
+--[Patch]--
+Title("Disable Purple Gem Camera")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Disables the camera change when using the Purple Gem.")
+
+--[Functions]--
+DecryptExecutable()
+WriteVirtualBytes(0x82256750|"48 00")
