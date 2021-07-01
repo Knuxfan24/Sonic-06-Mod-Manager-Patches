@@ -1,0 +1,9 @@
+--[Patch]--
+Title("Disable Sand Jump")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Disables the shorter jump used when colliding with sand or water.")
+
+--[Functions]--
+DecryptExecutable()
+WriteVirtualBytes(0x8220924C|"48 00")
