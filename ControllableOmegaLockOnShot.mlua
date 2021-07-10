@@ -1,0 +1,10 @@
+--[Patch]--
+Title("Controllable Omega Lock-On Shot")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Allows Omega to move whilst shooting homing lasers.")
+
+--[Functions]--
+DecryptExecutable()
+WriteVirtualNop(0x821AA908)
+WriteVirtualNop(0x821AA910)

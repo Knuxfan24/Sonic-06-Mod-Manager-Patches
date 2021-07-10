@@ -2,7 +2,7 @@
 Title("Controllable Tornado Attack")
 Author("Hyper")
 Platform("Xbox 360")
-Blurb("Allows the player to move whilst performing the Tornado attack.")
+Blurb("Allows Sonic to move whilst performing the Tornado attack.")
 Description("This patch will allow Sonic to move whilst performing the Tornado attack with the Green Gem.")
 
 --[Functions]--

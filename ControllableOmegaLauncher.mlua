@@ -1,0 +1,10 @@
+--[Patch]--
+Title("Controllable Omega Launcher")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Allows Omega to move whilst shooting in mid-air.")
+
+--[Functions]--
+DecryptExecutable()
+WriteVirtualNop(0x821AA6CC)
+WriteVirtualNop(0x821AA6D4)

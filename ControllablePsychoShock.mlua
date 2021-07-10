@@ -2,7 +2,7 @@
 Title("Controllable Psycho Shock")
 Author("Hyper")
 Platform("Xbox 360")
-Blurb("Allows the player to move whilst performing Psycho Shock.")
+Blurb("Allows Silver to move whilst performing Psycho Shock.")
 Description("This patch will allow Silver to move whilst performing Psycho Shock.")
 
 --[Functions]--

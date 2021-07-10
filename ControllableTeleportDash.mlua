@@ -2,7 +2,7 @@
 Title("Controllable Teleport Dash")
 Author("Nonami")
 Platform("Xbox 360")
-Blurb("Allows the player to move whilst performing Teleport Dash.")
+Blurb("Allows Silver to move whilst performing Teleport Dash.")
 Description("This patch will allow Silver to move whilst performing Teleport Dash.")
 
 --[Functions]--
