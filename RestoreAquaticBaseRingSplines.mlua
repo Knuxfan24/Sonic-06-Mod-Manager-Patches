@@ -1,0 +1,11 @@
+--[Patch]--
+Title("Restore Aquatic Base Ring Splines")
+Author("Hyper")
+Platform("All Systems")
+Blurb("Restores the unused spline data for Aquatic Base, allowing Sonic to smoothly light dash through rings.")
+
+--[Functions]--
+All Systems:
+BeginBlock("core\archives\scripts.arc")
+StringReplace("core\scripts\stage\aqa\a_sonic.lub"|"    Game.LoadPath("placement/aqa/d_aqa_s_a", "pathobj"),"|"    Game.LoadPath("placement/aqa/d_aqa_s_a", "pathobj"),\n    Game.LoadPath("placement/aqa/aqa_s_a"),")
+EndBlock("core\archives\scripts.arc")
