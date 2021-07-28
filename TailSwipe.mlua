@@ -14,7 +14,6 @@ BeginBlock("core\archives\player.arc")
 --Add required parameters to Tails' script
 ParameterAdd("core\player\tails.lub"|"c_sliding_power"|"500 * N")
 ParameterAdd("core\player\tails.lub"|"c_sliding_damage"|"1 * point")
-ParameterAdd("core\player\tails.lub"|"c_sliding_collision"|"{ type = shape_sphere, radius = 1 * meter, offset = { x = 0 * meter, y = -1 * meter, z = 0 * meter } }")
 
 --Register new animation slot
 PackageEdit("core\player\tails.pkg"|"motion"|"attack"|"player/tails/ta_attack_l_Root.xnm")
