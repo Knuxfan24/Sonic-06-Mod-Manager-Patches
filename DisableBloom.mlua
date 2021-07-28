@@ -6,10 +6,5 @@ Blurb("Disables bloom effects on the framebuffer.")
 Description("This patch will disable bloom entirely, as you would expect from a patch called 'Disable Bloom.'")
 
 --[Functions]--
-BeginBlock("core\archives\cache.arc")
-ParameterErase("core\scripts\render"|"ApplyBloom(_ARG_0_)")
-EndBlock("core\archives\cache.arc")
-
-BeginBlock("core\archives\scripts.arc")
-ParameterErase("core\scripts\render\stage"|"ApplyBloom(_ARG_0_)")
-EndBlock("core\archives\scripts.arc")
+DecryptExecutable()
+WriteVirtualBytes(0x8260A420|"4E800020")
