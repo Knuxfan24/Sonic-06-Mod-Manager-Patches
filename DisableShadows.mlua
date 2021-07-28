@@ -6,10 +6,5 @@ Blurb("Disables real-time shadows and shadow maps.")
 Description("This patch will disable real-time shadow rendering and baked shadows. This may provide a significant performance boost, but looks pretty ugly.")
 
 --[Functions]--
-BeginBlock("core\archives\cache.arc")
-ParameterErase("core\scripts\render"|"RenderCSM(_ARG_0_, GenerateCSMLevels, GenerateCSMObjects)")
-EndBlock("core\archives\cache.arc")
-
-BeginBlock("core\archives\scripts.arc")
-ParameterErase("core\scripts\render\stage"|"RenderCSM(_ARG_0_, GenerateCSMLevels, GenerateCSMObjects)")
-EndBlock("core\archives\scripts.arc")
+DecryptExecutable()
+WriteVirtualBytes(0x8260CE10|"0x4E800020")
