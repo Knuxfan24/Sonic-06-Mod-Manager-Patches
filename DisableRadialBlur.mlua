@@ -5,7 +5,11 @@ Platform("All Systems")
 Blurb("Disables the radial blur effect when running.")
 
 --[Functions]--
-All Systems:
+Xbox 360:
+DecryptExecutable()
+WriteVirtualBytes(0x8204C584|"8260A5B0")
+
+PlayStation 3:
 BeginBlock("core\archives\cache.arc")
 StringReplace("core\scripts\render\render_gamemode.lub"|"RasterizeBurnoutBlur(_ARG_0_, "postprocess_output", "main", 1)"|"Rasterize(_ARG_0_, "postprocess_output")")
 EndBlock("core\archives\cache.arc")
