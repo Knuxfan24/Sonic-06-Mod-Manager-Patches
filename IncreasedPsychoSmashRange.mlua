@@ -1,0 +1,11 @@
+--[Patch]--
+Title("Increased Psycho Smash Range")
+Author("JotaroPowered")
+Platform("All Systems")
+Blurb("Increases the range of Silver's Psycho Smash attack.")
+
+--[Functions]--
+All Systems:
+BeginBlock("core\archives\player.arc")
+ParameterEdit("core\player\silver.lub"|"c_psychosmash_begin"|"6 * meter")
+EndBlock("core\archives\player.arc")
