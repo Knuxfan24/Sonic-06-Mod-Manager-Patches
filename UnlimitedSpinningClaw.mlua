@@ -1,0 +1,9 @@
+--[Patch]--
+Title("Unlimited Spinning Claw")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Stops Blaze's Spinning Claw attack from cancelling automatically.")
+
+--[Functions]--
+DecryptExecutable()
+WriteVirtualNop(0x821AC5A4)
