@@ -1,0 +1,10 @@
+--[Patch]--
+Title("Disable 2x MSAA")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Disables only 2x MSAA used for gameplay.")
+Description("Disables 2x Multisample Anti-Aliasing, which is used during gameplay (except for super speed sections). This can significantly improve performance, especially in the town areas.")
+
+--[Functions]--
+DecryptExecutable()
+WriteVirtualBytes(0x82607B94|"38800000")

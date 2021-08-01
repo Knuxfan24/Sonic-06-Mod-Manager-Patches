@@ -1,0 +1,10 @@
+--[Patch]--
+Title("Disable 4x MSAA")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Disables only 4x MSAA used for menus.")
+Description("Disables 4x Multisample Anti-Aliasing, which is used only for the main menu.")
+
+--[Functions]--
+DecryptExecutable()
+WriteVirtualBytes(0x82607BB8|"38800000")
