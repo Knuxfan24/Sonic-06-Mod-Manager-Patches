@@ -7,4 +7,4 @@ Description("This patch will disable real-time shadow rendering and baked shadow
 
 --[Functions]--
 DecryptExecutable()
-WriteVirtualBytes(0x8260CE10|"4E800020")
+WriteVirtualBytes(0x8260CE40|"48000204")
