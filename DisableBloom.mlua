@@ -7,4 +7,4 @@ Description("This patch will disable bloom entirely, as you would expect from a 
 
 --[Functions]--
 DecryptExecutable()
-WriteVirtualBytes(0x8260A420|"4E800020")
+WriteVirtualBytes(0x8260A448|"48000094")
