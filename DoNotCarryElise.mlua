@@ -1,11 +1,32 @@
 --[Patch]--
 Title("Don't Carry Elise")
-Author("Luna")
+Author("Luna & Nonami")
 Platform("All Systems")
 Blurb("Uses default Sonic for Elise's stages.")
 
 --[Functions]--
 All Systems:
 BeginBlock("core\archives\player.arc")
+
+Xbox 360:
+DecryptExecutable()
+
+--Add bungee support
+WriteBytes(Executable|0xB18DCB|"1D821A4D28")
+
+--Add tarzan support
+WriteBytes(Executable|0xB18E2B|"1C821A4CB0")
+
+--Register animations for bungee state
+PackageEdit("core\player\sonic_new.pkg"|"motion"|"bungee_d2u"|"player/sonic_new/so_hang01_l_Root.xnm")
+PackageEdit("core\player\sonic_new.pkg"|"motion"|"bungee_d_l"|"player/sonic_new/so_hang01_l_Root.xnm")
+PackageEdit("core\player\sonic_new.pkg"|"motion"|"bungee_u"|"player/sonic_new/so_hang01_l_Root.xnm")
+
+--Register animations for tarzan state
+PackageEdit("core\player\sonic_new.pkg"|"motion"|"tarzan_b_l"|"player/sonic_new/so_hang01_l_Root.xnm")
+PackageEdit("core\player\sonic_new.pkg"|"motion"|"tarzan_b2f_l"|"player/sonic_new/so_hang01_l_Root.xnm")
+PackageEdit("core\player\sonic_new.pkg"|"motion"|"tarzan_l"|"player/sonic_new/so_hang01_l_Root.xnm")
+
+All Systems:
 WriteBase64("core\player\princess.lub"|"c2NyaXB0LnJlbG9hZCgicGxheWVyL3NvbmljX25ldy5sdWEiKQ==")
 EndBlock("core\archives\player.arc")
