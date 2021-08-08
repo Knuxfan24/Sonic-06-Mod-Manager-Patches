@@ -1,0 +1,11 @@
+--[Patch]--
+Title("Always Hold Amy's Hammer")
+Author("Hyper")
+Platform("All Systems")
+Blurb("Forces Amy to always hold her hammer during gameplay.")
+
+--[Functions]--
+All Systems:
+BeginBlock("core\archives\player.arc")
+StringReplace("core\player\amy.lub"|"function SetupModuleSub(_ARG_0_)"|"function SetupModuleSub(_ARG_0_)\n  OpenModel(_ARG_0_, model_system_easy, "player/amy", "hammer", "RightHand")")
+EndBlock("core\archives\player.arc")
