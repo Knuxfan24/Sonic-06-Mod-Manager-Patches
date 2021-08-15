@@ -1,9 +1,15 @@
 --[Patch]--
 Title("Always Hold Physics Objects")
-Author("Hyper")
-Platform("Xbox 360")
+Author("Hyper & Dunker")
+Platform("All Systems")
 Blurb("Allows Silver to hold physics objects while levitating.")
 
 --[Functions]--
+Xbox 360:
 DecryptExecutable()
 WriteNopPPC(Executable|0x21DCBC)
+
+PlayStation 3:
+DecryptExecutable()
+WriteNopPPC(Executable|0x2CB9E8)
+EncryptExecutable()
