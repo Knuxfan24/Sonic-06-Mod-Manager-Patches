@@ -1,12 +1,19 @@
 --[Patch]--
 Title("Restore Homing Flips")
-Author("Desko")
-Platform("Xbox 360")
+Author("Desko & Dunker")
+Platform("All Systems")
 Blurb("Restores Sonic's extra flipping animations after homing.")
 Description("This patch will restore the homing flip animations for Sonic.")
 
 --[Functions]--
+All Systems:
 DecryptExecutable()
 
+Xbox 360:
 --Branch if equal
 WriteBytes(Executable|0x21A3F0|"41 9A")
+
+PlayStation 3:
+--Branch if not equal
+WriteBytes(Executable|0x2C04DC|"40 9E")
+EncryptExecutable()
