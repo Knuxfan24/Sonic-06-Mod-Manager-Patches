@@ -1,13 +1,21 @@
 --[Patch]--
 Title("Mid-air Control for Mach Speed")
-Author("Desko")
-Platform("Xbox 360")
+Author("Desko & Dunker")
+Platform("All Systems")
 Blurb("Allows for free movement when jumping at Mach Speed.")
 Description("This patch will provide more free control in the air during Mach Speed sections.")
 
 --[Functions]--
+All Systems:
 DecryptExecutable()
+
+Xbox 360:
 WriteNopPPC(Executable|0x213380)
 WriteNopPPC(Executable|0x213384)
 WriteNopPPC(Executable|0x2133B4)
 WriteNopPPC(Executable|0x2133B8)
+
+PlayStation 3:
+WriteNopPPC(Executable|0x2ad364)
+WriteNopPPC(Executable|0x2ae560)
+EncryptExecutable()
