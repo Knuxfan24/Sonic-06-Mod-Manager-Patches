@@ -16,6 +16,6 @@ WriteNopPPC(Executable|0x2133B4)
 WriteNopPPC(Executable|0x2133B8)
 
 PlayStation 3:
-WriteNopPPC(Executable|0x2ad364)
-WriteNopPPC(Executable|0x2ae560)
+WriteNopPPC(Executable|0x2AD364)
+WriteNopPPC(Executable|0x2AE560)
 EncryptExecutable()
