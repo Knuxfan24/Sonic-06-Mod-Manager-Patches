@@ -6,12 +6,22 @@ Blurb("Restores Sonic's homing gravity from earlier builds.")
 Description("This patch will restore Sonic's homing gravity from early versions of Sonic '06.\n\nThe PlayStation 3 version uses a workaround that removes Sonic's ability to destroy physics objects. This will be fixed once the patch is ported over.")
 
 --[Functions]--
+
+All Systems:
+BeginBlock("core\archives\player.arc")
+
 Xbox 360:
 DecryptExecutable()
 WriteVirtualNop(0x821F8724)
 WriteVirtualBytes(0x821F872D|"3D B4 85")
 
+--Use Sonic's homing module for Blaze and Knuckles so they can destroy physics objects
+ParameterEdit("core\player\common.lub"|"other_module_blaze_homing"|"other_module_sonic_homing")
+ParameterEdit("core\player\common.lub"|"other_module_knuckles_homing"|"other_module_sonic_homing")
+
 PlayStation 3:
-BeginBlock("core\archives\player.arc")
-ParameterEdit("core\player\common.lub"|"other_module_sonic_homing"|"9")
+--Use Blaze's homing module for Sonic (cannot destroy physics objects)
+ParameterEdit("core\player\common.lub"|"other_module_sonic_homing"|"other_module_blaze_homing")
+
+All Systems:
 EndBlock("core\archives\player.arc")
