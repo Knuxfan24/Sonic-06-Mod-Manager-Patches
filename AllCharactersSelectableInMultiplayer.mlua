@@ -1,0 +1,24 @@
+--[Patch]--
+Title("All Characters Selectable in Multiplayer")
+Author("Dunker & Reimous")
+Platform("Xbox 360")
+Blurb("Allows you to select all possible characters in multiplayer.")
+Description("Allows you to select all possible characters in multiplayer, rather than being limited to the three main hedgehogs.")
+
+--[Functions]--
+DecryptExecutable()
+
+--Call characters scripts
+WriteVirtualBytes(0x82504CC0|"4B C5 D5 D9")
+
+--Implement other character scripts
+WriteVirtualBytes(0x82162298|"91 21 02 90 3D 40 82 00 39 6A 17 64 91 61 02 94 39 6A 17 88 91 61 02 98 39 6A 17 6C 91 61 02 9C 39 6A 17 74 91 61 02 A0 39 6A 17 8C 91 61 02 A4 39 6A 17 80 91 61 02 A8 4E 80 00 20")
+
+--Extend 1P limit
+WriteVirtualBytes(0x82502768|"38 A0 00 09")
+
+--Extend 2P limit
+WriteVirtualBytes(0x824FF1B8|"38 A0 00 09")
+
+--Disable name display
+WriteVirtualBytes(0x824EAED8|"4E 80 00 20")
