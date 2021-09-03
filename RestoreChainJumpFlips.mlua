@@ -11,6 +11,7 @@ DecryptExecutable()
 WriteBytes(Executable|0x19C650|"C0 61 00 7C")
 WriteBytes(Executable|0x20CB74|"91 6A 00 44")
 WriteBytes(Executable|0x20F0BC|"D3 EB 00 44")
+WriteBytes(Executable|0x2136BC|"D0 0B 00 44")
 
 --Correct chain jump animation slots.
 WriteByte(Executable|0x20F117|0x65)
