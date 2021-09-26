@@ -1,0 +1,10 @@
+--[Patch]--
+Title("Restore Chaos Boost Jump")
+Author("Chara")
+Platform("Xbox 360")
+Blurb("Restores The jump animation when activating Chaos Boost.")
+
+--[Functions]--
+DecryptExecutable()
+WriteByte(Executable|0x1A997F|0x01)
+WriteByte(Executable|0x1A9987|0x02)
