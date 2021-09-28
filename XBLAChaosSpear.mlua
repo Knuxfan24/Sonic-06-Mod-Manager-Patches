@@ -11,6 +11,9 @@ DecryptExecutable()
 --Replace ShadowChaosSpearAfter vftable function with ShadowHomingAfter
 WriteVirtualBytes(0x820043AC|"821A6670")
 
+--Force X press input to override Y Button Light Dash
+WriteVirtualBytes(0x821A5D54|"546BC7FE")
+
 --Remove X release (direct) check
 WriteVirtualNop(0x821A5D64|9)
 
