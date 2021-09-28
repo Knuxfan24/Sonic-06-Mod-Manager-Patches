@@ -1,0 +1,18 @@
+--[Patch]--
+Title("XBLA Chaos Spear")
+Author("Chara & Hyper")
+Platform("Xbox 360")
+Blurb("Restores the Chaos Spear behaviour from the XBLA demo.")
+Description("This patch makes you jump after performing Chaos Spear and allows you to perform another homing attack after use. You can also perform Chaos Spear in the falling state.")
+
+--[Functions]--
+DecryptExecutable()
+
+--Replace ShadowChaosSpearAfter vftable function with ShadowHomingAfter
+WriteVirtualBytes(0x820043AC|"821A6670")
+
+--Remove X release (direct) check
+WriteVirtualNop(0x821A5D64|9)
+
+--Replace ShadowLightDash state ID with ShadowChaosSpear
+WriteVirtualBytes(0x821A5D8C|"38800052")
