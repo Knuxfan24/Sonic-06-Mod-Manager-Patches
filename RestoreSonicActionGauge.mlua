@@ -7,6 +7,7 @@ Description("This patch will restore Sonic's Action Gauge draining and replenish
 
 --[Functions]--
 All Systems:
+DecryptExecutable()
 BeginBlock("core\archives\player.arc")
 ParameterRename("core\player\sonic_new.lub"|"c_gauge_green"|"c_green")
 ParameterRename("core\player\sonic_new.lub"|"c_gauge_red"|"c_red")
@@ -20,10 +21,9 @@ ParameterRename("core\player\sonic_new.lub"|"c_super"|"c_gauge_super")
 EndBlock("core\archives\player.arc")
 
 Xbox 360:
-DecryptExecutable()
 
 --beq instead of bne | Sonic's code checks for something that always equals to zero 
-WriteBytes(Executable|0x241F64|"41")
+WriteBytes(Executable|0x241F64|"41 9A 00 10")
 
 --optimizing the code
 
@@ -71,7 +71,6 @@ WriteVirtualBytes(0x8223F05C|"41 99 FF E8")
 --branch to red
 WriteVirtualBytes(0x8223F08C|"4B FF FF C0")
 
-
 --A custom function
 
 --branch to it
@@ -93,3 +92,26 @@ WriteVirtualBytes(0x8223F0BC|"4B FD 8F AD")
 --load the beginning of the function where we came from and branch there
 WriteVirtualBytes(0x8223F0C0|"817F0250")
 WriteVirtualBytes(0x8223F0C4|"4B FD A4 C4")
+
+PlayStation 3:
+--beq instead of bne | Sonic's code checks for something that always equals to zero 
+WriteBytes(Executable|0x1E7178|"41 9E 00 58")
+
+--custom code
+--branch
+WriteVirtualBytes(0x2D2C58|"48 7C 88 15")
+--blr just to be sure that nothing will intercept used space
+WriteVirtualBytes(0xA9B468|"4E 80 00 20")
+--code
+WriteVirtualBytes(0xA9B46C|"7F A3 EB 78 80 7D 00 54 54 63 03 9C 2F 83 00 00 41 9E 00 24 39 3D 02 2C 79 29 00 20 80 69 00 00 81 23 00 34 C0 02 B5 6C 39 29 00 01 D0 03 00 2C 91 23 00 34 60 00 00 00 4E 80 00 20")
+
+--drain fixes
+
+--red
+WriteVirtualBytes(0x1F73A0|"C1 A2 B5 6C")
+WriteVirtualBytes(0x1F73AC|"4F DD EB 82")
+
+--purple
+WriteVirtualBytes(0x1F7314|"48 00 00 8C")
+
+EncryptExecutable()
