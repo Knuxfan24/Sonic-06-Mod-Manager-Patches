@@ -1,0 +1,9 @@
+--[Patch]--
+Title("Restore Chaos Spear Flips")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Restores the flipping animations when performing Chaos Spear.")
+
+--[Functions]--
+DecryptExecutable()
+WriteVirtualNop(0x821A6730)
