@@ -1,0 +1,9 @@
+--[Patch]--
+Title("XBLA Edge Attack")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Disables Shadow's Edge Attack.")
+
+--[Functions]--
+DecryptExecutable()
+WriteVirtualNop(0x821A7998|3)
