@@ -1,0 +1,12 @@
+--[Patch]--
+Title("Disable Super Switch Delay")
+Author("Chara")
+Platform("Xbox 360")
+Blurb("Disables the delay when switching Super characters during the Solaris boss.")
+
+--[Functions]--
+DecryptExecutable()
+WriteNopPPC(Executable|0x1B4318)
+WriteNopPPC(Executable|0x1B4370)
+WriteByte(Executable|0x1B43FF|0x00)
+WriteByte(Executable|0x1B4403|0x69)
