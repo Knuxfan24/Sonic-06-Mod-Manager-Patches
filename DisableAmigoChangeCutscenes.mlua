@@ -1,0 +1,10 @@
+--[Patch]--
+Title("Disable Amigo Change Cutscenes")
+Author("Chara")
+Platform("Xbox 360")
+Blurb("Disables the cutscenes when changing to different characters.")
+
+--[Functions]--
+DecryptExecutable()
+WriteNopPPC(Executable|0x1A4A38)
+WriteNopPPC(Executable|0x1A4A4C)
