@@ -7,20 +7,16 @@ Blurb("Changes the HUD colours to match the character's episode theme.")
 --[Functions]--
 DecryptExecutable()
 
---Disable condition to be sure that our new function will not cause a crash
-WriteVirtualBytes(0x824D7FF0|"2B 0A 00 03")
-WriteVirtualBytes(0x824D7FF4|"41 99 00 B8")
-
 --Jump from life bar initialiser to custom function
-WriteVirtualBytes(0x824D8048|"3A 40 00 00")
-WriteVirtualBytes(0x824D804C|"4B CD 04 F4")
+WriteVirtualBytes(0x824D8040|"4BCD0501")
+WriteVirtualBytes(0x824D809C|"4BCD04A5")
+WriteVirtualBytes(0x824D8F28|"4BCCF619")
 
---Jump from life bar animation initialiser to custom function
-WriteVirtualBytes(0x824D8F30|"3A 40 00 01")
-WriteVirtualBytes(0x824D8F34|"4B CC F6 0C")
+--Fix ring balance in HUB not being updated
+WriteVirtualBytes(0x824DEB34|"80BF0078")
 
 --Custom function that determines which animation to play for the life bar
-WriteVirtualBytes(0x821A8540|"38 A0 00 00 38 8B 6C 90 81 FF 00 78 2B 0F 00 00 41 9A 00 14 2B 0F 00 03 41 9A 00 0C 2B 0F 00 05 40 9A 00 0C 38 AB 67 78 48 00 00 20 2B 0F 00 01 41 9A 00 14 2B 0F 00 06 41 9A 00 0C 2B 0F 00 07 40 9A 00 0C 38 AB 67 6C 48 00 00 20 2B 0F 00 02 41 9A 00 14 2B 0F 00 04 41 9A 00 0C 2B 0F 00 08 40 9A 00 08 38 AB 67 60 2B 12 00 00 40 9A 00 0C 48 32 60 C1 48 32 FA 9C 48 32 70 19 48 33 09 7C")
+WriteVirtualBytes(0x821A8540|"3D 60 82 03 80 DF 00 78 3D 80 82 1B 39 8C 85 8C 2B 06 00 04 41 98 00 18 2B 06 00 07 41 99 00 10 28 00 00 01 41 9A 00 08 38 C6 00 01 48 00 00 08 38 C6 FF FD 2B 06 00 02 41 99 FF F8 54 C0 10 3A 7C 0C 00 2E 7C 09 03 A6 4E 80 04 20 82 1A 85 98 82 1A 85 A0 82 1A 85 A8 38 AB 67 78 4E 80 00 20 38 AB 67 6C 4E 80 00 20 38 AB 67 60 4E 80 00 20 38 AB 67 6C 4E 80 00 20")
 
 --Shadow the Hedgehog
 WriteBytes(Executable|0x39BE8|"3F 80 00 00")
