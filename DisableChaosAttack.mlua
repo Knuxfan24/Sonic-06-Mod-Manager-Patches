@@ -1,0 +1,9 @@
+--[Patch]--
+Title("Disable Chaos Attack")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Disables Shadow's Chaos Attack to behave more like Sonic when homing.")
+
+--[Functions]--
+DecryptExecutable()
+WriteVirtualBytes(0x82005D3C|"821B6B20")
