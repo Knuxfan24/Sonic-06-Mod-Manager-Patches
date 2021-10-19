@@ -2,7 +2,7 @@
 Title("Restore Scrapped Battle Acts")
 Author("Reimous, Hyper, Gordon Ramsay & Knuxfan24")
 Platform("Xbox 360")
-Blurb("Restores Radical Train and Tropical Jungle for battle mode.")
+Blurb("Restores Radical Train and Tropical Jungle for battle mode with custom placement.")
 
 --[Functions]--
 DecryptExecutable()
