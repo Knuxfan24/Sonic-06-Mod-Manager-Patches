@@ -3,7 +3,7 @@ Title("Restore Sonic's Action Gauge")
 Author("Desko, Dunker & Reimous")
 Platform("All Systems")
 Blurb("Restores gauge draining and replenishment for Sonic.")
-Description("This patch will restore Sonic's Action Gauge draining and replenishment when using Gems.\n\nThe Rainbow Gem also won't drain the gauge due to the workaround.")
+Description("This patch will restore Sonic's Action Gauge draining and replenishment when using Gems.")
 
 --[Functions]--
 All Systems:
@@ -16,8 +16,7 @@ ParameterRename("core\player\sonic_new.lub"|"c_gauge_white"|"c_white")
 ParameterRename("core\player\sonic_new.lub"|"c_gauge_sky"|"c_sky")
 ParameterRename("core\player\sonic_new.lub"|"c_gauge_yellow"|"c_yellow")
 ParameterRename("core\player\sonic_new.lub"|"c_gauge_purple"|"c_purple")
---Rainbow Gem's draining is broken in the workaround, so enabling it in player.arc is pointless. | Rename just to be sure that c_super won't drain anything.
-ParameterRename("core\player\sonic_new.lub"|"c_super"|"c_gauge_super")
+ParameterRename("core\player\sonic_new.lub"|"c_gauge_super"|"c_super")
 EndBlock("core\archives\player.arc")
 
 Xbox 360:
@@ -74,24 +73,10 @@ WriteVirtualBytes(0x8223F08C|"4B FF FF C0")
 --A custom function
 
 --branch to it
-WriteVirtualBytes(0x82219584|"48 02 5B 20")
+WriteVirtualBytes(0x822196E8|"48 02 59 BC")
 
---If RT is held then branch
-WriteVirtualBytes(0x8223F0A4|"54 6B 7F FE")
-WriteVirtualBytes(0x8223F0A8|"2B 0B 00 00")
-WriteVirtualBytes(0x8223F0AC|"419A0014")
-
---load Rainbow Gem and float thingies
-WriteVirtualBytes(0x8223F0B0|"38800008")
-WriteVirtualBytes(0x8223F0B4|"FC200890")
-WriteVirtualBytes(0x8223F0B8|"7FE3FB78")
-
---bl to the Gem Drain Case
-WriteVirtualBytes(0x8223F0BC|"4B FD 8F AD")
-
---load the beginning of the function where we came from and branch there
-WriteVirtualBytes(0x8223F0C0|"817F0250")
-WriteVirtualBytes(0x8223F0C4|"4B FD A4 C4")
+--code
+WriteVirtualBytes(0x8223F0A4|"4B FF FF 35 81 FF 00 54 55 EB 7F FE 2B 0B 00 00 41 9A 00 08 4B FF FF 01 4B FD A6 30")
 
 PlayStation 3:
 --beq instead of bne | Sonic's code checks for something that always equals to zero 
