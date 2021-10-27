@@ -1,9 +1,0 @@
---[Patch]--
-Title("Disable Automatic Dead")
-Author("Hyper")
-Platform("Xbox 360")
-Blurb("Disables the extended world boundaries that kills the player upon intersecting.")
-
---[Functions]--
-DecryptExecutable()
-WriteVirtualBytes(0x821E32B0|"4E 80 00 20")
