@@ -1,0 +1,9 @@
+--[Patch]--
+Title("Restore Silver Boss Throw")
+Author("Chara")
+Platform("Xbox 360")
+Blurb("Restores Silver's ability to throw bosses to damage them.")
+
+--[Functions]--
+DecryptExecutable()
+WriteByte(Executable|0x1B571F|0x00)
