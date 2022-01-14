@@ -9,4 +9,5 @@ All Systems:
 BeginBlock("core\archives\scripts.arc")
 StringReplace("core\scripts\mission\0001\mission.lub"|"scripts/mission/0001/set_mission_0001_ring.path.XML"|"scripts/mission/0001/set_mission_0001_ring")
 StringReplace("core\scripts\stage\aqa\a_sonic.lub"|"    Game.LoadPath("placement/aqa/d_aqa_s_a", "pathobj"),"|"    Game.LoadPath("placement/aqa/d_aqa_s_a", "pathobj"),\n    Game.LoadPath("placement/aqa/aqa_s_a"),")
+StringReplace("core\scripts\stage\aqa\a_tag.lub"|"    Game.LoadPath("placement/aqa/d_aqa_s_a", "pathobj"),"|"    Game.LoadPath("placement/aqa/d_aqa_s_a", "pathobj"),\n    Game.LoadPath("placement/aqa/aqa_s_a"),")
 EndBlock("core\archives\scripts.arc")
