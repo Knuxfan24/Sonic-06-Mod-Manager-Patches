@@ -1,11 +1,12 @@
 --[Patch]--
-Title("Restore Aquatic Base Ring Splines")
-Author("Hyper")
+Title("Restore Missing Splines")
+Author("Hyper & Mafiu")
 Platform("All Systems")
-Blurb("Restores the unused spline data for Aquatic Base, allowing Sonic to smoothly light dash through rings.")
+Blurb("Restores any unused spline data for light dash trails, particularly for Soleanna and Aquatic Base.")
 
 --[Functions]--
 All Systems:
 BeginBlock("core\archives\scripts.arc")
+StringReplace("core\scripts\mission\0001\mission.lub"|"scripts/mission/0001/set_mission_0001_ring.path.XML"|"scripts/mission/0001/set_mission_0001_ring")
 StringReplace("core\scripts\stage\aqa\a_sonic.lub"|"    Game.LoadPath("placement/aqa/d_aqa_s_a", "pathobj"),"|"    Game.LoadPath("placement/aqa/d_aqa_s_a", "pathobj"),\n    Game.LoadPath("placement/aqa/aqa_s_a"),")
 EndBlock("core\archives\scripts.arc")
