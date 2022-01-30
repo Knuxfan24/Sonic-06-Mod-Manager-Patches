@@ -1,0 +1,9 @@
+--[Patch]--
+Title("Unlimited Antigravity")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Stops Sonic's Antigravity attack from cancelling automatically.")
+
+--[Functions]--
+DecryptExecutable()
+WriteVirtualNop(0x82217A94)
