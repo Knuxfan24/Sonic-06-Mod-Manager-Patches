@@ -1,0 +1,15 @@
+--[Patch]--
+Title("Restore Point Light Behaviour")
+Author("Desko")
+Platform("Xbox 360")
+Blurb("Restores the original point light behaviour, allowing them to render if possible.")
+Description("Restores the original point light behaviour, allowing them to render if possible - they are still limited to two per mesh by internal shader limits, however.")
+
+--[Functions]--
+DecryptExecutable()
+
+--Force point lights to draw on objects
+WriteVirtualNop(0x8258DBC4|8)
+
+--Force point lights to draw on terrain
+WriteVirtualNop(0x8258DF60|8)
