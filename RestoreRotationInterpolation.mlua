@@ -1,11 +1,16 @@
 --[Patch]--
 Title("Restore Rotation Interpolation")
-Author("Desko")
+Author("Desko & Chara")
 Platform("Xbox 360")
 Blurb("Makes character rotation smoother.")
 Description("This patch restores the missing rotation interpolation, making it so that characters adjust their angle more smoothly as is the case in pre-release versions. This also fixes certain minor issues when moving on steeply angled surfaces.")
 
 --[Functions]--
 DecryptExecutable()
+
+--Desko
 WriteBytes(Executable|0x203900|"3B800001")
 WriteNopPPC(Executable|0x203908)
+
+--Chara
+WriteBytes(Executable|0x2039E8|"815F03F0")
