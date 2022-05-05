@@ -1,0 +1,10 @@
+--[Patch]--
+Title("Disable Point Lights")
+Author("Hyper")
+Platform("Xbox 360")
+Blurb("Disables point light rendering on objects and terrain.")
+
+--[Functions]--
+DecryptExecutable()
+WriteVirtualBytes(0x8258DB88|"48 00")
+WriteVirtualBytes(0x8258DF24|"48 00")
