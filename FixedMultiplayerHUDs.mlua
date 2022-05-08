@@ -15,7 +15,11 @@ WriteByte(Executable|0x39FF5|0x31)
 
 BeginBlock("win32\archives\sprite.arc")
 
---Player 1 tag display fix (for fuck sake, Sonic Team)
+--Player 1 tag display life bar fix
 WriteByte("win32\sprite\tagdisplay_1p.xncp"|0x6E6|0x65)
+
+--Player 1 tag display Chaos Boost fix
+WriteByte("win32\sprite\tagdisplay_1p.xncp"|0x6B0|0x00)
+WriteByte("win32\sprite\tagdisplay_1p.xncp"|0xC10C|0x00)
 
 EndBlock("win32\archives\sprite.arc")
