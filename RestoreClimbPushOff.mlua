@@ -1,0 +1,9 @@
+--[Patch]--
+Title("Restore Climb Push Off")
+Author("Chara")
+Platform("Xbox 360")
+Blurb("Restores the push back after jumping off walls with Knuckles and Rouge.")
+
+--[Functions]--
+DecryptExecutable()
+WriteVirtualBytes(0x821AD7A6|"01 10")
