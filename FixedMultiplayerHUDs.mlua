@@ -18,6 +18,10 @@ BeginBlock("win32\archives\sprite.arc")
 --Player 1 tag display life bar fix
 WriteByte("win32\sprite\tagdisplay_1p.xncp"|0x6E6|0x65)
 
+--Player 1 battle display Chaos Boost fix
+WriteByte("win32\sprite\battledisplay_1p.xncp"|0x5C0|0x00)
+WriteByte("win32\sprite\battledisplay_1p.xncp"|0x9FB8|0x00)
+
 --Player 1 tag display Chaos Boost fix
 WriteByte("win32\sprite\tagdisplay_1p.xncp"|0x6B0|0x00)
 WriteByte("win32\sprite\tagdisplay_1p.xncp"|0xC10C|0x00)
