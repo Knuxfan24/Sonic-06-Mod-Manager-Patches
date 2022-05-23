@@ -1,8 +1,8 @@
 --[Patch]--
-Title("Increased Shield Radius for Elise")
+Title("Increased Shield Range for Elise")
 Author("Hyper & jase3300")
 Platform("All Systems")
-Blurb("Changes Elise's shield to a more appropriate radius with reduced force, rather than the Antigravity properties.")
+Blurb("Increases the range of Elise's shield.")
 
 --[Functions]--
 All Systems:

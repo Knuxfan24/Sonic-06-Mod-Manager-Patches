@@ -2,7 +2,7 @@
 Title("Increased Omega Shot Range")
 Author("Hyper")
 Platform("All Systems")
-Blurb("Increases the shot range and hit box for Omega.")
+Blurb("Increases the range of Omega Shot.")
 
 --[Functions]--
 All Systems:

@@ -2,7 +2,7 @@
 Title("Increased Chaos Blast Range")
 Author("Nonami & VolcanoTheBat")
 Platform("Xbox 360")
-Blurb("Changes Shadow's Chaos Blast radius from 1 to 20 meters and makes Chaos Blast sphere larger.")
+Blurb("Increases the range of Chaos Blast.")
 
 --[Functions]--
 DecryptExecutable()
