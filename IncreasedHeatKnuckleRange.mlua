@@ -1,0 +1,10 @@
+--[Patch]--
+Title("Increased Heat Knuckle Range")
+Author("Chara")
+Platform("Xbox 360")
+Blurb("Increases the range of Knuckles' third attack combo.")
+
+--[Functions]--
+DecryptExecutable()
+WriteVirtualBytes(0x822460E6|"82 01")
+WriteVirtualBytes(0x822460EE|"D9 D0")
