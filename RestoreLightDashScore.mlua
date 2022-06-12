@@ -1,0 +1,21 @@
+--[Patch]--
+Title("Restore Light Dash Score")
+Author("Reimous & Chara")
+Platform("Xbox 360")
+Blurb("Restores the light dash rewarding the player with score bonuses.")
+
+--[Functions]--
+DecryptExecutable()
+WriteVirtualNop(0x82506D30)
+
+--Sonic
+WriteVirtualBytes(0x821A2C6C|"48 00 F6 DC")
+
+--Shadow
+WriteVirtualBytes(0x821A6414|"48 00 BF 34")
+WriteVirtualBytes(0x821B2348|"7D 88 02 A6 91 81 FF F8 94 21 FF 00 7C 7F 1B 78 80 63 00 08 3C 00 82 4F 60 00 2B 10 7C 08 03 A6 4E 80 00 21 80 7F 00 0C 39 60 FF FE 38 80 00 64 90 83 00 40 91 63 00 70 38 21 01 00 81 81 FF F8 7D 88 03 A6 4E 80 00 20")
+WriteVirtualBytes(0x824F2B10|"7D 88 02 A6 91 81 FF F8 94 21 FF A0 80 83 00 98 2B 04 00 00 41 9A 00 4C 3D 60 82 61 39 6B 5D 60 2B 0B 00 00 41 9A 00 3C 38 61 00 50 48 16 3C 1D 80 61 00 50 2B 03 00 00 41 9A 00 28 3D 60 82 61 39 6B 5D 60 2B 0B 00 00 41 9A 00 0C 48 00 00 29 80 61 00 50 2B 03 00 00 41 9A 00 08 48 08 F2 CD 38 21 00 60 81 81 FF F8 7D 88 03 A6 4E 80 00 20")
+WriteVirtualBytes(0x824F2B84|"38 A0 01 2C 38 80 00 01 48 04 10 04")
+
+WriteVirtualBytes(0x82B79618|"82 03 5E 50")
+WriteVirtualBytes(0x828CBD08|"4E 80 00 20")
