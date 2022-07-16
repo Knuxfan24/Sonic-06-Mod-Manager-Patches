@@ -1,0 +1,13 @@
+--[Patch]--
+Title("Correct Omega's Hover Animation")
+Author("Chara")
+Platform("Xbox 360")
+Blurb("Uses the correct hover animation, rather than the fall animation.")
+
+--[Functions]--
+DecryptExecutable()
+WriteVirtualBytes(0x82B159BA|"00 25")
+
+BeginBlock("core\archives\player.arc")
+PackageEdit("core\player\omega.pkg"|"motion"|"attack"|"player/omega/om_hover_l_Root.xnm")
+EndBlock("core\archives\player.arc")
