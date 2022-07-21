@@ -1,0 +1,10 @@
+--[Patch]--
+Title("Restore Demo Camera Mode")
+Author("Desko")
+Platform("Xbox 360")
+Blurb("Restores the demo camera used in the promotional trailers.")
+Description("This patch will restore the demo camera.\n\nControls:\n► Right Analog Stick - Rotate.\n► Left Trigger - Zoom out.\n► Right Trigger - Zoom in.\n► Left Bumper - Reset.")
+
+--[Functions]--
+DecryptExecutable()
+WriteVirtualNop(0x821896F8)
