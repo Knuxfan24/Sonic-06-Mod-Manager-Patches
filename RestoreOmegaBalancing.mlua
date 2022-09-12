@@ -1,0 +1,9 @@
+--[Patch]--
+Title("Restore Omega Balancing")
+Author("Chara")
+Platform("Xbox 360")
+Blurb("Restore's Omega's balancing animation when close to the edge of a platform.")
+
+--[Functions]--
+DecryptExecutable()
+WriteVirtualBytes(0x82B16923|"10 821A0750")
