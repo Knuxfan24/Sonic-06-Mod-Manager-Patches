@@ -1,9 +1,9 @@
 --[Patch]--
-Title("Tail Swipe")
-Author("Nonami, ChaosX & Chara")
+Title("Project '06 Tail Swipe")
+Author("Nonami, Chara & ChaosX")
 Platform("Xbox 360")
-Blurb("Adds the Tail Swipe attack from Sonic Adventure.")
-Description("Adds the Tail Swipe attack from Sonic Adventure.\nAnimated by ChaosX.")
+Blurb("Adds Tails' Tail Swipe attack from Sonic Adventure.")
+Description("Adds Tails' Tail Swipe attack from Sonic Adventure.\nAnimated by ChaosX.")
 
 --[Functions]--
 DecryptExecutable()
