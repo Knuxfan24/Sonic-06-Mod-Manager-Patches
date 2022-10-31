@@ -1,0 +1,33 @@
+--[Patch]--
+Title("Fixed Upgrade Models")
+Author("Hyper")
+Platform("All Systems")
+Blurb("Fixes inconsistencies with character upgrades.")
+Description("Fixes inconsistencies with character upgrades.\n\nCurrently this fixes Sonic's upgrades not being present for the snowboard or super speed sections.\n\nThis will not work with Draw Snowboard Shadows, the fix used in that patch is included in this.")
+
+--[Functions]--
+All Systems:
+
+BeginBlock("core\archives\player.arc")
+
+PackageAdd("core\player\sonic_fast.pkg"|"model"|"bbungle_L"|"player/sonic_new/so_itm_bbungle_L.xno")
+PackageAdd("core\player\sonic_fast.pkg"|"model"|"sbungle_L"|"player/sonic_new/so_itm_sbungle_L.xno")
+PackageAdd("core\player\sonic_fast.pkg"|"model"|"sbungle_R"|"player/sonic_new/so_itm_sbungle_R.xno")
+
+StringReplace("core\player\sonic_fast.lub"|"  OpenGameMaster(_ARG_0_, gamemaster_module_player)"|"  OpenGameMaster(_ARG_0_, gamemaster_module_player)\n  OpenOther(_ARG_0_, other_module_item)")
+
+StringReplace("core\player\sonic_fast.lub"|"script.reload("player/collision_standard.lua")"|"c_item_table = { { flags = equip_boundjump, package = c_model_package, model = "bbungle_L", node = "Left_ItemPoint" }, { flags = equip_homingsmash, package = c_model_package, model = "sbungle_L", node = "Left_ItemPoint" }, { flags = equip_homingsmash, package = c_model_package, model = "sbungle_R", node = "Right_ItemPoint" } }\nscript.reload("player/collision_standard.lua")")
+
+PackageAdd("core\player\snow_board.pkg"|"model"|"bbungle_L"|"player/sonic_new/so_itm_bbungle_L.xno")
+PackageAdd("core\player\snow_board.pkg"|"model"|"sbungle_L"|"player/sonic_new/so_itm_sbungle_L.xno")
+PackageAdd("core\player\snow_board.pkg"|"model"|"sbungle_R"|"player/sonic_new/so_itm_sbungle_R.xno")
+
+StringReplace("core\player\snow_board.lub"|"  OpenGameMaster(_ARG_0_, gamemaster_module_player)"|"  OpenGameMaster(_ARG_0_, gamemaster_module_player)\n  OpenOther(_ARG_0_, other_module_item)")
+
+StringReplace("core\player\snow_board_wap.lub"|"  OpenGameMaster(_ARG_0_, gamemaster_module_player)"|"  OpenGameMaster(_ARG_0_, gamemaster_module_player)\n  OpenOther(_ARG_0_, other_module_item)")
+
+StringReplace("core\player\snow_board.lub"|"script.reload("player/collision_standard.lua")"|"c_item_table = { { flags = equip_boundjump, package = c_model_package, model = "bbungle_L", node = "Left_ItemPoint" }, { flags = equip_homingsmash, package = c_model_package, model = "sbungle_L", node = "Left_ItemPoint" }, { flags = equip_homingsmash, package = c_model_package, model = "sbungle_R", node = "Right_ItemPoint" }, { flags = 1, package = "player/common", model = "snow_board_csc", node = "LeftToeBase" }  }\nscript.reload("player/collision_standard.lua")")
+
+StringReplace("core\player\snow_board_wap.lub"|"script.reload("player/collision_standard.lua")"|"c_item_table = { { flags = equip_boundjump, package = c_model_package, model = "bbungle_L", node = "Left_ItemPoint" }, { flags = equip_homingsmash, package = c_model_package, model = "sbungle_L", node = "Left_ItemPoint" }, { flags = equip_homingsmash, package = c_model_package, model = "sbungle_R", node = "Right_ItemPoint" }, { flags = 1, package = "player/common", model = "snow_board_wap", node = "LeftToeBase" }  }\nscript.reload("player/collision_standard.lua")")
+
+EndBlock("core\archives\player.arc")
