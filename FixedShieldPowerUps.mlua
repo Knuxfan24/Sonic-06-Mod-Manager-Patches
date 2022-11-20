@@ -1,0 +1,60 @@
+--[Patch]--
+Title("Fixed Shield Power Ups")
+Author("Chara")
+Platform("Xbox 360")
+Blurb("Fixes the shields not producing invincibility frames upon taking damage and restores the sound effect for the power up.")
+
+--[Functions]--
+DecryptExecutable()
+
+--Invincibility frames
+--Jump to custom code
+WriteVirtualBytes(0x8220CE20|"4B F9 3E 89")
+WriteVirtualBytes(0x8220CEF0|"4B F9 3D B9")
+
+--Custom code
+--stb   r29, 0x104(r11)
+--lwz   r11, 8(r30)
+--addi  r10, r11, 0xb0
+--addi  r11, r11, 0x1c0
+--lfs   f13, 0(r10)
+--lfs   f0, 0(r11)
+--fcmpu cr6, f13, f0
+--blt   cr6, 0x24
+--mr    r11, r10
+--bl    0x6c124
+--blr   
+WriteVirtualBytes(0x821A0CA8|"9B AB 01 04 81 7E 00 08 39 4B 00 B0 39 6B 01 C0 C1 AA 00 00 C0 0B 00 00 FF 0D 00 00 41 98 00 08 7D 4B 53 78 48 06 C1 01 4E 80 00 20")
+
+--Sound effect (prevents mainmenu for jumping to ranking code)
+WriteVirtualNop(0x82506D30)
+
+--Jump to custom code
+WriteVirtualBytes(0x8216CB48|"48 38 63 49")
+
+--Custom code
+--cmpwi cr6, r11, 8
+--beq   cr6, 0x10
+--addi  r11, r11, 0xfffb
+--bl    0xffffffffffc79cbc
+--mulli r11, r29, 0x4c
+--add   r11, r11, r31
+--mr    r3, r31
+--lwz   r10, 0xe50(r11)
+--addi  r10, r10, 0xc8
+--stw   r10, 0xe50(r11)
+--b     0x30
+--nop   
+--mflr  r12
+--stw   r12, -8(r1)
+--std   r31, -0x10(r1)
+--stwu  r1, -0x70(r1)
+--lis   r11, 0x8201
+--mr    r31, r3
+--addi  r6, r11, 0xdd94
+--lis   r11, 0x8200
+--mr    r4, r31
+--addi  r5, r11, 0x11dc
+--addi  r3, r1, 0x50
+--bl    0xffffffffffc785fc
+WriteVirtualBytes(0x824F2E90|"2F 0B 00 08 41 9A 00 0C 39 6B FF FB 4B C7 9C B1 1D 7D 00 4C 7D 6B FA 14 7F E3 FB 78 81 4B 0E 50 39 4A 00 C8 91 4B 0E 50 48 00 00 08 60 00 00 00 7D 88 02 A6 91 81 FF F8 FB E1 FF F0 94 21 FF 90 3D 60 82 01 7C 7F 1B 78 38 CB DD 94 3D 60 82 00 7F E4 FB 78 38 AB 11 DC 38 61 00 50 4B C7 85 A1")
