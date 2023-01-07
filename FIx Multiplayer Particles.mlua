@@ -1,9 +1,8 @@
  --[Patch]--
-Title("Restore Multiplayer Particles")
+Title("Fix Multiplayer Particles")
 Author("Reimous")
 Platform("Xbox 360")
-Blurb("Adds Particles back to multiplayer")
-Description("Allows particles to be displayed in multiplayer")
+Blurb("Fixes some particles not displaying in multiplayer")
 
 --[Functions]--
 DecryptExecutable()
