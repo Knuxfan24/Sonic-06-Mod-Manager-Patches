@@ -2,7 +2,7 @@
 Title("Omega Hover Limit")
 Author("Reimous")
 Platform("Xbox 360")
-Blurb("Limits Omega Hovering only a few seconds to prevent exploits.")
+Blurb("Limits Omega Hovering to only a few seconds to prevent exploits.")
 --[Functions]--
 DecryptExecutable()
 
