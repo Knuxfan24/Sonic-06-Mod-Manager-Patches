@@ -1,0 +1,15 @@
+ --[Patch]--
+Title("Restore Multiplayer Particles")
+Author("Reimous")
+Platform("Xbox 360")
+Blurb("Adds Particles back to multiplayer")
+Description("Allows particles to be displayed in multiplayer")
+
+--[Functions]--
+DecryptExecutable()
+
+--Disable condintion flag to multiplayer what disable particles
+WriteVirtualBytes(0x826651E4|"60 00 00 00 60 00 00 00")
+
+--Allows display to all screens unless one last
+WriteVirtualBytes(0x82648D70|"60 00 00 00")
