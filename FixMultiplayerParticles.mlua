@@ -2,7 +2,7 @@
 Title("Fix Multiplayer Particles")
 Author("Reimous")
 Platform("Xbox 360")
-Blurb("Fixes some particles not displaying in multiplayer")
+Blurb("Fixes some particles not displaying in multiplayer.")
 
 --[Functions]--
 DecryptExecutable()
