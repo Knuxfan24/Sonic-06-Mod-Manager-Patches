@@ -1,9 +1,8 @@
 --[Patch]--
-Title("Omega Hover Nerf")
-Author("Rei-San(Reimous,GhostTH)")
+Title("Omega Hover Limit")
+Author("Reimous")
 Platform("Xbox 360")
-Blurb("Limits Omega Hovering")
-Description("Puts a timer on Omega's hovering.")
+Blurb("Limits Omega Hovering only a few seconds to prevent exploits.")
 --[Functions]--
 DecryptExecutable()
 
