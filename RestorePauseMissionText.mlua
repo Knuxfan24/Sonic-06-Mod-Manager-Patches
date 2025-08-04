@@ -1,0 +1,11 @@
+--[Patch]--
+Title("Restore Pause Mission Text")
+Author("Desko & Hyper")
+Platform("Xbox 360")
+Blurb("Restores the mission text window appearing when the game is paused.")
+
+--[Functions]--
+DecryptExecutable()
+WriteVirtualNop(0x824F0018)
+WriteVirtualNop(0x824F02A0)
+WriteVirtualBytes(0x82509AEA|"15 FC")
