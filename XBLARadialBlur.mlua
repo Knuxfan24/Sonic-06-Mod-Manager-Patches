@@ -2,8 +2,8 @@
 Title("XBLA Radial Blur")
 Author("Hyper")
 Platform("Xbox 360")
-Blurb("Restores the higher quality radial blur from the XBLA demo.")
-Description("This patch will restore the higher quality radial blur from the Xbox Live Arcade Demo.")
+Blurb("Restores the lower quality radial blur from the XBLA demo.")
+Description("This patch will restore the lower quality radial blur from the Xbox Live Arcade Demo.")
 
 --[Functions]--
 BeginBlock("core\archives\shader.arc")
